@@ -1,0 +1,1 @@
+DarkRP.addChatReceiver("/pub", "parler en pub", function(ply) return true end)
