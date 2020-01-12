@@ -333,9 +333,9 @@ GM.Config.DisabledCustomModules = {
 
 -- The list of weapons that players are not allowed to drop. Items set to true are not allowed to be dropped.
 GM.Config.DisallowDrop = {
-	["fine_list"] = true,
-	["idcard"] = true,
-	["surrender"] = true,
+    ["fine_list"] = true,
+    ["idcard"] = true,
+    ["surrender"] = true,
     ["arrest_stick"] = true,
     ["door_ram"] = true,
     ["gmod_camera"] = true,
@@ -353,9 +353,9 @@ GM.Config.DisallowDrop = {
 
 -- The list of weapons people spawn with.
 GM.Config.DefaultWeapons = {
-	"idcard",
-	"surrender",
-	"weapon_physgun",
+    "idcard",
+    "surrender",
+    "weapon_physgun",
     "gmod_camera",
     "gmod_tool",
     "itemstore_pickup",
