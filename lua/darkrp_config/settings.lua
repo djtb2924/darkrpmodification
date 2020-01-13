@@ -9,6 +9,7 @@ If this file is missing settings (because of e.g. an update), DarkRP will assume
 You need not worry about updating this file. If a new setting is added you can manually add them to this file.
 ---------------------------------------------------------------------------]]
 
+-- Copyright © LiveYourGame, 2020
 
 --[[
 Toggle settings.

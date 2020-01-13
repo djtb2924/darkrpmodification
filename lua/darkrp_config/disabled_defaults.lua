@@ -1,6 +1,6 @@
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 DarkRP disabled defaults
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 DarkRP comes with a bunch of default things:
     - a load of modules
@@ -15,8 +15,9 @@ Note: if you want to have e.g. edit the official medic job, you MUST disable the
 You can copy the medic from DarkRP and paste it in darkrp_config/jobs.lua
 ---------------------------------------------------------------------------]]
 
+-- Copyright © LiveYourGame, 2020
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 The list of modules that are disabled. Set to true to disable, false to enable.
 Modules that are not in this list are enabled by default.
 In some cases some external addons may overwrite one of the modules below and will expect them to be enabled to work.
@@ -39,7 +40,7 @@ DarkRP.disabledDefaults["modules"] = {
     ["chatindicator"]    = true,
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 The disabled default jobs. true to disable, false to enable.
 
 NOTE: If you disable a job and remake it, expect things that rely on the job to stop working
@@ -59,7 +60,7 @@ DarkRP.disabledDefaults["jobs"] = {
     ["mobboss"]   = true,
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Shipments and pistols
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["shipments"] = {
@@ -75,7 +76,7 @@ DarkRP.disabledDefaults["shipments"] = {
     ["Sniper rifle"] = true,
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Entities
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["entities"] = {
@@ -86,7 +87,7 @@ DarkRP.disabledDefaults["entities"] = {
     ["Tip Jar"]       = true,
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Vehicles
 (at the moment there are no default vehicles)
 You could use this to disable vehicles you added in the vehicles.lua located in the darkrp_customthings folder.
@@ -95,7 +96,7 @@ DarkRP.disabledDefaults["vehicles"] = {
 
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Food
 Food is only enabled when hungermod is enabled (see disabled modules above).
 ---------------------------------------------------------------------------]]
@@ -113,7 +114,7 @@ DarkRP.disabledDefaults["food"] = {
     ["Orange"]           = true,
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Door groups
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["doorgroups"] = {
@@ -122,7 +123,7 @@ DarkRP.disabledDefaults["doorgroups"] = {
 }
 
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Ammo packets
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["ammo"] = {
@@ -131,7 +132,7 @@ DarkRP.disabledDefaults["ammo"] = {
     ["Shotgun ammo"] = true,
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Agendas
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["agendas"] = {
@@ -139,7 +140,7 @@ DarkRP.disabledDefaults["agendas"] = {
     ["Police agenda"] = true,
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Chat groups (chat with /g)
 Chat groups do not have names, so their index is used instead.
 ---------------------------------------------------------------------------]]
@@ -149,7 +150,7 @@ DarkRP.disabledDefaults["groupchat"] = {
     [3] = true, -- Group chat between people of the same team
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Jobs that are hitmen
 set to true to disable
 ---------------------------------------------------------------------------]]
@@ -157,7 +158,7 @@ DarkRP.disabledDefaults["hitmen"] = {
     ["mobboss"] = true,
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Demote groups
 When anyone is demoted from any job in this group, they will be temporarily banned
 from every job in the group
@@ -167,7 +168,7 @@ DarkRP.disabledDefaults["demotegroups"] = {
     ["Gangsters"] = true,
 }
 
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Workarounds
 
 DarkRP works around some bugs in GMod and other addons that aren't maintained

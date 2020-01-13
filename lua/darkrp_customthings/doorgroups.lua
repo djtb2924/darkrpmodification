@@ -1,12 +1,14 @@
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Door groups
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 The server owner can set certain doors as owned by a group of people, identified by their jobs.
 
 
 HOW TO MAKE A DOOR GROUP:
 AddDoorGroup("NAME OF THE GROUP HERE, you will see this when looking at a door", Team1, Team2, team3, team4, etc.)
 ---------------------------------------------------------------------------]]
+
+-- Copyright © LiveYourGame, 2020
 
 AddDoorGroup("Gouvernement", TEAM_MAYOR, TEAM_SECRETAIRE, TEAM_GARDE, TEAM_GENDARME, TEAM_AGN, TEAM_MGN, TEAM_BRI, TEAM_SDR, TEAM_OFFICIER, TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_SOLDATGIGN, TEAM_INGEGIGN, TEAM_SNIPERGIGN, TEAM_INGEGIGN, TEAM_OSUGIGN, TEAM_MARECHAL, TEAM_GENGEN, TEAM_GIGNGENERAL, TEAM_STAFF)
 AddDoorGroup("Gendarmerie", TEAM_GENDARME, TEAM_AGN, TEAM_MGN, TEAM_BRI, TEAM_SDR, TEAM_OFFICIER, TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_SOLDATGIGN, TEAM_INGEGIGN, TEAM_SNIPERGIGN, TEAM_INGEGIGN, TEAM_OSUGIGN, TEAM_MARECHAL, TEAM_GENGEN, TEAM_GIGNGENERAL, TEAM_STAFF)

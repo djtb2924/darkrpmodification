@@ -1,6 +1,6 @@
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 Group chats
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 Team chat for when you have a certain job.
 e.g. with the default police group chat, police officers, chiefs and mayors can
 talk to one another through /g or team chat.
@@ -14,6 +14,8 @@ GAMEMODE:AddGroupChat(a function with ply as argument that returns whether a ran
 This is for people who know how to script Lua.
 
 ---------------------------------------------------------------------------]]
+
+-- Copyright © LiveYourGame, 2020
 
 GAMEMODE:AddGroupChat(TEAM_MAYOR, TEAM_SECRETAIRE, TEAM_GARDE, TEAM_GENDARME, TEAM_AGN, TEAM_MGN, TEAM_BRI, TEAM_SDR, TEAM_OFFICIER, TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_SOLDATGIGN, TEAM_SNIPERGIGN, TEAM_INGEGIGN, TEAM_OSUGIGN, TEAM_MARECHAL, TEAM_GENGEN, TEAM_GIGNGENERAL, TEAM_AGS)
 GAMEMODE:AddGroupChat(TEAM_GENDARME, TEAM_AGN, TEAM_MGN, TEAM_BRI, TEAM_SDR, TEAM_OFFICIER, TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_SOLDATGIGN, TEAM_SNIPERGIGN, TEAM_INGEGIGN, TEAM_OSUGIGN, TEAM_MARECHAL, TEAM_GENGEN, TEAM_GIGNGENERAL, TEAM_AGS)

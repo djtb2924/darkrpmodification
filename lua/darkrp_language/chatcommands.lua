@@ -1,6 +1,6 @@
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 English (example) Chat command translation file
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 This file contains translations for chat command descriptions.
 On the left side you see the chat command, on the right side you see the description.
@@ -26,6 +26,8 @@ Make sure the language code is right at the bottom of this file
 = Using a language =
 Make sure the convar gmod_language is set to your language code. You can do that in a server CFG file.
 ---------------------------------------------------------------------------]]
+
+-- Copyright © LiveYourGame, 2020
 
 local descriptions = {
     ["/"]                     = "Global server chat.",

@@ -1,6 +1,6 @@
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 DarkRP custom jobs
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 This file contains your custom jobs.
 This file should also contain jobs from DarkRP that you edited.
 
@@ -15,6 +15,8 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 
 Add your custom jobs under the following line:
 ---------------------------------------------------------------------------]]
+
+-- Copyright © LiveYourGame, 2020
 
 local green = Color(20, 150, 20)
 local yellow = Color(241, 196, 15)

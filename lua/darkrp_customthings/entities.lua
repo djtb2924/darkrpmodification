@@ -1,6 +1,6 @@
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 DarkRP custom entities
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 This file contains your custom entities.
 This file should also contain entities from DarkRP that you edited.
@@ -16,6 +16,8 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomEntityFields
 
 Add entities under the following line:
 ---------------------------------------------------------------------------]]
+
+-- Copyright © LiveYourGame, 2020
 
 -- Fermier
 

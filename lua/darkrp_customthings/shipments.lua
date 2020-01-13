@@ -1,6 +1,6 @@
---[[---------------------------------------------------------------------------
+--[[-------------------------------------------------------------------------
 DarkRP custom shipments and guns
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 This file contains your custom shipments and guns.
 This file should also contain shipments and guns from DarkRP that you edited.
@@ -16,6 +16,8 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomShipmentFields
 
 Add shipments and guns under the following line:
 ---------------------------------------------------------------------------]]
+
+-- Copyright © LiveYourGame, 2020
 
 --[[-------------------------------------------------------------------------
 Quincailler
