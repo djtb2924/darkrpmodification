@@ -319,7 +319,7 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 
 TEAM_GENGEN = DarkRP.createJob("Général", {
 	color = blue,
-	model = "models/player/darkley/f_gend_02_960.mdl",
+	model = "models/player/pmc_5/pmc__01.mdl",
 	description = [[Vous protegez les citoyens.]],
 	weapons = {
 		"drogue_search",
@@ -413,7 +413,12 @@ TEAM_RECRUEGIGN = DarkRP.createJob("Recrue GIGN", {
 
 TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 	color = blue,
-	model = "models/player/pmc_4/pmc__13.mdl",
+	model = {
+		"models/player/pmc_4/pmc__13.mdl",
+		"models/player/pmc_4/pmc__14.mdl",
+		"models/player/pmc_5/pmc__13.mdl",
+		"models/player/pmc_5/pmc__14.mdl"
+	},
 	description = [[Vous êtes le médecin de l'unité vous rester en retrait pour soigner vos collègues. Vous êtes sous les ordres des Sous-Officiers et Officiers]],
 	weapons = {
 		"drogue_search",
@@ -443,7 +448,12 @@ TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 
 TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 	color = blue,
-	model = "models/player/pmc_4/pmc__12.mdl",
+	model = {
+		"models/player/pmc_4/pmc__13.mdl",
+		"models/player/pmc_4/pmc__14.mdl",
+		"models/player/pmc_5/pmc__13.mdl",
+		"models/player/pmc_5/pmc__14.mdl"
+	},
 	description = [[Vous êtes le soldat de l'unité. Vous êtes sous les ordres des Sous-Officiers et Officiers]],
 	weapons = {
 		"drogue_search",
@@ -458,7 +468,8 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 		"fine_list",
 		"gen_badge",
 		"realistic_hook",
-		"heavy_shield"
+		"heavy_shield",
+		"m9k_jackhammer"
 	},
 	command = "soldatgign",
 	max = 10,
@@ -472,7 +483,10 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 
 TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 	color = blue,
-	model = "models/player/pmc_4/pmc__03.mdl",
+	model = {
+		"models/player/pmc_4/pmc__03.mdl",
+		"models/player/pmc_5/pmc__03.mdl"
+	},
 	description = [[Vous êtes le sniper de l'unité. Vous êtes sous les ordres des Sous-Officiers et Officiers]],
 	weapons = {
 		"drogue_search",
@@ -501,7 +515,12 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 
 TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 	color = blue,
-	model = "models/player/pmc_4/pmc__07.mdl",
+	model = {
+		"models/player/pmc_4/pmc__05.mdl",
+		"models/player/pmc_4/pmc__06.mdl",
+		"models/player/pmc_5/pmc__05.mdl",
+		"models/player/pmc_5/pmc__06.mdl"
+	},
 	description = [[Vous êtes le sniper de l'unité. Vous êtes sous les ordres des Sous-Officiers et Officiers]],
 	weapons = {
 		"drogue_search",
@@ -530,7 +549,12 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 
 TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 	color = blue,
-	model = "models/player/pmc_4/pmc__09.mdl",
+	model = {
+		"models/player/pmc_4/pmc__10.mdl",
+		"models/player/pmc_4/pmc__11.mdl",
+		"models/player/pmc_5/pmc__10.mdl",
+		"models/player/pmc_5/pmc__11.mdl"
+	},
 	description = [[Vous êtes sous les ordres du Général]],
 	weapons = {
 		"drogue_search",
@@ -563,7 +587,10 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 
 TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 	color = blue,
-	model = "models/player/pmc_4/pmc__01.mdl",
+	model = {
+		"models/player/pmc_4/pmc__01.mdl",
+		"models/player/pmc_5/pmc__01.mdl",
+	},
 	description = [[Vous dirigez le GIGN]],
 	weapons = {
 		"drogue_search",

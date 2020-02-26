@@ -756,17 +756,6 @@ DarkRP.createShipment("HK416 GIGN", {
 	allowed = {TEAM_GIGNGENERAL}
 })
 
-DarkRP.createShipment("Bouclier", {
-	model = "models/drover/shield.mdl",
-	entity = "weapon_policeshield",
-	price = 500,
-	amount = 1,
-	separate = false,
-	pricesep = 500,
-	noship = false,
-	allowed = {TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_SOLDATGIGN, TEAM_SNIPERGIGN, TEAM_OSUGIGN, TEAM_GIGNGENERAL}
-})
-
 DarkRP.createShipment("C4", {
 	model = "models/weapons/w_c4.mdl",
 	entity = "weapon_sh_doorcharge",
