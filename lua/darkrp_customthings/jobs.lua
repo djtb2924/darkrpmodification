@@ -126,7 +126,6 @@ TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 		"m9k_usp",
 		"policebadgewallet",
 		"stungun",
-		"weapon_kidnapper",
 		"weapon_r_handcuffs",
 		"weaponchecker"
 	},
@@ -1315,7 +1314,10 @@ TEAM_TOWER = DarkRP.createJob("Dépanneur",{
 	color = green,
 	model = "models/player/magnusson.mdl",
 	description = [[]],
-	weapons = {"tow_attach", "nova_mechanic"},
+	weapons = {
+		"tow_attach",
+		"nova_mechanic"
+	},
 	command = "tower",
 	max = 2,
 	salary = 250,
@@ -1415,8 +1417,8 @@ TEAM_KIDNAPPEUR = DarkRP.createJob("Kidnappeur V.I.P", {
 	},
 	description = [[Vous Kidnappez les gens.]],
 	weapons = {
-		"weapon_kidnapper",
 		"csgo_bayonet",
+		"scalpel"
 	},
 	command = "kidnappeur",
 	max = 2,
@@ -1611,7 +1613,8 @@ TEAM_STAFF = DarkRP.createJob("Staff", {
 		"weaponchecker",
 		"itemstore_checker",
 		"weapon_r_handcuffs",
-		"weapon_keypadchecker"
+		"weapon_keypadchecker",
+		"drogue_search"
 	},
 	command = "staff",
 	max = 0,
