@@ -626,19 +626,6 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 Farm
 ---------------------------------------------------------------------------]]
 
-TEAM_FERMIER = DarkRP.createJob("Fermier", {
-	color = green,
-	model = "models/sirgibs/ragdolls/hl2/fisherman.mdl",
-	description = [[Vous recoltez des fruits.]],
-	weapons = {"weapon_hl2shovel"},
-	command = "fermier",
-	max = 4,
-	salary = 200,
-	admin = 0,
-	hasLicense = false,
-	candemote = false
-})
-
 TEAM_BITMINER = DarkRP.createJob("Mineur de BitCoins", {
 	color = orange,
 	model = {
