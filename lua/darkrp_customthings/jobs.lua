@@ -1649,24 +1649,6 @@ TEAM_STAFF = DarkRP.createJob("Staff", {
 Jobs customs
 ---------------------------------------------------------------------------]]
 
-TEAM_BAKO = DarkRP.createJob("Bako", {
-	color = black,
-	model = "models/csgoleet2pm.mdl",
-	description = [[Job Custom.]],
-	weapons = {
-		"keypad_cracker",
-		"lockpick"
-	},
-	command = "bako",
-	max = 8,
-	salary = 50,
-	admin = 0,
-	vote = false,
-	hasLicense = false,
-	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
-})
-
 TEAM_ZETTA = DarkRP.createJob("Nietski", {
 	color = black,
 	model = {
@@ -1722,22 +1704,9 @@ TEAM_GUERRIER = DarkRP.createJob("Guerrier", {
 	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
 })
 
-TEAM_STONES = DarkRP.createJob("Stones", {
-	color = black,
-	model = "models/csgopirate1pm.mdl",
-	description = [[Job Custom.]],
-	weapons = {},
-	command = "stones",
-	max = 6,
-	salary = 150,
-	admin = 0,
-	hasLicense = false,
-	candemote = false
-})
-
 TEAM_SUKEHIRO = DarkRP.createJob("Sukehiro", {
 	color = black,
-	model = "models/player/kuma/alqaeda_commando.mdl",
+	model = "models/player/pd2_wolf_p.mdl",
 	description = [[Job Custom.]],
 	weapons = {
 		"keypad_cracker",
