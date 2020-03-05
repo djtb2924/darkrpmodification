@@ -193,7 +193,7 @@ TEAM_MGN = DarkRP.createJob("MGN", {
 		"weapon_medkit"
 	},
 	command = "mgn",
-	max = 4,
+	max = 8,
 	salary = 300,
 	admin = 0,
 	hasLicense = true,
@@ -246,7 +246,7 @@ TEAM_SDR = DarkRP.createJob("SDR", {
 		"nova_spikestrip_deployer"
 	},
 	command = "sdr",
-	max = 4,
+	max = 8,
 	salary = 150,
 	admin = 0,
 	hasLicense = true,
@@ -277,7 +277,7 @@ TEAM_BRI = DarkRP.createJob("BRI", {
 		"nova_spikestrip_deployer"
 	},
 	command = "bri",
-	max = 4,
+	max = 8,
 	salary = 150,
 	admin = 0,
 	hasLicense = true,
@@ -307,7 +307,7 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 		"weapon_medkit"
 	},
 	command = "officier",
-	max = 4,
+	max = 3,
 	salary = 150,
 	admin = 0,
 	hasLicense = true,
@@ -337,7 +337,7 @@ TEAM_GENGEN = DarkRP.createJob("Général", {
 		"weapon_medkit"
 	},
 	command = "gengen",
-	max = 4,
+	max = 2,
 	salary = 150,
 	admin = 0,
 	hasLicense = true,
@@ -436,7 +436,7 @@ TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 		"weapon_medkit"
 	},
 	command = "medicgign",
-	max = 10,
+	max = 8,
 	salary = 5000,
 	admin = 0,
 	hasLicense = true,
@@ -471,7 +471,7 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 		"m9k_jackhammer"
 	},
 	command = "soldatgign",
-	max = 10,
+	max = 8,
 	salary = 5000,
 	admin = 0,
 	hasLicense = true,
@@ -537,7 +537,7 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 		"nova_mechanic"
 	},
 	command = "ingegign",
-	max = 10,
+	max = 8,
 	salary = 5000,
 	admin = 0,
 	hasLicense = true,
