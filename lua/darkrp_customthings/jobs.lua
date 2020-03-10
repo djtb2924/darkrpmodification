@@ -1519,7 +1519,8 @@ TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
 	weapons = {
 		"m9k_m98b",
 		"m9k_glock",
-		"realistic_hook"
+		"realistic_hook",
+		"hitman_googles"
 	},
 	command = "tueur",
 	max = 2,
