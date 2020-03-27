@@ -1659,22 +1659,6 @@ TEAM_ZETTA = DarkRP.createJob("Nietski", {
 	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
 })
 
-TEAM_AYZEN = DarkRP.createJob("Ayzen", {
-	color = black,
-	model = "models/csgopheonix4pm.mdl",
-	description = [[Job Custom.]],
-	weapons = {
-		"keypad_cracker",
-		"lockpick"
-	},
-	command = "ayzen",
-	max = 8,
-	salary = 150,
-	admin = 0,
-	hasLicense = false,
-	candemote = false
-})
-
 TEAM_GUERRIER = DarkRP.createJob("Guerrier", {
 	color = black,
 	model = {
@@ -1735,6 +1719,23 @@ TEAM_COSTELO = DarkRP.createJob("Costelo", {
 	description = [[Job Custom.]],
 	weapons = {},
 	command = "costelo",
+	max = 8,
+	salary = 150,
+	admin = 0,
+	hasLicense = false,
+	candemote = false,
+	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+})
+
+TEAM_KOTOMINE = DarkRP.createJob("Kotomine", {
+	color = black,
+	model = "models/player/Suits/male_07_closed_tie.mdl",
+	description = [[Job Custom.]],
+	weapons = {
+		"keypad_cracker",
+		"lockpick"
+	},
+	command = "kotomine",
 	max = 8,
 	salary = 150,
 	admin = 0,
