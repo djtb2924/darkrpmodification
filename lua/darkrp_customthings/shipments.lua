@@ -879,7 +879,7 @@ end
 diamond.weps = {
 	{"AK-103 Evil Santa", "wf_wpn_ar04_xmas02", "models/weapons/rifleman/ar04/santa/worldmodel.mdl"},
 	{"Syndicate AK Alpha", "wf_wpn_ar29_bp05", "models/weapons/rifleman/ar29/syndicate/worldmodel.mdl"},
-	{"Gold AK Alpha", "wf_wpn_ar29_gold01", "models/weapons/rifleman/ar29/gold/worldmodel.mdl"},
+	{"AK Alpha Desert", "wf_wpn_ar29_desert01", "models/weapons/rifleman/ar29/desert/worldmodel.mdl"},
 	{"Gold SIG Sauer P226", "wf_wpn_pt14_gold01", "models/weapons/pistols/pt14/gold/worldmodel.mdl"},
 	{"Gold SCAR-L PDW", "wf_wpn_smg31_gold01", "models/weapons/engineer/smg31/gold/worldmodel.mdl"},
 	{"Gold CZ Scorpion Evo3 A1", "wf_wpn_smg38_gold01", "models/weapons/engineer/smg38/gold/worldmodel.mdl"},
@@ -973,7 +973,7 @@ end
 
 premium.weps = {
 	{"Earth Shaker SIG Sauer P226", "wf_wpn_pt14_lava01", "models/weapons/pistols/pt14/magma/worldmodel.mdl"},
-	{"H&K MP5 Winter Camo", "wf_wpn_smg04_camo02", "models/weapons/engineer/smg04/winter/worldmodel.mdl"},
+	{"H&K MP5", "wf_wpn_smg04", "models/weapons/engineer/smg04/worldmodel.mdl"},
 	{"SCAR-L PDW", "wf_wpn_smg31", "models/weapons/engineer/smg31/worldmodel.mdl"},
 	{"CZ Scorpion Evo3 A1", "wf_wpn_smg38", "models/weapons/engineer/smg38/worldmodel.mdl"}
 }
