@@ -500,7 +500,7 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 		"fine_list",
 		"gen_badge",
 		"realistic_hook",
-		"m9k_aw50"
+		"m9k_m24"
 	},
 	command = "snipergign",
 	max = 2,
@@ -571,7 +571,7 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 		"realistic_hook",
 		"defibrillator",
 		"weapon_medkit",
-		"m9k_aw50",
+		"m9k_m24",
 		"nova_mechanic"
 	},
 	command = "osugign",
@@ -607,7 +607,7 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 		"realistic_hook",
 		"defibrillator",
 		"weapon_medkit",
-		"m9k_aw50",
+		"m9k_m24",
 		"nova_mechanic"
 	},
 	command = "gigngeneral",
