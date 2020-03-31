@@ -1642,9 +1642,7 @@ Jobs customs
 
 TEAM_ZETTA = DarkRP.createJob("Nietski", {
 	color = black,
-	model = {
-		"models/player/Suits/male_07_open_tie.mdl"
-	},
+	model = "models/player/Suits/male_07_open_tie.mdl",
 	description = [[Job Custom.]],
 	weapons = {
 		"keypad_cracker",
@@ -1659,7 +1657,7 @@ TEAM_ZETTA = DarkRP.createJob("Nietski", {
 	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
 })
 
-TEAM_GUERRIER = DarkRP.createJob("Guerrier", {
+TEAM_GUERRIER = DarkRP.createJob("Guerken", {
 	color = black,
 	model = {
 		"models/csgoanarchist1pm.mdl",
@@ -1671,7 +1669,7 @@ TEAM_GUERRIER = DarkRP.createJob("Guerrier", {
 		"lockpick"
 	},
 	command = "guerrier",
-	max = 8,
+	max = 12,
 	salary = 150,
 	admin = 0,
 	hasLicense = false,
