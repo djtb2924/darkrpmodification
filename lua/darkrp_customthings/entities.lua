@@ -19,73 +19,6 @@ Add entities under the following line:
 
 -- Copyright © LiveYourGame, 2020
 
--- Fermier
-
-DarkRP.createEntity("Caisse Fermier", {
-	ent = "skyyrize_box",
-	model = "models/props_junk/PlasticCrate01a.mdl",
-	price = 1000,
-	max = 1,
-	cmd = "buycaisseferm",
-	allowed = TEAM_FERMIER
-})
-
--- Weed
-
-DarkRP.createEntity("Pot", {
-	ent = "adrug_weed_plant",
-	model = "models/props_junk/terracotta01.mdl",
-	price = 10,
-	max = 3,
-	cmd = "buypotcannabis",
-	allowed = TEAM_WEED
-})
-
-DarkRP.createEntity("Graine de Cannabis", {
-	ent = "adrug_weed_seed",
-	model = "models/props/de_inferno/crate_fruit_break_gib2.mdl",
-	price = 60,
-	max = 4,
-	cmd = "buygrainec",
-	allowed = TEAM_WEED
-})
-
-DarkRP.createEntity("Eau", {
-	ent = "adrug_water",
-	model = "models/props_junk/garbage_plasticbottle003a.mdl",
-	price = 3,
-	max = 1,
-	cmd = "buyeaucannabis",
-	allowed = TEAM_WEED
-})
-
-DarkRP.createEntity("Lampe Forte", {
-	ent = "adrug_heat_lamp",
-	model = "models/props_c17/light_floodlight02_off.mdl",
-	price = 150,
-	max = 2,
-	cmd = "buylampeforte",
-	allowed = TEAM_WEED
-})
-
-DarkRP.createEntity("Générateur", {
-	ent = "adrug_generator",
-	model = "models/props_vehicles/generatortrailer01.mdl",
-	price = 200,
-	max = 1,
-	cmd = "buygenerateur",
-	allowed = TEAM_WEED
-})
-
-DarkRP.createEntity("Éssence", {
-	ent = "adrug_fuel",
-	model = "models/props_junk/metalgascan.mdl",
-	price = 25,
-	max = 1,
-	cmd = "buycannabisessence",
-	allowed = TEAM_WEED
-})
-
 -- Businessman
 
 DarkRP.createEntity("Worker", {
@@ -259,15 +192,6 @@ DarkRP.createEntity("Méthamphétamine", {
 	price = 1500,
 	max = 5,
 	cmd = "méthamphétamine",
-	allowed = TEAM_BICRAVEUR
-})
-
-DarkRP.createEntity("Cocaine", {
-	ent = "durgz_cocaine",
-	model = "models/cocn.mdl",
-	price = 50000,
-	max = 5,
-	cmd = "cocaine",
 	allowed = TEAM_BICRAVEUR
 })
 
