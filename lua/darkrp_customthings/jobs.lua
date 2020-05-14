@@ -25,7 +25,7 @@ local red = Color(231, 76, 60)
 local grey = Color(149, 165, 166)
 local black = Color(0, 0, 0)
 
-local blue = Color(0, 0, 128)
+local blue = Color(0, 0, 145)
 
 --[[-------------------------------------------------------------------------
 Gouvernement
@@ -38,7 +38,7 @@ TEAM_MAYOR = DarkRP.createJob("Maire", {
 	weapons = {},
 	command = "maire",
 	max = 1,
-	salary = 1500,
+	salary = 3000,
 	admin = 0,
 	vote = true,
 	mayor = true,
@@ -57,7 +57,7 @@ TEAM_SECRETAIRE = DarkRP.createJob("Secretaire Du Maire", {
 	weapons = {},
 	command = "secretaire",
 	max = 1,
-	salary = 300,
+	salary = 600,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -72,7 +72,7 @@ TEAM_GARDE = DarkRP.createJob("Garde Du Maire", {
 	},
 	command = "garde",
 	max = 4,
-	salary = 400,
+	salary = 800,
 	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(50) end,
 	admin = 0,
 	hasLicense = true,
@@ -92,7 +92,7 @@ TEAM_AVOCAT = DarkRP.createJob("Avocat", {
 	weapons = {},
 	command = "avocat",
 	max = 2,
-	salary = 5000,
+	salary = 10000,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -131,7 +131,7 @@ TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 	},
 	command = "secret",
 	max = 2,
-	salary = 500,
+	salary = 1000,
 	admin = 0,
 	hasLicense = true,
 	candemote = false,
@@ -163,7 +163,7 @@ TEAM_GENDARME = DarkRP.createJob("Gendarme", {
 	},
 	command = "gendarme",
 	max = 0,
-	salary = 300,
+	salary = 600,
 	admin = 0,
 	hasLicense = true,
 	candemote = false,
@@ -194,7 +194,7 @@ TEAM_MGN = DarkRP.createJob("MGN", {
 	},
 	command = "mgn",
 	max = 8,
-	salary = 300,
+	salary = 600,
 	admin = 0,
 	hasLicense = true,
 	candemote = false,
@@ -220,7 +220,7 @@ TEAM_AGN = DarkRP.createJob("AGN", {
 	},
 	command = "agn",
 	max = 4,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -247,7 +247,7 @@ TEAM_SDR = DarkRP.createJob("SDR", {
 	},
 	command = "sdr",
 	max = 8,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -278,7 +278,7 @@ TEAM_BRI = DarkRP.createJob("BRI", {
 	},
 	command = "bri",
 	max = 8,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -308,7 +308,7 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 	},
 	command = "officier",
 	max = 3,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -318,7 +318,10 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 
 TEAM_GENGEN = DarkRP.createJob("Général", {
 	color = blue,
-	model = "models/player/pmc_5/pmc__01.mdl",
+	model = {
+		"models/player/pmc_5/pmc__01.mdl",
+		"models/player/pmc_6/pmc__01.mdl"
+	},
 	description = [[Vous protegez les citoyens.]],
 	weapons = {
 		"drogue_search",
@@ -338,7 +341,7 @@ TEAM_GENGEN = DarkRP.createJob("Général", {
 	},
 	command = "gengen",
 	max = 2,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -372,7 +375,7 @@ TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 	},
 	command = "marechal",
 	max = 1,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -402,7 +405,7 @@ TEAM_RECRUEGIGN = DarkRP.createJob("Recrue GIGN", {
 	},
 	command = "recruegign",
 	max = 10,
-	salary = 5000,
+	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -437,7 +440,7 @@ TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 	},
 	command = "medicgign",
 	max = 8,
-	salary = 5000,
+	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -472,7 +475,7 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 	},
 	command = "soldatgign",
 	max = 8,
-	salary = 5000,
+	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -504,7 +507,7 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 	},
 	command = "snipergign",
 	max = 2,
-	salary = 5000,
+	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -538,7 +541,7 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 	},
 	command = "ingegign",
 	max = 8,
-	salary = 5000,
+	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -576,7 +579,7 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 	},
 	command = "osugign",
 	max = 3,
-	salary = 5000,
+	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -588,7 +591,7 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 	color = blue,
 	model = {
 		"models/player/pmc_4/pmc__01.mdl",
-		"models/player/pmc_5/pmc__01.mdl",
+		"models/player/pmc_5/pmc__01.mdl"
 	},
 	description = [[Vous dirigez le GIGN]],
 	weapons = {
@@ -612,7 +615,7 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 	},
 	command = "gigngeneral",
 	max = 2,
-	salary = 5000,
+	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
@@ -642,7 +645,7 @@ TEAM_BITMINER = DarkRP.createJob("Mineur de BitCoins", {
 	weapons = {},
 	command = "bitminer",
 	max = 4,
-	salary = 50,
+	salary = 100,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -655,7 +658,7 @@ TEAM_BUSINESSMAN = DarkRP.createJob("Businessman", {
 	weapons = {},
 	command = "businessman",
 	max = 5,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false
 })
@@ -668,13 +671,13 @@ TEAM_PBANQUIER = DarkRP.createJob("Patron de la Banque", {
 	color = green,
 	model = {
 		"models/player/suits/male_03_open.mdl",
-		"models/player/suits/male_09_open_waistcoat.mdl",
+		"models/player/suits/male_09_open_waistcoat.mdl"
 	},
 	description = [[Vous dirigez les banquiers.]],
 	weapons = {},
 	command = "pbanquier",
 	max = 1,
-	salary = 1000,
+	salary = 2000,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -691,7 +694,7 @@ TEAM_BANQUIER = DarkRP.createJob("Banquier", {
 	weapons = {},
 	command = "banquier",
 	max = 3,
-	salary = 500,
+	salary = 1000,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -708,7 +711,7 @@ TEAM_SDF = DarkRP.createJob("SDF", {
 	weapons = {},
 	command = "sdf",
 	max = 3,
-	salary = 15,
+	salary = 30,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -739,7 +742,7 @@ TEAM_VOLEUR = DarkRP.createJob("Voleur", {
 	},
 	command = "voleur",
 	max = 2,
-	salary = 50,
+	salary = 100,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -770,7 +773,7 @@ TEAM_CAMBRIOLEUR = DarkRP.createJob("Cambrioleur", {
 	},
 	command = "cambrioleur",
 	max = 2,
-	salary = 50,
+	salary = 100,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -783,7 +786,7 @@ TEAM_MICHTONEUSE = DarkRP.createJob("Michtoneuse", {
 	weapons = {"swep_pickpocket"},
 	command = "michto",
 	max = 4,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -799,13 +802,10 @@ TEAM_CGANGSTER = DarkRP.createJob("Chef des Gangsters", {
 	color = black,
 	model = "models/player/alyx.mdl",
 	description = [[Vous dirigez les Gangsters.]],
-	weapons = {
-		"jewelry_robbery_cellphone",
-		"jewelry_robbery_hammer"
-	},
+	weapons = {},
 	command = "cgangster",
 	max = 1,
-	salary = 200,
+	salary = 400,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -825,13 +825,10 @@ TEAM_GANGSTER = DarkRP.createJob("Gangster", {
 		"models/player/Group03/Male_04.mdl"
 	},
 	description = [[Vous agissez illégalement.]],
-	weapons = {
-		"jewelry_robbery_cellphone",
-		"jewelry_robbery_hammer"
-	},
+	weapons = {},
 	command = "gangster",
 	max = 6,
-	salary = 100,
+	salary = 200,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -852,15 +849,13 @@ TEAM_GANGSTERV = DarkRP.createJob("Gangster V.I.P", {
 	},
 	description = [[Vous agissez illégalement.]],
 	weapons = {
-		"jewelry_robbery_cellphone",
-		"jewelry_robbery_hammer",
 		"m9k_auga3",
 		"keypad_cracker",
 		"lockpick"
 	},
 	command = "gangsterv",
 	max = 4,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -876,7 +871,7 @@ TEAM_CMAFIA = DarkRP.createJob("Parrain", {
 	weapons = {},
 	command = "cmafia",
 	max = 1,
-	salary = 200,
+	salary = 400,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -895,7 +890,7 @@ TEAM_MAFIA = DarkRP.createJob("Mafieux", {
 	weapons = {},
 	command = "mafia",
 	max = 6,
-	salary = 100,
+	salary = 200,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -918,7 +913,7 @@ TEAM_MAFIAV = DarkRP.createJob("Mafieux V.I.P", {
 	},
 	command = "mafiav",
 	max = 4,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -934,13 +929,10 @@ TEAM_CYAKUSA = DarkRP.createJob("Chef des Yakuza", {
 		"models/sd/players/[dbs_grappler_2].mdl"
 	},
 	description = [[Vous dirigez les Yakusas.]],
-	weapons = {
-		"jewelry_robbery_cellphone",
-		"jewelry_robbery_hammer"
-	},
+	weapons = {},
 	command = "cyakuza",
 	max = 1,
-	salary = 200,
+	salary = 400,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -959,13 +951,10 @@ TEAM_YAKUSA = DarkRP.createJob("Yakuza", {
 		"models/sd/players/[dbs_brawler]-head_brawler_dbs.mdl"
 	},
 	description = [[Vous agissez illégalement.]],
-	weapons = {
-		"jewelry_robbery_cellphone",
-		"jewelry_robbery_hammer"
-	},
+	weapons = {},
 	command = "yakuza",
 	max = 6,
-	salary = 100,
+	salary = 200,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -985,15 +974,13 @@ TEAM_YAKUSAV = DarkRP.createJob("Yakuza V.I.P", {
 	},
 	description = [[Vous agissez illégalement.]],
 	weapons = {
-		"jewelry_robbery_cellphone",
-		"jewelry_robbery_hammer",
 		"m9k_auga3",
 		"keypad_cracker",
 		"lockpick"
 	},
 	command = "yakuzav",
 	max = 4,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1013,7 +1000,7 @@ TEAM_CBRAQUEUR = DarkRP.createJob("Chef des Braqueurs", {
 	weapons = {},
 	command = "cbraqueur",
 	max = 1,
-	salary = 200,
+	salary = 400,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1030,7 +1017,7 @@ TEAM_BRAQUEUR = DarkRP.createJob("Braqueur", {
 	weapons = {},
 	command = "braqueur",
 	max = 6,
-	salary = 100,
+	salary = 200,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1051,7 +1038,7 @@ TEAM_BRAQUEURV = DarkRP.createJob("Braqueur V.I.P", {
 	},
 	command = "braqueurv",
 	max = 4,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1067,13 +1054,10 @@ TEAM_CCARTEL = DarkRP.createJob("Chef du Cartel", {
 		"models/fearless/suit07.mdl"
 	},
 	description = [[Vous dirigez les Cartels.]],
-	weapons = {
-		"jewelry_robbery_cellphone",
-		"jewelry_robbery_hammer"
-	},
+	weapons = {},
 	command = "ccartel",
 	max = 1,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1086,13 +1070,10 @@ TEAM_CARTEL = DarkRP.createJob("Cartel", {
 		"models/fearless/wsuit15.mdl"
 	},
 	description = [[Vous agissez illégalement.]],
-	weapons = {
-		"jewelry_robbery_cellphone",
-		"jewelry_robbery_hammer"
-	},
+	weapons = {},
 	command = "cartel",
 	max = 6,
-	salary = 100,
+	salary = 200,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1106,15 +1087,13 @@ TEAM_CARTELV = DarkRP.createJob("Cartel V.I.P", {
 	},
 	description = [[Vous agissez illégalement.]],
 	weapons = {
-		"jewelry_robbery_cellphone",
-		"jewelry_robbery_hammer",
 		"m9k_auga3",
 		"keypad_cracker",
 		"lockpick"
 	},
 	command = "cartelv",
 	max = 4,
-	salary = 200,
+	salary = 400,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1130,7 +1109,7 @@ TEAM_CCRIPZ = DarkRP.createJob("Chef Cripz", {
 	weapons = {"weapon_fists"},
 	command = "ccripz",
 	max = 1,
-	salary = 200,
+	salary = 400,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1146,7 +1125,7 @@ TEAM_CRIPZ = DarkRP.createJob("Cripz", {
 	weapons = {"weapon_fists"},
 	command = "cripz",
 	max = 6,
-	salary = 100,
+	salary = 200,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1166,7 +1145,7 @@ TEAM_CRIPZV = DarkRP.createJob("Cripz V.I.P", {
 	},
 	command = "cripzv",
 	max = 4,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1182,7 +1161,7 @@ TEAM_CBLOODZ = DarkRP.createJob("Chef Bloodz", {
 	weapons = {"weapon_fists"},
 	command = "cbloodz",
 	max = 1,
-	salary = 200,
+	salary = 400,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1198,7 +1177,7 @@ TEAM_BLOODZ = DarkRP.createJob("Bloodz", {
 	weapons = {"weapon_fists"},
 	command = "bloodz",
 	max = 6,
-	salary = 100,
+	salary = 200,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1218,7 +1197,7 @@ TEAM_BLOODZV = DarkRP.createJob("Bloodz V.I.P", {
 	},
 	command = "bloodzv",
 	max = 4,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1247,7 +1226,7 @@ TEAM_SAMU = DarkRP.createJob("Samu", {
 	},
 	command = "samu",
 	max = 3,
-	salary = 1000,
+	salary = 2000,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1261,7 +1240,7 @@ TEAM_ARMURIER = DarkRP.createJob("Armurier", {
 	weapons = {},
 	command = "armurier",
 	max = 4,
-	salary = 200,
+	salary = 400,
 	admin = 0,
 	hasLicense = true,
 	candemote = false
@@ -1274,7 +1253,7 @@ TEAM_TRAFIQUANT = DarkRP.createJob("Trafiquant d'Armes", {
 	weapons = {},
 	command = "trafiquant",
 	max = 4,
-	salary = 200,
+	salary = 400,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1287,7 +1266,7 @@ TEAM_QUINCAILLER = DarkRP.createJob("Quincailler", {
 	weapons = {},
 	command = "quincailler",
 	max = 4,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1303,7 +1282,7 @@ TEAM_COOK = DarkRP.createJob("Cuisinier", {
 	},
 	command = "cuisinier",
 	max = 2,
-	salary = 500,
+	salary = 1000,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1320,7 +1299,7 @@ TEAM_TOWER = DarkRP.createJob("Dépanneur",{
 	},
 	command = "tower",
 	max = 2,
-	salary = 250,
+	salary = 500,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1347,7 +1326,7 @@ TEAM_METH = DarkRP.createJob("Fabriquant de Meth", {
 	weapons = {"zmlab_extractor"},
 	command = "meth",
 	max = 3,
-	salary = 100,
+	salary = 200,
 	admin = 0,
 	hasLicense = false
 })
@@ -1366,10 +1345,10 @@ TEAM_WEED = DarkRP.createJob("Fabriquant de Weed", {
 		"models/player/suits/male_09_shirt.mdl"
 	},
 	description = [[Vous fabriquez de la weed.]],
-	weapons = {},
+	weapons = {"zwf_shoptablet", "zwf_cable"},
 	command = "weed",
 	max = 3,
-	salary = 100,
+	salary = 200,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1392,7 +1371,7 @@ TEAM_BICRAVEUR = DarkRP.createJob("Bicraveur", {
 	weapons = {},
 	command = "bicraveur",
 	max = 2,
-	salary = 50,
+	salary = 100,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1422,7 +1401,7 @@ TEAM_KIDNAPPEUR = DarkRP.createJob("Kidnappeur V.I.P", {
 	},
 	command = "kidnappeur",
 	max = 2,
-	salary = 50,
+	salary = 100,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1451,7 +1430,7 @@ TEAM_PSYCHOPATHE = DarkRP.createJob("Psychopathe V.I.P", {
 	},
 	command = "psychopathe",
 	max = 2,
-	salary = 50,
+	salary = 100,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1464,7 +1443,7 @@ TEAM_ENFANT = DarkRP.createJob("Enfant Bizarre V.I.P", {
 	weapons = {"csgo_bayonet"},
 	command = "enfant",
 	max = 2,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false
 })
@@ -1490,14 +1469,14 @@ TEAM_TERRORISTE = DarkRP.createJob("Terroriste V.I.P", {
 	},
 	command = "terroriste",
 	max = 2,
-	salary = 50,
+	salary = 100,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
 	PlayerDeath = function(ply, weapon, killer)
-			ply:teamBan()
-			ply:changeTeam(GAMEMODE.DefaultTeam, true)
-			DarkRP.notifyAll(0, 4, "Le terroriste est mort.")
+		ply:teamBan()
+		ply:changeTeam(TEAM_CITIZEN, true)
+		DarkRP.notifyAll(0, 4, "Le terroriste est mort.")
 	end
 })
 
@@ -1524,7 +1503,7 @@ TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
 	},
 	command = "tueur",
 	max = 2,
-	salary = 500,
+	salary = 1000,
 	admin = 0,
 	hasLicense = false
 })
@@ -1552,7 +1531,7 @@ TEAM_ADS = DarkRP.createJob("Agent De Securite", {
 	},
 	command = "securite",
 	max = 5,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1560,13 +1539,13 @@ TEAM_ADS = DarkRP.createJob("Agent De Securite", {
 })
 
 TEAM_MERCENAIRE = DarkRP.createJob("Mercenaire", {
-	color = grey,
+	color = black,
 	model = "models/player/guerilla.mdl",
 	description = [[Vous protégez votre client.]],
 	weapons = {},
 	command = "mercenaire",
 	max = 4,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1593,7 +1572,7 @@ TEAM_CITIZEN = DarkRP.createJob("Chomeur", {
 	weapons = {},
 	command = "chomeur",
 	max = 0,
-	salary = 50,
+	salary = 100,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
@@ -1650,7 +1629,7 @@ TEAM_ZETTA = DarkRP.createJob("Nietski", {
 	},
 	command = "nietski",
 	max = 12,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1670,7 +1649,7 @@ TEAM_GUERRIER = DarkRP.createJob("Guerken", {
 	},
 	command = "guerrier",
 	max = 12,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1687,38 +1666,24 @@ TEAM_SUKEHIRO = DarkRP.createJob("Sukehiro", {
 	},
 	command = "sukehiro",
 	max = 12,
-	salary = 150,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
 	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
 })
 
-TEAM_KIYOSHI = DarkRP.createJob("Kiyoshi", {
+TEAM_AKASHI = DarkRP.createJob("Akashi", {
 	color = black,
-	model = "models/csgoseparatist4pm.mdl",
+	model = "models/csgoleet4pm.mdl",
 	description = [[Job Custom.]],
 	weapons = {
 		"keypad_cracker",
 		"lockpick"
 	},
-	command = "kiyoshi",
-	max = 6,
-	salary = 150,
-	admin = 0,
-	hasLicense = false,
-	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
-})
-
-TEAM_COSTELO = DarkRP.createJob("Costelo", {
-	color = black,
-	model = "models/player/Suits/male_07_closed_tie.mdl",
-	description = [[Job Custom.]],
-	weapons = {},
-	command = "costelo",
-	max = 8,
-	salary = 150,
+	command = "akashi",
+	max = 16,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
@@ -1734,8 +1699,38 @@ TEAM_KOTOMINE = DarkRP.createJob("Kotomine", {
 		"lockpick"
 	},
 	command = "kotomine",
-	max = 8,
-	salary = 150,
+	max = 12,
+	salary = 300,
+	admin = 0,
+	hasLicense = false,
+	candemote = false,
+	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+})
+
+TEAM_WHITE = DarkRP.createJob("White", {
+	color = black,
+	model = "models/player/kuma/alqaeda_commando.mdl",
+	description = [[Job Custom.]],
+	weapons = {},
+	command = "white",
+	max = 6,
+	salary = 300,
+	admin = 0,
+	hasLicense = false,
+	candemote = false
+})
+
+TEAM_BAKO = DarkRP.createJob("Bako", {
+	color = black,
+	model = {
+		"models/player/suits/male_05_closed_coat_tie.mdl",
+		"models/player/suits/male_09_closed_coat_tie.mdl"
+	},
+	description = [[Job Custom.]],
+	weapons = {},
+	command = "bako",
+	max = 6,
+	salary = 300,
 	admin = 0,
 	hasLicense = false,
 	candemote = false,

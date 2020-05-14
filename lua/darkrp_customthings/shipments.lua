@@ -23,6 +23,40 @@ Add shipments and guns under the following line:
 Quincailler
 ---------------------------------------------------------------------------]]
 
+-- Bijouterie
+DarkRP.createShipment("Sac à bijoux", {
+	model = "models/sterling/ajr_backpack.mdl",
+	entity = "advancedrobbery_robbery_bag",
+	amount = 1,
+	price = 1000,
+	separate = false,
+	pricesep = 1000,
+	noship = false,
+	allowed = {TEAM_QUINCAILLER}
+})
+
+DarkRP.createShipment("Telephone bijoux", {
+	model = "models/sterling/ajr_phone_w.mdl",
+	entity = "advancedrobbery_cellphone",
+	amount = 1,
+	price = 1000,
+	separate = false,
+	pricesep = 1000,
+	noship = false,
+	allowed = {TEAM_QUINCAILLER}
+})
+
+DarkRP.createShipment("Marteau brise glace", {
+	model = "models/sterling/ajr_hammer_w.mdl",
+	entity = "jewelry_robbery_hammer",
+	amount = 1,
+	price = 1000,
+	separate = false,
+	pricesep = 1000,
+	noship = false,
+	allowed = {TEAM_QUINCAILLER}
+})
+
 -- Couteaux
 DarkRP.createShipment("Shadow Daggers | Tigger Tooth", {
 	model = "models/weapons/w_csgo_push.mdl",
