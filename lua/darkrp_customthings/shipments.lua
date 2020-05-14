@@ -826,7 +826,7 @@ DarkRP.createShipment("USAS", {
 DarkRP.createShipment("Kevlar Lourd", {
 	model = "models/combine_vests/elitevest.mdl",
 	entity = "heavy kevlar armor",
-	price = 10000,
+	price = 5000,
 	amount = 1,
 	separate = false,
 	pricesep = 10000,
