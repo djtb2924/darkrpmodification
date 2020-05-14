@@ -107,7 +107,7 @@ GM.Config.license                       = false
 -- lockdown - Enable/Disable initiating lockdowns for mayors.
 GM.Config.lockdown                      = true
 -- lockpickfading - Enable/disable the lockpicking of fading doors.
-GM.Config.lockpickfading                = true
+GM.Config.lockpickfading                = false
 -- logging - Enable/disable logging everything that happens.
 GM.Config.logging                       = false
 -- lottery - Enable/disable creating lotteries for mayors.
@@ -240,7 +240,7 @@ GM.Config.normalsalary                  = 45
 -- npckillpay - Sets the money given for each NPC kill.
 GM.Config.npckillpay                    = 10
 -- paydelay - Sets how long it takes before people get salary.
-GM.Config.paydelay                      = 900
+GM.Config.paydelay                      = 600
 -- pocketitems - Sets the amount of objects the pocket can carry.
 GM.Config.pocketitems                   = 10
 -- pricecap - The maximum price of items (using /price).
