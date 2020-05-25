@@ -206,30 +206,11 @@ DarkRP.createEntity("Drone", {
 	allowed = {
 		TEAM_SDR,
 		TEAM_OFFICIER,
+		TEAM_GENGEN,
+		TEAM_MARECHAL,
 		TEAM_INGEGIGN,
 		TEAM_OSUGIGN,
 		TEAM_GIGNGENERAL,
-		TEAM_MARECHAL,
-		TEAM_GENGEN,
 		TEAM_CAMBRIOLEUR
-	}
-})
-
-DarkRP.createShipment("Sac à bijoux", {
-	model = "models/sterling/ajr_backpack.mdl",
-	entity = "jewelry_robbery_bag",
-	price = 10000,
-	amount = 1,
-	separate = false,
-	allowed = {
-		TEAM_CGANGSTER,
-		TEAM_GANGSTER,
-		TEAM_GANGSTERV,
-		TEAM_CCARTEL,
-		TEAM_CARTEL,
-		TEAM_CARTELV,
-		TEAM_CYAKUSA,
-		TEAM_YAKUSA,
-		TEAM_YAKUSAV,
 	}
 })
