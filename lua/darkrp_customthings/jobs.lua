@@ -1572,9 +1572,7 @@ Staff
 
 TEAM_STAFF = DarkRP.createJob("Staff", {
 	color = green,
-	model = {
-		"models/fearless/suit04.mdl"
-	},
+	model = "models/fearless/suit04.mdl",
 	description = [[Vous administrez le serveur.]],
 	weapons = {
 		"adminstick",
@@ -1590,16 +1588,16 @@ TEAM_STAFF = DarkRP.createJob("Staff", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	customCheck = function(ply) return CLIENT or table.HasValue({
+	customCheck = function(ply)
+		return CLIENT or table.HasValue({
 			"superadmin",
 			"users",
 			"admin",
 			"moderateur",
 			"moderateur test",
 			"helpeur",
-			"helpeur test",
-		},
-		ply:GetNWString("usergroup"))
+			"helpeur test"
+		}, ply:GetNWString("usergroup"))
 	end
 })
 
