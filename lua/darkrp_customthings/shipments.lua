@@ -6,7 +6,7 @@ This file contains your custom shipments and guns.
 This file should also contain shipments and guns from DarkRP that you edited.
 
 Note: If you want to edit a default DarkRP shipment, first disable it in darkrp_config/disabled_defaults.lua
-    Once you've done that, copy and paste the shipment to this file and edit it.
+	Once you've done that, copy and paste the shipment to this file and edit it.
 
 The default shipments and guns can be found here:
 https://github.com/FPtje/DarkRP/blob/master/gamemode/config/addentities.lua
@@ -22,6 +22,18 @@ Add shipments and guns under the following line:
 --[[-------------------------------------------------------------------------
 Quincailler
 ---------------------------------------------------------------------------]]
+
+-- Restrains
+DarkRP.createShipment("Attaches Serflex", {
+	model = "models/tobadforyou/flexcuffs_deployed.mdl",
+	entity = "weapon_r_restrains",
+	amount = 1,
+	price = 50000,
+	separate = false,
+	pricesep = 1000,
+	noship = false,
+	allowed = {TEAM_QUINCAILLER}
+})
 
 -- Bijouterie
 DarkRP.createShipment("Sac à bijoux", {
@@ -779,28 +791,6 @@ DarkRP.createShipment("MP5 SD", {
 	allowed = {TEAM_AGS}
 })
 
-DarkRP.createShipment("HK416 GIGN", {
-	model = "models/weapons/w_hk_416.mdl",
-	entity = "m9k_m416",
-	price = 10000,
-	amount = 1,
-	separate = false,
-	pricesep = 15000,
-	noship = false,
-	allowed = {TEAM_GIGNGENERAL}
-})
-
-DarkRP.createShipment("C4", {
-	model = "models/weapons/w_c4.mdl",
-	entity = "weapon_sh_doorcharge",
-	price = 1000,
-	amount = 1,
-	separate = false,
-	pricesep = 1000,
-	noship = false,
-	allowed = {TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_SOLDATGIGN, TEAM_SNIPERGIGN, TEAM_INGEGIGN, TEAM_OSUGIGN, TEAM_GIGNGENERAL}
-})
-
 DarkRP.createShipment("Herse-Ammo", {
 	model = "models/novacars/spikestrip/spikestrip.mdl",
 	entity = "nova_spikestrip_ammo",
@@ -831,60 +821,18 @@ DarkRP.createShipment("Kevlar Lourd", {
 	separate = false,
 	pricesep = 10000,
 	noship = false,
-	allowed = {TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_INGEGIGN, TEAM_SOLDATGIGN, TEAM_SNIPERGIGN, TEAM_OSUGIGN, TEAM_GIGNGENERAL, TEAM_GENGEN, TEAM_MARECHAL}
+	allowed = {TEAM_GENGEN, TEAM_MARECHAL}
 })
 
-DarkRP.createShipment("Flash", {
-	model = "models/weapons/w_eq_flashbang.mdl",
-	entity = "ptp_weapon_flash",
-	price = 500,
+DarkRP.createShipment("Paquetage", {
+	model = "models/props/de_prodigy/ammo_can_02.mdl",
+	entity = "gign_package",
+	price = 5000,
 	amount = 1,
 	separate = false,
 	pricesep = 500,
 	noship = false,
 	allowed = {TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_INGEGIGN, TEAM_SOLDATGIGN, TEAM_SNIPERGIGN, TEAM_OSUGIGN, TEAM_GIGNGENERAL}
-})
-
-DarkRP.createShipment("Smoke", {
-	model = "models/weapons/w_eq_smokegrenade.mdl",
-	entity = "ptp_weapon_smoke",
-	price = 500,
-	amount = 1,
-	separate = false,
-	pricesep = 500,
-	noship = false,
-	allowed = {TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_INGEGIGN, TEAM_SOLDATGIGN, TEAM_SNIPERGIGN, TEAM_OSUGIGN, TEAM_GIGNGENERAL}
-})
-
-DarkRP.createShipment("Grenade", {
-	model = "models/weapons/w_eq_fraggrenade.mdl",
-	entity = "ptp_weapon_grenade",
-	price = 1000,
-	amount = 1,
-	separate = false,
-	pricesep = 1000,
-	noship = false,
-	allowed = {TEAM_INGEGIGN, TEAM_OSUGIGN, TEAM_GIGNGENERAL}
-})
-
-DarkRP.createShipment("Ithacam", {
-	model = "models/weapons/w_ithaca_m37.mdl",
-	entity = "m9k_ithacam37",
-	price = 10000,
-	amount = 1,
-	separate = false,
-	pricesep = 10000,
-	noship = false,
-	allowed = {TEAM_MARECHAL}
-})
-
-DarkRP.createShipment("Sac à bijoux", {
-	model = "models/sterling/ajr_backpack.mdl",
-	entity = "jewelry_robbery_bag",
-	price = 10000,
-	amount = 1,
-	separate = false,
-	allowed = {TEAM_CGANGSTER, TEAM_GANGSTER, TEAM_GANGSTERV, TEAM_CCARTEL, TEAM_CARTEL, TEAM_CARTELV, TEAM_CYAKUSA, TEAM_YAKUSA, TEAM_YAKUSAV}
 })
 
 --[[-------------------------------------------------------------------------

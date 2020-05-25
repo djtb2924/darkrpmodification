@@ -110,11 +110,11 @@ TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 		"models/fearless/mafia02.mdl",
 		"models/player/Group03/male_03.mdl",
 		"models/player/Group03/male_02.mdl",
-		"models/player/bloodz/slow_3.mdl",
-		"models/player/cripz/slow_3.mdl",
+		"models/player/bloodz/slow_1.mdl",
+		"models/player/cripz/slow_1.mdl",
 		"models/fearless/wsuit09.mdl",
 		"models/player/suits/male_01_shirt.mdl",
-		"models/sd/players/[dbs_brawler_2]-head_brawler_dbs.mdl"
+		"models/sd/players/[dbs_brawler_2]-head_brawler_dbs.mdl",
 	},
 	description = [[Vous infiltrez les gangs pour les arreter.]],
 	weapons = {
@@ -1104,7 +1104,7 @@ TEAM_CARTELV = DarkRP.createJob("Cartel V.I.P", {
 
 TEAM_CCRIPZ = DarkRP.createJob("Chef Cripz", {
 	color = black,
-	model = { "models/player/cripz/slow_3.mdl"},
+	model = "models/player/cripz/slow_3.mdl",
 	description = [[Vous dirigez les Cripz.]],
 	weapons = {"weapon_fists"},
 	command = "ccripz",
