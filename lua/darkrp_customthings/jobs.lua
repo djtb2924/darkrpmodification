@@ -1439,21 +1439,19 @@ TEAM_ENFANT = DarkRP.createJob("Enfant Bizarre V.I.P", {
 TEAM_TERRORISTE = DarkRP.createJob("Terroriste V.I.P", {
 	color = grey,
 	model = {
-		"models/player/suits/male_01_shirt.mdl",
-		"models/player/suits/male_02_shirt.mdl",
-		"models/player/suits/male_03_shirt.mdl",
-		"models/player/suits/male_04_shirt.mdl",
-		"models/player/suits/male_05_shirt_tie.mdl",
-		"models/player/suits/male_06_shirt.mdl",
-		"models/player/suits/male_07_shirt.mdl",
-		"models/player/suits/male_08_shirt.mdl",
-		"models/player/suits/male_09_shirt.mdl"
+		"models/fearless/02.mdl",
+		"models/fearless/mafia02.mdl",
+		"models/player/gman_high.mdl",
+		"models/player/guard_pack/guard_07.mdl",
+		"models/player/leet.mdl",
+		"models/player/suits/male_07_shirt.mdl"
 	},
 	description = [[Vous tuez lors de votre attentat.]],
 	weapons = {
-		"m9k_ak47",
 		"csgo_bayonet",
-		"m9k_ied_detonator"
+		"m9k_ak47",
+		"m9k_ied_detonator",
+		"m9k_suicide_bomb"
 	},
 	command = "terroriste",
 	max = 2,
@@ -1465,7 +1463,8 @@ TEAM_TERRORISTE = DarkRP.createJob("Terroriste V.I.P", {
 		ply:teamBan()
 		ply:changeTeam(TEAM_CITIZEN, true)
 		DarkRP.notifyAll(0, 4, "Le terroriste est mort.")
-	end
+	end,
+	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end,
 })
 
 TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
