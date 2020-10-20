@@ -1426,9 +1426,12 @@ TEAM_PSYCHOPATHE = DarkRP.createJob("Psychopathe V.I.P", {
 
 TEAM_ENFANT = DarkRP.createJob("Enfant Bizarre V.I.P", {
 	color = yellow,
-	model = "models/player/dewobedil/chucky/chucky.mdl",
+	model = {
+		"models/player/dewobedil/chucky/chucky.mdl",
+		"models/player/portal_and_mika/kid.mdl"
+	},
 	description = [[Vous ignorez la vie.]],
-	weapons = {"csgo_bayonet"},
+	weapons = {"csgo_huntsman_case"},
 	command = "enfant",
 	max = 2,
 	salary = 300,
