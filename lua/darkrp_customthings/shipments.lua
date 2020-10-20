@@ -1016,7 +1016,8 @@ vip.Ranks = {
 	["VIPDiamant"] = true,
 	["VIPPlatinium"] = true,
 	["VIPPrenium"] = true,
-	["VIP+"] = true
+	["VIP+"] = true,
+	["VIP"] = true
 }
 
 function vip.check(ply)
