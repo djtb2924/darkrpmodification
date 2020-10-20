@@ -25,8 +25,8 @@ In these few cases it will be pretty obvious when you expect something to happen
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["modules"] = {
     ["afk"]              = false,
-    ["chatsounds"]       = false,
-    ["events"]           = false,
+    ["chatsounds"]       = true,
+    ["events"]           = true,
     ["fpp"]              = false,
     ["f1menu"]           = true,
     ["f4menu"]           = false,
