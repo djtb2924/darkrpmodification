@@ -194,23 +194,3 @@ DarkRP.createEntity("Méthamphétamine", {
 	cmd = "méthamphétamine",
 	allowed = TEAM_BICRAVEUR
 })
-
--- Autre
-
-DarkRP.createEntity("Drone", {
-	ent = "drone_sentity",
-	model = "models/props_junk/cardboard_box003a.mdl",
-	price = 50000,
-	max = 1,
-	cmd = "drone",
-	allowed = {
-		TEAM_SDR,
-		TEAM_OFFICIER,
-		TEAM_GENGEN,
-		TEAM_MARECHAL,
-		TEAM_INGEGIGN,
-		TEAM_OSUGIGN,
-		TEAM_GIGNGENERAL,
-		TEAM_CAMBRIOLEUR
-	}
-})
