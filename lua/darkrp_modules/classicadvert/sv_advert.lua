@@ -14,4 +14,4 @@ local function pub(ply, args)
         end
     end
 end
-DarkRP.defineChatCommand("pub", pub, true, 3)
+DarkRP.defineChatCommand("pub", pub)
