@@ -105,16 +105,16 @@ Gendarmerie
 TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 	color = black,
 	model = {
-		"models/player/bond.mdl",
-		"models/player/suits/robber_shirt.mdl",
+		"models/fearless/02.mdl",
 		"models/fearless/mafia02.mdl",
-		"models/player/Group03/male_03.mdl",
-		"models/player/Group03/male_02.mdl",
 		"models/player/bloodz/slow_1.mdl",
+		"models/player/bond.mdl",
 		"models/player/cripz/slow_1.mdl",
-		"models/fearless/wsuit09.mdl",
+		"models/player/Group03/male_02.mdl",
+		"models/player/Group03/male_03.mdl",
 		"models/player/suits/male_01_shirt.mdl",
-		"models/sd/players/[dbs_brawler_2]-head_brawler_dbs.mdl",
+		"models/player/suits/robber_shirt.mdl",
+		"models/sd/players/[dbs_brawler_2]-head_brawler_dbs.mdl"
 	},
 	description = [[Vous infiltrez les gangs pour les arreter.]],
 	weapons = {
@@ -1421,7 +1421,8 @@ TEAM_KIDNAPPEUR = DarkRP.createJob("Kidnappeur V.I.P", {
 	description = [[Vous Kidnappez les gens.]],
 	weapons = {
 		"csgo_bayonet",
-		"scalpel"
+		"scalpel",
+		"weapon_r_baton"
 	},
 	command = "kidnappeur",
 	max = 2,
@@ -1447,7 +1448,7 @@ TEAM_PSYCHOPATHE = DarkRP.createJob("Psychopathe V.I.P", {
 	},
 	description = [[Vous tuez les gens discretement.]],
 	weapons = {
-		"csgo_huntsman_case",
+		"m9k_machete",
 		"stunstick",
 		"weapon_hl2brokenbottle",
 		"weapon_hl2pipe"
@@ -1582,7 +1583,7 @@ Chomeur
 ---------------------------------------------------------------------------]]
 
 TEAM_CITIZEN = DarkRP.createJob("Chomeur", {
-	color = Color(98, 0, 114, 255),
+	color = Color(98, 0, 114),
 	model = {
 		"models/player/suits/male_01_shirt.mdl",
 		"models/player/suits/male_02_shirt.mdl",
