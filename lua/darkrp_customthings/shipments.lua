@@ -564,10 +564,6 @@ DarkRP.createShipment("KeyPad Cracker", {
 	allowed = {TEAM_ARMURIER, TEAM_QUINCAILLER}
 })
 
---[[-------------------------------------------------------------------------
-Gendarmerie
----------------------------------------------------------------------------]]
-
 DarkRP.createShipment("Kevlar moyen", {
 	model = "models/combine_vests/bogvest.mdl",
 	entity = "medium kevlar armor",
@@ -579,15 +575,26 @@ DarkRP.createShipment("Kevlar moyen", {
 	allowed = {TEAM_ARMURIER, TEAM_TRAFIQUANT, TEAM_QUINCAILLER, TEAM_AGS}
 })
 
+--[[-------------------------------------------------------------------------
+Gendarmerie
+---------------------------------------------------------------------------]]
+
 DarkRP.createShipment("Kevlar Gendarme", {
 	model = "models/props_c17/suitcase_passenger_physics.mdl",
-	entity = "copkelar_medium",
+	entity = "gen_kevlar",
 	price = 1000,
 	amount = 1,
 	separate = false,
-	pricesep = 17500,
-	noship = false,
-	allowed = {TEAM_GENDARME, TEAM_AGN, TEAM_MGN, TEAM_BRI, TEAM_SDR, TEAM_OFFICIER, TEAM_MARECHAL, TEAM_GENGEN}
+	allowed = {
+		TEAM_GENDARME,
+		TEAM_AGN,
+		TEAM_MGN,
+		TEAM_BRI,
+		TEAM_SDR,
+		TEAM_OFFICIER,
+		TEAM_GENGEN,
+		TEAM_MARECHAL
+	}
 })
 
 -- AGN
@@ -799,17 +806,6 @@ DarkRP.createShipment("USAS", {
 	pricesep = 10000,
 	noship = false,
 	allowed = {TEAM_GIGNGENERAL}
-})
-
-DarkRP.createShipment("Kevlar Lourd", {
-	model = "models/combine_vests/elitevest.mdl",
-	entity = "heavy kevlar armor",
-	price = 5000,
-	amount = 1,
-	separate = false,
-	pricesep = 10000,
-	noship = false,
-	allowed = {TEAM_GENGEN, TEAM_MARECHAL}
 })
 
 DarkRP.createShipment("Paquetage", {
