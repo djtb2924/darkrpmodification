@@ -213,18 +213,6 @@ DarkRP.createShipment("M9 Bayonet", {
 	allowed = {TEAM_QUINCAILLER}
 })
 
--- Autres
-DarkRP.createShipment("Pied de biche pour ATM", {
-	model = "models/weapons/w_crowbar.mdl",
-	entity = "lyg_crowbar",
-	price = 45000,
-	amount = 1,
-	separate = false,
-	pricesep = 16000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
-})
-
 --[[-------------------------------------------------------------------------
 Armurier
 ---------------------------------------------------------------------------]]
