@@ -14,8 +14,8 @@ local function tow(ply, args)
 
         local players = player.GetAll()
         for i = 1, #players do
-            if v:Team() == TEAM_TOWER or v == ply then
-                DarkRP.talkToPerson(v, col, "(Dépannage) " .. name, green, text, ply)
+            if players[i]:Team() == TEAM_TOWER or players[i] == ply then
+                DarkRP.talkToPerson(players[i], col, "(Dépannage) " .. name, green, text, ply)
             end
         end
     end
