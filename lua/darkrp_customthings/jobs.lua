@@ -70,9 +70,7 @@ TEAM_GARDE = DarkRP.createJob("Garde Du Maire", {
 	color = grey,
 	model = "models/fearless/02.mdl",
 	description = [[Votre but est de protéger le Maire ainsi que mettre en oeuvre l'ensemble des mesures nécessaires à l'organisation matérielle et à la sécurité des déplacements du Maire.]],
-	weapons = {
-		"weaponchecker"
-	},
+	weapons = {"weaponchecker"},
 	command = "garde",
 	max = 4,
 	salary = 800,
@@ -123,12 +121,11 @@ TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 	weapons = {
 		"ags_badge",
 		"door_ram",
+		"drogue_search",
+		"dsr_taser",
 		"keypad_cracker",
 		"lockpick",
-		"m9k_mp7",
 		"m9k_usp",
-		"policebadgewallet",
-		"dsr_taser",
 		"weapon_r_handcuffs",
 		"weaponchecker"
 	},
@@ -155,11 +152,11 @@ TEAM_GENDARME = DarkRP.createJob("Gendarme", {
 	weapons = {
 		"door_ram",
 		"drogue_search",
+		"dsr_taser",
 		"fine_list",
 		"gen_badge",
 		"itemstore_checker",
 		"salute",
-		"dsr_taser",
 		"stunstick",
 		"weapon_r_handcuffs"
 	},
@@ -182,7 +179,6 @@ TEAM_MGN = DarkRP.createJob("MGN", {
 	},
 	description = [[Médecin de la Gendarmerie]],
 	weapons = {
-		"defibrillator",
 		"door_ram",
 		"drogue_search",
 		"dsr_medkit",
@@ -192,6 +188,7 @@ TEAM_MGN = DarkRP.createJob("MGN", {
 		"itemstore_checker",
 		"salute",
 		"stunstick",
+		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "mgn",
@@ -211,12 +208,13 @@ TEAM_AGN = DarkRP.createJob("AGN", {
 	weapons = {
 		"door_ram",
 		"drogue_search",
+		"dsr_taser",
 		"fine_list",
 		"gen_badge",
 		"itemstore_checker",
 		"salute",
-		"dsr_taser",
 		"stunstick",
+		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "agn",
@@ -236,12 +234,12 @@ TEAM_SDR = DarkRP.createJob("SDR", {
 	weapons = {
 		"door_ram",
 		"drogue_search",
+		"dsr_taser",
 		"fine_list",
 		"gen_badge",
 		"itemstore_checker",
 		"nova_spikestrip_deployer",
 		"salute",
-		"dsr_taser",
 		"stunstick",
 		"swep_drone_controller",
 		"wcd_speedchecker",
@@ -268,12 +266,12 @@ TEAM_BRI = DarkRP.createJob("BRI", {
 	weapons = {
 		"door_ram",
 		"drogue_search",
+		"dsr_taser",
 		"fine_list",
 		"gen_badge",
 		"itemstore_checker",
 		"nova_spikestrip_deployer",
 		"salute",
-		"dsr_taser",
 		"stunstick",
 		"wcd_speedchecker",
 		"weapon_r_handcuffs"
@@ -411,13 +409,13 @@ TEAM_RECRUEGIGN = DarkRP.createJob("Recrue GIGN", {
 	weapons = {
 		"door_ram",
 		"drogue_search",
+		"dsr_taser",
 		"fine_list",
 		"gen_badge",
 		"googles",
 		"itemstore_checker",
 		"realistic_hook",
 		"salute",
-		"dsr_taser",
 		"stunstick",
 		"unarrest_stick",
 		"weapon_r_handcuffs"
@@ -435,26 +433,27 @@ TEAM_RECRUEGIGN = DarkRP.createJob("Recrue GIGN", {
 TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 	color = blue,
 	model = {
-		"models/player/pmc_4/pmc__13.mdl",
-		"models/player/pmc_4/pmc__14.mdl",
-		"models/player/pmc_5/pmc__13.mdl",
-		"models/player/pmc_5/pmc__14.mdl"
+		"models/player/pmc_4/pmc__08.mdl",
+		"models/player/pmc_4/pmc__09.mdl",
+		"models/player/pmc_5/pmc__08.mdl",
+		"models/player/pmc_5/pmc__09.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"defibrillator",
 		"door_ram",
 		"drogue_search",
+		"dsr_medkit",
+		"dsr_taser",
 		"fine_list",
 		"gen_badge",
 		"googles",
 		"itemstore_checker",
 		"realistic_hook",
 		"salute",
-		"dsr_taser",
 		"stunstick",
 		"unarrest_stick",
-		"dsr_medkit",
+		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "medicgign",
@@ -477,19 +476,20 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
+		"deployable_shield",
 		"door_ram",
 		"drogue_search",
+		"dsr_taser",
 		"fine_list",
 		"gen_badge",
 		"googles",
-		"deployable_shield",
 		"itemstore_checker",
 		"m9k_jackhammer",
 		"realistic_hook",
 		"salute",
-		"dsr_taser",
 		"stunstick",
 		"unarrest_stick",
+		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "soldatgign",
@@ -512,6 +512,7 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 	weapons = {
 		"door_ram",
 		"drogue_search",
+		"dsr_taser",
 		"fine_list",
 		"gen_badge",
 		"googles",
@@ -519,9 +520,8 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 		"m9k_m24",
 		"realistic_hook",
 		"salute",
-		"dsr_taser",
 		"stunstick",
-		"unarrest_stick",
+		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "snipergign",
@@ -557,7 +557,7 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 		"salute",
 		"stunstick",
 		"swep_drone_controller",
-		"unarrest_stick",
+		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "ingegign",
@@ -600,6 +600,7 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 		"stunstick",
 		"swep_drone_controller",
 		"unarrest_stick",
+		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "osugign",
@@ -640,6 +641,7 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 		"stunstick",
 		"swep_drone_controller",
 		"unarrest_stick",
+		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "gigngeneral",
@@ -729,7 +731,7 @@ TEAM_BANQUIER = DarkRP.createJob("Banquier", {
 })
 
 --[[-------------------------------------------------------------------------
-Banque
+SDF
 ---------------------------------------------------------------------------]]
 
 TEAM_SDF = DarkRP.createJob("SDF", {
@@ -776,8 +778,6 @@ TEAM_VOLEUR = DarkRP.createJob("Voleur", {
 	candemote = false
 })
 
-
-
 TEAM_CAMBRIOLEUR = DarkRP.createJob("Cambrioleur", {
 	color = orange,
 	model = {
@@ -794,10 +794,10 @@ TEAM_CAMBRIOLEUR = DarkRP.createJob("Cambrioleur", {
 	},
 	description = [[Personne qui soustrait frauduleusement ce qui appartient à autrui.]],
 	weapons = {
-		"m9k_usp",
+		"keypad_cracker",
 		"lockpick",
-		"realistic_hook",
-		"keypad_cracker"
+		"m9k_usp",
+		"realistic_hook"
 	},
 	command = "cambrioleur",
 	max = 2,
@@ -847,9 +847,9 @@ TEAM_GANGSTER = DarkRP.createJob("Gangster", {
 		"models/player/Group03/Female_03.mdl",
 		"models/player/Group03/Female_04.mdl",
 		"models/player/Group03/Female_06.mdl",
-		"models/player/group03/male_01.mdl",
+		"models/player/group03/Male_01.mdl",
 		"models/player/Group03/Male_02.mdl",
-		"models/player/Group03/male_03.mdl",
+		"models/player/Group03/Male_03.mdl",
 		"models/player/Group03/Male_04.mdl"
 	},
 	description = [[Membre d'un gang, d'une association de malfaiteurs.]],
@@ -870,16 +870,16 @@ TEAM_GANGSTERV = DarkRP.createJob("Gangster V.I.P", {
 		"models/player/Group03/Female_03.mdl",
 		"models/player/Group03/Female_04.mdl",
 		"models/player/Group03/Female_06.mdl",
-		"models/player/group03/male_01.mdl",
+		"models/player/group03/Male_01.mdl",
 		"models/player/Group03/Male_02.mdl",
-		"models/player/Group03/male_03.mdl",
+		"models/player/Group03/Male_03.mdl",
 		"models/player/Group03/Male_04.mdl"
 	},
 	description = [[Membre d'un gang, d'une association de malfaiteurs.]],
 	weapons = {
-		"m9k_auga3",
 		"keypad_cracker",
-		"lockpick"
+		"lockpick",
+		"m9k_auga3"
 	},
 	command = "gangsterv",
 	max = 4,
@@ -935,9 +935,9 @@ TEAM_MAFIAV = DarkRP.createJob("Mafieux V.I.P", {
 	},
 	description = [[Association secrète sicilienne ayant de nombreuses ramifications notamment en Italie et aux États-Unis qui utilise des moyens illicites pour servir ses intérêts.]],
 	weapons = {
-		"m9k_auga3",
 		"keypad_cracker",
-		"lockpick"
+		"lockpick",
+		"m9k_auga3"
 	},
 	command = "mafiav",
 	max = 4,
@@ -1002,9 +1002,9 @@ TEAM_YAKUZAV = DarkRP.createJob("Yakuza V.I.P", {
 	},
 	description = [[Membre de la mafia japonaise.]],
 	weapons = {
-		"m9k_auga3",
 		"keypad_cracker",
-		"lockpick"
+		"lockpick",
+		"m9k_auga3"
 	},
 	command = "yakuzav",
 	max = 4,
@@ -1060,9 +1060,9 @@ TEAM_BRAQUEURV = DarkRP.createJob("Braqueur V.I.P", {
 	},
 	description = [[Auteur d'un braquage et malfaiteur qui commet des attaques à main armée.]],
 	weapons = {
-		"m9k_auga3",
 		"keypad_cracker",
-		"lockpick"
+		"lockpick",
+		"m9k_auga3"
 	},
 	command = "braqueurv",
 	max = 4,
@@ -1115,9 +1115,9 @@ TEAM_CARTELV = DarkRP.createJob("Cartel V.I.P", {
 	},
 	description = [[Groupement d'intérêt dans l'industrie ou la politique.]],
 	weapons = {
-		"m9k_auga3",
 		"keypad_cracker",
-		"lockpick"
+		"lockpick",
+		"m9k_auga3"
 	},
 	command = "cartelv",
 	max = 4,
@@ -1128,13 +1128,13 @@ TEAM_CARTELV = DarkRP.createJob("Cartel V.I.P", {
 	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
 })
 
--- Cripz
+-- Crips
 
 TEAM_CCRIPS = DarkRP.createJob("Chef Crips", {
 	color = black,
 	model = "models/player/cripz/slow_3.mdl",
 	description = [[Gang originaire de South Central Los Angeles, sur la côte ouest des États-Unis.]],
-	weapons = {"weapon_fists"},
+	weapons = {},
 	command = "ccrips",
 	max = 1,
 	salary = 400,
@@ -1150,7 +1150,7 @@ TEAM_CRIPS = DarkRP.createJob("Crips", {
 		"models/player/cripz/slow_2.mdl"
 	},
 	description = [[Gang originaire de South Central Los Angeles, sur la côte ouest des États-Unis.]],
-	weapons = {"weapon_fists"},
+	weapons = {},
 	command = "crips",
 	max = 6,
 	salary = 200,
@@ -1167,9 +1167,9 @@ TEAM_CRIPSV = DarkRP.createJob("Crips V.I.P", {
 	},
 	description = [[Gang originaire de South Central Los Angeles, sur la côte ouest des États-Unis.]],
 	weapons = {
-		"m9k_auga3",
 		"keypad_cracker",
-		"lockpick"
+		"lockpick",
+		"m9k_auga3"
 	},
 	command = "cripsv",
 	max = 4,
@@ -1180,13 +1180,13 @@ TEAM_CRIPSV = DarkRP.createJob("Crips V.I.P", {
 	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
 })
 
--- Bloodz
+-- Bloods
 
 TEAM_CBLOODS = DarkRP.createJob("Chef Bloods", {
 	color = black,
 	model = "models/player/bloodz/slow_3.mdl",
 	description = [[Gang de rue fondé en 1972 à Los Angeles en Californie.]],
-	weapons = {"weapon_fists"},
+	weapons = {},
 	command = "cbloods",
 	max = 1,
 	salary = 400,
@@ -1202,7 +1202,7 @@ TEAM_BLOODS = DarkRP.createJob("Bloods", {
 		"models/player/bloodz/slow_1.mdl"
 	},
 	description = [[Gang de rue fondé en 1972 à Los Angeles en Californie.]],
-	weapons = {"weapon_fists"},
+	weapons = {},
 	command = "bloods",
 	max = 6,
 	salary = 200,
@@ -1219,9 +1219,9 @@ TEAM_BLOODSV = DarkRP.createJob("Bloods V.I.P", {
 	},
 	description = [[Gang de rue fondé en 1972 à Los Angeles en Californie.]],
 	weapons = {
-		"m9k_auga3",
 		"keypad_cracker",
-		"lockpick"
+		"lockpick",
+		"m9k_auga3"
 	},
 	command = "bloodsv",
 	max = 4,
@@ -1317,13 +1317,13 @@ TEAM_COOK = DarkRP.createJob("Cuisinier", {
 	cook = true
 })
 
-TEAM_TOWER = DarkRP.createJob("Dépanneur",{
+TEAM_TOWER = DarkRP.createJob("Dépanneur", {
 	color = green,
 	model = "models/player/magnusson.mdl",
 	description = [[]],
 	weapons = {
-		"tow_attach",
-		"nova_mechanic"
+		"nova_mechanic",
+		"tow_attach"
 	},
 	command = "tower",
 	max = 2,
@@ -1373,7 +1373,10 @@ TEAM_WEED = DarkRP.createJob("Fabriquant de Weed", {
 		"models/player/suits/male_09_shirt.mdl"
 	},
 	description = [[Personne qui fabrique illégalement de la drogue.]],
-	weapons = {"zwf_shoptablet", "zwf_cable"},
+	weapons = {
+		"zwf_cable",
+		"zwf_shoptablet"
+	},
 	command = "weed",
 	max = 3,
 	salary = 200,
@@ -1453,7 +1456,6 @@ TEAM_PSYCHOPATHE = DarkRP.createJob("Psychopathe V.I.P", {
 	description = [[Personne souffrant d'un important trouble du comportement. Il agit de manière très impulsive, dans le de but de détruire psychologiquement et/ou physiquement quelqu'un.]],
 	weapons = {
 		"m9k_machete",
-		"stunstick",
 		"weapon_hl2brokenbottle",
 		"weapon_hl2pipe"
 	},
@@ -1477,7 +1479,8 @@ TEAM_ENFANT = DarkRP.createJob("Enfant Bizarre V.I.P", {
 	max = 2,
 	salary = 300,
 	admin = 0,
-	hasLicense = false
+	hasLicense = false,
+	candemote = false
 })
 
 TEAM_TERRORISTE = DarkRP.createJob("Terroriste V.I.P", {
@@ -1508,7 +1511,7 @@ TEAM_TERRORISTE = DarkRP.createJob("Terroriste V.I.P", {
 		ply:changeTeam(TEAM_CITIZEN, true)
 		DarkRP.notifyAll(0, 4, "Le terroriste est mort.")
 	end,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end,
+	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
 })
 
 TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
@@ -1527,10 +1530,10 @@ TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
 	},
 	description = [[Personne qui se fait rémunérer pour assassiner d'autres personnes.]],
 	weapons = {
-		"m9k_m98b",
+		"hitman_googles",
 		"m9k_glock",
-		"realistic_hook",
-		"hitman_googles"
+		"m9k_m98b",
+		"realistic_hook"
 	},
 	command = "tueur",
 	max = 2,
@@ -1557,9 +1560,7 @@ TEAM_ADS = DarkRP.createJob("Agent De Securite", {
 		"models/player/guard_pack/guard_09.mdl"
 	},
 	description = [[Employé chargé des tâches de gardiennage des bâtiments. Il est là pour surveiller mais également pour protéger, aussi bien les personnes que les biens.]],
-	weapons = {
-		"weaponchecker"
-	},
+	weapons = {"weaponchecker"},
 	command = "securite",
 	max = 5,
 	salary = 300,
@@ -1619,11 +1620,9 @@ TEAM_STAFF = DarkRP.createJob("Staff", {
 	description = [[Membre du Staff.]],
 	weapons = {
 		"adminstick",
-		"weaponchecker",
 		"itemstore_checker",
-		"weapon_r_handcuffs",
 		"weapon_keypadchecker",
-		"drogue_search"
+		"weapon_r_handcuffs"
 	},
 	command = "staff",
 	max = 0,
@@ -1661,8 +1660,7 @@ GAMEMODE.CivilProtection = {
 	[TEAM_OSUGIGN] = true,
 	[TEAM_MARECHAL] = true,
 	[TEAM_GENGEN] = true,
-	[TEAM_GIGNGENERAL] = true,
-	[TEAM_AGS] = true
+	[TEAM_GIGNGENERAL] = true
 }
 
-DarkRP.addHitmanTeam(TEAM_TUEUR)
+DarkRP.addHitmanTeam(TEAM_MOB)
