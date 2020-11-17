@@ -1,0 +1,3 @@
+# Specify filepatterns you want git to ignore.
+
+lua/darkrp_customthings/families.lua
