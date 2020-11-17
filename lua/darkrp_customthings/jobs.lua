@@ -48,6 +48,11 @@ local defaultSkins = {
 	"models/player/suits/male_09_shirt.mdl"
 }
 
+local function demoteJob(ply)
+	DarkRP.notifyAll(0, 4, "Le " .. team.GetName(ply:Team()):lower() .. " est mort.")
+	ply:changeTeam(GAMEMODE.DefaultTeam, true)
+end
+
 --[[-------------------------------------------------------------------------
 Gouvernement
 ---------------------------------------------------------------------------]]
@@ -64,10 +69,7 @@ TEAM_MAYOR = DarkRP.createJob("Maire", {
 	mayor = true,
 	hasLicense = false,
 	candemote = false,
-	PlayerDeath = function(ply)
-		ply:changeTeam(TEAM_CITIZEN, true)
-		DarkRP.notifyAll(0, 4, "Le Maire est décédé !")
-	end
+	PlayerDeath = demoteJob
 })
 
 TEAM_SECRETAIRE = DarkRP.createJob("Secretaire Du Maire", {
@@ -1453,11 +1455,7 @@ TEAM_TERRORISTE = DarkRP.createJob("Terroriste V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	PlayerDeath = function(ply, weapon, killer)
-		ply:teamBan()
-		ply:changeTeam(TEAM_CITIZEN, true)
-		DarkRP.notifyAll(0, 4, "Le terroriste est mort.")
-	end,
+	PlayerDeath = demoteJob,
 	PlayerLoadout = loadouts[150]
 })
 
