@@ -1602,4 +1602,4 @@ GAMEMODE.CivilProtection = {
 	[TEAM_GIGNGENERAL] = true
 }
 
-DarkRP.addHitmanTeam(TEAM_MOB)
+DarkRP.addHitmanTeam(TEAM_TUEUR)
