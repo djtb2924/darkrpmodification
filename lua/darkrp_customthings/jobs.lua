@@ -329,6 +329,7 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 TEAM_GENGEN = DarkRP.createJob("Général", {
 	color = blue,
 	model = {
+		"models/player/pmc_1/pmc__01.mdl",
 		"models/player/pmc_5/pmc__01.mdl",
 		"models/player/pmc_6/pmc__01.mdl"
 	},
