@@ -945,9 +945,9 @@ TEAM_MAFIAV = DarkRP.createJob("Mafieux V.I.P", {
 	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
 })
 
--- Yakusas
+-- Yakuzas
 
-TEAM_CYAKUSA = DarkRP.createJob("Chef des Yakuza", {
+TEAM_CYAKUZA = DarkRP.createJob("Chef des Yakuza", {
 	color = black,
 	model = {
 		"models/sd/players/[dbs_grappler].mdl",
@@ -963,7 +963,7 @@ TEAM_CYAKUSA = DarkRP.createJob("Chef des Yakuza", {
 	candemote = false
 })
 
-TEAM_YAKUSA = DarkRP.createJob("Yakuza", {
+TEAM_YAKUZA = DarkRP.createJob("Yakuza", {
 	color = black,
 	model = {
 		"models/sd/players/[dbs_quick]-head_quick_dbs.mdl",
@@ -985,7 +985,7 @@ TEAM_YAKUSA = DarkRP.createJob("Yakuza", {
 	candemote = false
 })
 
-TEAM_YAKUSAV = DarkRP.createJob("Yakuza V.I.P", {
+TEAM_YAKUZAV = DarkRP.createJob("Yakuza V.I.P", {
 	color = black,
 	model = {
 		"models/sd/players/[dbs_quick]-head_quick_dbs.mdl",
@@ -1127,12 +1127,12 @@ TEAM_CARTELV = DarkRP.createJob("Cartel V.I.P", {
 
 -- Cripz
 
-TEAM_CCRIPZ = DarkRP.createJob("Chef Cripz", {
+TEAM_CCRIPS = DarkRP.createJob("Chef Crips", {
 	color = black,
 	model = "models/player/cripz/slow_3.mdl",
 	description = [[Gang originaire de South Central Los Angeles, sur la côte ouest des États-Unis.]],
 	weapons = {"weapon_fists"},
-	command = "ccripz",
+	command = "ccrips",
 	max = 1,
 	salary = 400,
 	admin = 0,
@@ -1140,7 +1140,7 @@ TEAM_CCRIPZ = DarkRP.createJob("Chef Cripz", {
 	candemote = false
 })
 
-TEAM_CRIPZ = DarkRP.createJob("Cripz", {
+TEAM_CRIPS = DarkRP.createJob("Crips", {
 	color = black,
 	model = {
 		"models/player/cripz/slow_1.mdl",
@@ -1148,7 +1148,7 @@ TEAM_CRIPZ = DarkRP.createJob("Cripz", {
 	},
 	description = [[Gang originaire de South Central Los Angeles, sur la côte ouest des États-Unis.]],
 	weapons = {"weapon_fists"},
-	command = "cripz",
+	command = "crips",
 	max = 6,
 	salary = 200,
 	admin = 0,
@@ -1156,7 +1156,7 @@ TEAM_CRIPZ = DarkRP.createJob("Cripz", {
 	candemote = false
 })
 
-TEAM_CRIPZV = DarkRP.createJob("Cripz V.I.P", {
+TEAM_CRIPSV = DarkRP.createJob("Crips V.I.P", {
 	color = black,
 	model = {
 		"models/player/cripz/slow_1.mdl",
@@ -1168,7 +1168,7 @@ TEAM_CRIPZV = DarkRP.createJob("Cripz V.I.P", {
 		"keypad_cracker",
 		"lockpick"
 	},
-	command = "cripzv",
+	command = "cripsv",
 	max = 4,
 	salary = 300,
 	admin = 0,
@@ -1179,12 +1179,12 @@ TEAM_CRIPZV = DarkRP.createJob("Cripz V.I.P", {
 
 -- Bloodz
 
-TEAM_CBLOODZ = DarkRP.createJob("Chef Bloodz", {
+TEAM_CBLOODS = DarkRP.createJob("Chef Bloods", {
 	color = black,
 	model = "models/player/bloodz/slow_3.mdl",
 	description = [[Gang de rue fondé en 1972 à Los Angeles en Californie.]],
 	weapons = {"weapon_fists"},
-	command = "cbloodz",
+	command = "cbloods",
 	max = 1,
 	salary = 400,
 	admin = 0,
@@ -1192,7 +1192,7 @@ TEAM_CBLOODZ = DarkRP.createJob("Chef Bloodz", {
 	candemote = false
 })
 
-TEAM_BLOODZ = DarkRP.createJob("Bloodz", {
+TEAM_BLOODS = DarkRP.createJob("Bloods", {
 	color = black,
 	model = {
 		"models/player/bloodz/slow_2.mdl",
@@ -1200,7 +1200,7 @@ TEAM_BLOODZ = DarkRP.createJob("Bloodz", {
 	},
 	description = [[Gang de rue fondé en 1972 à Los Angeles en Californie.]],
 	weapons = {"weapon_fists"},
-	command = "bloodz",
+	command = "bloods",
 	max = 6,
 	salary = 200,
 	admin = 0,
@@ -1208,7 +1208,7 @@ TEAM_BLOODZ = DarkRP.createJob("Bloodz", {
 	candemote = false
 })
 
-TEAM_BLOODZV = DarkRP.createJob("Bloodz V.I.P", {
+TEAM_BLOODSV = DarkRP.createJob("Bloods V.I.P", {
 	color = black,
 	model = {
 		"models/player/bloodz/slow_2.mdl",
@@ -1220,7 +1220,7 @@ TEAM_BLOODZV = DarkRP.createJob("Bloodz V.I.P", {
 		"keypad_cracker",
 		"lockpick"
 	},
-	command = "bloodzv",
+	command = "bloodsv",
 	max = 4,
 	salary = 300,
 	admin = 0,
