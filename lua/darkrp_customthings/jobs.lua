@@ -52,7 +52,10 @@ TEAM_MAYOR = DarkRP.createJob("Maire", {
 
 TEAM_SECRETAIRE = DarkRP.createJob("Secretaire Du Maire", {
 	color = green,
-	model = "models/fearless/rosa.mdl",
+	model = {
+		"models/fearless/gsuit18.mdl",
+		"models/fearless/rosa.mdl"
+	},
 	description = [[Vous organiser et assurer l'accueil des usagers du service public dans les meilleurs conditions.]],
 	weapons = {},
 	command = "secretaire",
