@@ -24,13 +24,11 @@ local orange = Color(230, 126, 34)
 local red = Color(231, 76, 60)
 local grey = Color(149, 165, 166)
 local black = Color(0, 0, 0)
-
 local blue = Color(0, 0, 145)
 
 --[[-------------------------------------------------------------------------
 Gouvernement
 ---------------------------------------------------------------------------]]
-
 TEAM_MAYOR = DarkRP.createJob("Maire", {
 	color = orange,
 	model = "models/player/breen.mdl",
@@ -74,10 +72,13 @@ TEAM_GARDE = DarkRP.createJob("Garde Du Maire", {
 	command = "garde",
 	max = 4,
 	salary = 800,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(50) end,
 	admin = 0,
 	hasLicense = true,
-	candemote = false
+	candemote = false,
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(50)
+	end
 })
 
 TEAM_AVOCAT = DarkRP.createJob("Avocat", {
@@ -102,7 +103,6 @@ TEAM_AVOCAT = DarkRP.createJob("Avocat", {
 --[[-------------------------------------------------------------------------
 Gendarmerie
 ---------------------------------------------------------------------------]]
-
 TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 	color = black,
 	model = {
@@ -136,11 +136,13 @@ TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 	hasLicense = true,
 	candemote = false,
 	chief = true,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(100) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(100)
+	end
 })
 
 -- Gendarmes
-
 TEAM_GENDARME = DarkRP.createJob("Gendarme", {
 	color = blue,
 	model = {
@@ -167,7 +169,10 @@ TEAM_GENDARME = DarkRP.createJob("Gendarme", {
 	hasLicense = true,
 	candemote = false,
 	chief = true,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 TEAM_MGN = DarkRP.createJob("MGN", {
@@ -198,7 +203,10 @@ TEAM_MGN = DarkRP.createJob("MGN", {
 	hasLicense = true,
 	candemote = false,
 	chief = true,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 TEAM_AGN = DarkRP.createJob("AGN", {
@@ -224,7 +232,10 @@ TEAM_AGN = DarkRP.createJob("AGN", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 TEAM_SDR = DarkRP.createJob("SDR", {
@@ -252,7 +263,10 @@ TEAM_SDR = DarkRP.createJob("SDR", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 TEAM_BRI = DarkRP.createJob("BRI", {
@@ -283,7 +297,10 @@ TEAM_BRI = DarkRP.createJob("BRI", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 TEAM_OFFICIER = DarkRP.createJob("Officier", {
@@ -324,7 +341,10 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(200) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(200)
+	end
 })
 
 TEAM_GENGEN = DarkRP.createJob("Général", {
@@ -361,11 +381,13 @@ TEAM_GENGEN = DarkRP.createJob("Général", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(250) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(250)
+	end
 })
 
 -- Maréchal
-
 TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 	color = blue,
 	model = "models/player/massillia/prefect_01.mdl",
@@ -397,11 +419,13 @@ TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(250) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(250)
+	end
 })
 
 -- GIGN
-
 TEAM_RECRUEGIGN = DarkRP.createJob("Recrue GIGN", {
 	color = blue,
 	model = "models/Dauge/BF3_GIGN.mdl",
@@ -427,7 +451,10 @@ TEAM_RECRUEGIGN = DarkRP.createJob("Recrue GIGN", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(250) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(250)
+	end
 })
 
 TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
@@ -463,7 +490,10 @@ TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(250) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(250)
+	end
 })
 
 TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
@@ -499,7 +529,10 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(250) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(250)
+	end
 })
 
 TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
@@ -531,7 +564,10 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(250) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(250)
+	end
 })
 
 TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
@@ -567,7 +603,10 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(250) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(250)
+	end
 })
 
 TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
@@ -610,7 +649,10 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(250) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(250)
+	end
 })
 
 TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
@@ -651,13 +693,15 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(290) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(290)
+	end
 })
 
 --[[-------------------------------------------------------------------------
 Farm
 ---------------------------------------------------------------------------]]
-
 TEAM_BITMINER = DarkRP.createJob("Mineur de BitCoins", {
 	color = orange,
 	model = {
@@ -696,7 +740,6 @@ TEAM_BUSINESSMAN = DarkRP.createJob("Businessman", {
 --[[-------------------------------------------------------------------------
 Banque
 ---------------------------------------------------------------------------]]
-
 TEAM_PBANQUIER = DarkRP.createJob("Patron de la Banque", {
 	color = green,
 	model = {
@@ -733,7 +776,6 @@ TEAM_BANQUIER = DarkRP.createJob("Banquier", {
 --[[-------------------------------------------------------------------------
 SDF
 ---------------------------------------------------------------------------]]
-
 TEAM_SDF = DarkRP.createJob("SDF", {
 	color = green,
 	model = "models/player/scavenger/scavenger.mdl",
@@ -751,7 +793,6 @@ TEAM_SDF = DarkRP.createJob("SDF", {
 --[[-------------------------------------------------------------------------
 Voleurs
 ---------------------------------------------------------------------------]]
-
 TEAM_VOLEUR = DarkRP.createJob("Voleur", {
 	color = orange,
 	model = {
@@ -823,9 +864,7 @@ TEAM_MICHTONEUSE = DarkRP.createJob("Michtoneuse", {
 --[[-------------------------------------------------------------------------
 Gangs
 ---------------------------------------------------------------------------]]
-
 -- Gangsters
-
 TEAM_CGANGSTER = DarkRP.createJob("Chef des Gangsters", {
 	color = black,
 	model = "models/player/alyx.mdl",
@@ -887,11 +926,13 @@ TEAM_GANGSTERV = DarkRP.createJob("Gangster V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 -- Mafieux
-
 TEAM_CMAFIA = DarkRP.createJob("Parrain", {
 	color = black,
 	model = "models/vito.mdl",
@@ -945,11 +986,13 @@ TEAM_MAFIAV = DarkRP.createJob("Mafieux V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 -- Yakuzas
-
 TEAM_CYAKUZA = DarkRP.createJob("Chef des Yakuza", {
 	color = black,
 	model = {
@@ -1012,11 +1055,13 @@ TEAM_YAKUZAV = DarkRP.createJob("Yakuza V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 -- Braqueurs
-
 TEAM_CBRAQUEUR = DarkRP.createJob("Chef des Braqueurs", {
 	color = black,
 	model = {
@@ -1070,11 +1115,13 @@ TEAM_BRAQUEURV = DarkRP.createJob("Braqueur V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 -- Cartel
-
 TEAM_CCARTEL = DarkRP.createJob("Chef du Cartel", {
 	color = black,
 	model = {
@@ -1125,11 +1172,13 @@ TEAM_CARTELV = DarkRP.createJob("Cartel V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 -- Crips
-
 TEAM_CCRIPS = DarkRP.createJob("Chef Crips", {
 	color = black,
 	model = "models/player/cripz/slow_3.mdl",
@@ -1177,11 +1226,13 @@ TEAM_CRIPSV = DarkRP.createJob("Crips V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 -- Bloods
-
 TEAM_CBLOODS = DarkRP.createJob("Chef Bloods", {
 	color = black,
 	model = "models/player/bloodz/slow_3.mdl",
@@ -1229,13 +1280,15 @@ TEAM_BLOODSV = DarkRP.createJob("Bloods V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 --[[-------------------------------------------------------------------------
 Services
 ---------------------------------------------------------------------------]]
-
 TEAM_SAMU = DarkRP.createJob("Samu", {
 	color = green,
 	model = {
@@ -1336,7 +1389,6 @@ TEAM_TOWER = DarkRP.createJob("Dépanneur", {
 --[[-------------------------------------------------------------------------
 Drogues
 ---------------------------------------------------------------------------]]
-
 TEAM_METH = DarkRP.createJob("Fabriquant de Meth", {
 	color = orange,
 	model = {
@@ -1411,7 +1463,6 @@ TEAM_BICRAVEUR = DarkRP.createJob("Bicraveur", {
 --[[-------------------------------------------------------------------------
 Autres
 ---------------------------------------------------------------------------]]
-
 TEAM_KIDNAPPEUR = DarkRP.createJob("Kidnappeur V.I.P", {
 	color = yellow,
 	model = {
@@ -1511,7 +1562,10 @@ TEAM_TERRORISTE = DarkRP.createJob("Terroriste V.I.P", {
 		ply:changeTeam(TEAM_CITIZEN, true)
 		DarkRP.notifyAll(0, 4, "Le terroriste est mort.")
 	end,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(150) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(150)
+	end
 })
 
 TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
@@ -1545,7 +1599,6 @@ TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
 --[[-------------------------------------------------------------------------
 Sécurité
 ---------------------------------------------------------------------------]]
-
 TEAM_ADS = DarkRP.createJob("Agent De Securite", {
 	color = red,
 	model = {
@@ -1567,7 +1620,10 @@ TEAM_ADS = DarkRP.createJob("Agent De Securite", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	PlayerLoadout = function(ply) ply:SetHealth(100) ply:SetArmor(50) end
+	PlayerLoadout = function(ply)
+		ply:SetHealth(100)
+		ply:SetArmor(50)
+	end
 })
 
 TEAM_MERCENAIRE = DarkRP.createJob("Mercenaire", {
@@ -1586,7 +1642,6 @@ TEAM_MERCENAIRE = DarkRP.createJob("Mercenaire", {
 --[[-------------------------------------------------------------------------
 Chomeur
 ---------------------------------------------------------------------------]]
-
 TEAM_CITIZEN = DarkRP.createJob("Chomeur", {
 	color = Color(98, 0, 114),
 	model = {
@@ -1613,7 +1668,6 @@ TEAM_CITIZEN = DarkRP.createJob("Chomeur", {
 --[[-------------------------------------------------------------------------
 Staff
 ---------------------------------------------------------------------------]]
-
 TEAM_STAFF = DarkRP.createJob("Staff", {
 	color = green,
 	model = "models/fearless/suit04.mdl",
