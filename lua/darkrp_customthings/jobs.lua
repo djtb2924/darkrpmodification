@@ -36,6 +36,18 @@ local loadouts = {
 	[250] = loadout(250)
 }
 
+local defaultSkins = {
+	"models/player/suits/male_01_shirt.mdl",
+	"models/player/suits/male_02_shirt.mdl",
+	"models/player/suits/male_03_shirt.mdl",
+	"models/player/suits/male_04_shirt.mdl",
+	"models/player/suits/male_05_shirt_tie.mdl",
+	"models/player/suits/male_06_shirt.mdl",
+	"models/player/suits/male_07_shirt.mdl",
+	"models/player/suits/male_08_shirt.mdl",
+	"models/player/suits/male_09_shirt.mdl"
+}
+
 --[[-------------------------------------------------------------------------
 Gouvernement
 ---------------------------------------------------------------------------]]
@@ -669,17 +681,7 @@ Farm
 ---------------------------------------------------------------------------]]
 TEAM_BITMINER = DarkRP.createJob("Mineur de BitCoins", {
 	color = orange,
-	model = {
-		"models/player/suits/male_01_shirt.mdl",
-		"models/player/suits/male_02_shirt.mdl",
-		"models/player/suits/male_03_shirt.mdl",
-		"models/player/suits/male_04_shirt.mdl",
-		"models/player/suits/male_05_shirt_tie.mdl",
-		"models/player/suits/male_06_shirt.mdl",
-		"models/player/suits/male_07_shirt.mdl",
-		"models/player/suits/male_08_shirt.mdl",
-		"models/player/suits/male_09_shirt.mdl"
-	},
+	model = defaultSkins,
 	description = [[Individu vérifiant les transactions et opérations effectuées par les utilisateurs sur le réseau.]],
 	weapons = {},
 	command = "bitminer",
@@ -760,17 +762,7 @@ Voleurs
 ---------------------------------------------------------------------------]]
 TEAM_VOLEUR = DarkRP.createJob("Voleur", {
 	color = orange,
-	model = {
-		"models/player/suits/male_01_shirt.mdl",
-		"models/player/suits/male_02_shirt.mdl",
-		"models/player/suits/male_03_shirt.mdl",
-		"models/player/suits/male_04_shirt.mdl",
-		"models/player/suits/male_05_shirt_tie.mdl",
-		"models/player/suits/male_06_shirt.mdl",
-		"models/player/suits/male_07_shirt.mdl",
-		"models/player/suits/male_08_shirt.mdl",
-		"models/player/suits/male_09_shirt.mdl"
-	},
+	model = defaultSkins,
 	description = [[Personne qui soustrait frauduleusement ce qui appartient à autrui.]],
 	weapons = {
 		"lockpick",
@@ -1335,17 +1327,7 @@ Drogues
 ---------------------------------------------------------------------------]]
 TEAM_METH = DarkRP.createJob("Fabriquant de Meth", {
 	color = orange,
-	model = {
-		"models/player/suits/male_01_shirt.mdl",
-		"models/player/suits/male_02_shirt.mdl",
-		"models/player/suits/male_03_shirt.mdl",
-		"models/player/suits/male_04_shirt.mdl",
-		"models/player/suits/male_05_shirt_tie.mdl",
-		"models/player/suits/male_06_shirt.mdl",
-		"models/player/suits/male_07_shirt.mdl",
-		"models/player/suits/male_08_shirt.mdl",
-		"models/player/suits/male_09_shirt.mdl"
-	},
+	model = defaultSkins,
 	description = [[Personne qui fabrique illégalement de la drogue.]],
 	weapons = {"zmlab_extractor"},
 	command = "meth",
@@ -1357,17 +1339,7 @@ TEAM_METH = DarkRP.createJob("Fabriquant de Meth", {
 
 TEAM_WEED = DarkRP.createJob("Fabriquant de Weed", {
 	color = orange,
-	model = {
-		"models/player/suits/male_01_shirt.mdl",
-		"models/player/suits/male_02_shirt.mdl",
-		"models/player/suits/male_03_shirt.mdl",
-		"models/player/suits/male_04_shirt.mdl",
-		"models/player/suits/male_05_shirt_tie.mdl",
-		"models/player/suits/male_06_shirt.mdl",
-		"models/player/suits/male_07_shirt.mdl",
-		"models/player/suits/male_08_shirt.mdl",
-		"models/player/suits/male_09_shirt.mdl"
-	},
+	model = defaultSkins,
 	description = [[Personne qui fabrique illégalement de la drogue.]],
 	weapons = {
 		"zwf_cable",
@@ -1383,17 +1355,7 @@ TEAM_WEED = DarkRP.createJob("Fabriquant de Weed", {
 
 TEAM_BICRAVEUR = DarkRP.createJob("Bicraveur", {
 	color = orange,
-	model = {
-		"models/player/suits/male_01_shirt.mdl",
-		"models/player/suits/male_02_shirt.mdl",
-		"models/player/suits/male_03_shirt.mdl",
-		"models/player/suits/male_04_shirt.mdl",
-		"models/player/suits/male_05_shirt_tie.mdl",
-		"models/player/suits/male_06_shirt.mdl",
-		"models/player/suits/male_07_shirt.mdl",
-		"models/player/suits/male_08_shirt.mdl",
-		"models/player/suits/male_09_shirt.mdl"
-	},
+	model = defaultSkins,
 	description = [[Revendeur de drogue, dealer.]],
 	weapons = {},
 	command = "bicraveur",
@@ -1409,17 +1371,7 @@ Autres
 ---------------------------------------------------------------------------]]
 TEAM_KIDNAPPEUR = DarkRP.createJob("Kidnappeur V.I.P", {
 	color = yellow,
-	model = {
-		"models/player/suits/male_01_shirt.mdl",
-		"models/player/suits/male_02_shirt.mdl",
-		"models/player/suits/male_03_shirt.mdl",
-		"models/player/suits/male_04_shirt.mdl",
-		"models/player/suits/male_05_shirt_tie.mdl",
-		"models/player/suits/male_06_shirt.mdl",
-		"models/player/suits/male_07_shirt.mdl",
-		"models/player/suits/male_08_shirt.mdl",
-		"models/player/suits/male_09_shirt.mdl"
-	},
+	model = defaultSkins,
 	description = [[Votre but est d'enlever quelqu'un en vue d'obtenir une rançon ou une contrepartie quelconque.]],
 	weapons = {
 		"csgo_bayonet",
@@ -1582,17 +1534,7 @@ Chomeur
 ---------------------------------------------------------------------------]]
 TEAM_CITIZEN = DarkRP.createJob("Chomeur", {
 	color = Color(98, 0, 114),
-	model = {
-		"models/player/suits/male_01_shirt.mdl",
-		"models/player/suits/male_02_shirt.mdl",
-		"models/player/suits/male_03_shirt.mdl",
-		"models/player/suits/male_04_shirt.mdl",
-		"models/player/suits/male_05_shirt_tie.mdl",
-		"models/player/suits/male_06_shirt.mdl",
-		"models/player/suits/male_07_shirt.mdl",
-		"models/player/suits/male_08_shirt.mdl",
-		"models/player/suits/male_09_shirt.mdl"
-	},
+	model = defaultSkins,
 	description = [[Personne qui est involontairement privée de travail.]],
 	weapons = {},
 	command = "chomeur",
@@ -1606,6 +1548,17 @@ TEAM_CITIZEN = DarkRP.createJob("Chomeur", {
 --[[-------------------------------------------------------------------------
 Staff
 ---------------------------------------------------------------------------]]
+
+local staffRanks = {
+	["superadmin"] = true,
+	["users"] = true,
+	["admin"] = true,
+	["moderateur"] = true,
+	["moderateur test"] = true,
+	["helpeur"] = true,
+	["helpeur test"] = true
+}
+
 TEAM_STAFF = DarkRP.createJob("Staff", {
 	color = green,
 	model = "models/fearless/suit04.mdl",
@@ -1622,17 +1575,7 @@ TEAM_STAFF = DarkRP.createJob("Staff", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
-	customCheck = function(ply)
-		return CLIENT or table.HasValue({
-			"superadmin",
-			"users",
-			"admin",
-			"moderateur",
-			"moderateur test",
-			"helpeur",
-			"helpeur test"
-		}, ply:GetNWString("usergroup"))
-	end
+	customCheck = function(ply) return staffRanks[ply:GetUserGroup()] end,
 })
 
 GAMEMODE.DefaultTeam = TEAM_CITIZEN
