@@ -34,7 +34,7 @@ Gouvernement
 TEAM_MAYOR = DarkRP.createJob("Maire", {
 	color = orange,
 	model = "models/player/breen.mdl",
-	description = [[Vous controllez la ville.]],
+	description = [[Vous représentez l'autorité municipale.]],
 	weapons = {},
 	command = "maire",
 	max = 1,
@@ -53,7 +53,7 @@ TEAM_MAYOR = DarkRP.createJob("Maire", {
 TEAM_SECRETAIRE = DarkRP.createJob("Secretaire Du Maire", {
 	color = green,
 	model = "models/fearless/rosa.mdl",
-	description = [[Vous aidez le Maire.]],
+	description = [[Vous organiser et assurer l'accueil des usagers du service public dans les meilleurs conditions.]],
 	weapons = {},
 	command = "secretaire",
 	max = 1,
@@ -66,7 +66,7 @@ TEAM_SECRETAIRE = DarkRP.createJob("Secretaire Du Maire", {
 TEAM_GARDE = DarkRP.createJob("Garde Du Maire", {
 	color = grey,
 	model = "models/fearless/02.mdl",
-	description = [[Vous protegez le maire.]],
+	description = [[Votre but est de protéger le Maire ainsi que mettre en oeuvre l'ensemble des mesures nécessaires à l'organisation matérielle et à la sécurité des déplacements du Maire.]],
 	weapons = {
 		"weaponchecker"
 	},
@@ -88,7 +88,7 @@ TEAM_AVOCAT = DarkRP.createJob("Avocat", {
 		"models/fearless/gsuit18.mdl",
 		"models/fearless/gsuit15.mdl"
 	},
-	description = [[Vous défendez les citoyens.]],
+	description = [[Votre mission consiste à assister et à représenter en justice une personne qui se présente à lui et à défendre ses intérêts devant les différentes juridictions.]],
 	weapons = {},
 	command = "avocat",
 	max = 2,
@@ -116,7 +116,7 @@ TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 		"models/player/suits/robber_shirt.mdl",
 		"models/sd/players/[dbs_brawler_2]-head_brawler_dbs.mdl"
 	},
-	description = [[Vous infiltrez les gangs pour les arreter.]],
+	description = [[Personne qui travaille dans le plus grand secret pour l'espionnage d'une organisation ou d'un gouvernement.]],
 	weapons = {
 		"ags_badge",
 		"door_ram",
@@ -148,7 +148,7 @@ TEAM_GENDARME = DarkRP.createJob("Gendarme", {
 		"models/player/darkley/gendarmerie_02.mdl",
 		"models/player/darkley/gendarmerie_03.mdl"
 	},
-	description = [[Vous protegez les citoyens.]],
+	description = [[Militaire appartenant à une formation de la gendarmerie nationale.]],
 	weapons = {
 		"door_ram",
 		"drogue_search",
@@ -177,7 +177,7 @@ TEAM_MGN = DarkRP.createJob("MGN", {
 		"models/player/darkley/gend_02.mdl",
 		"models/player/darkley/gend_03.mdl"
 	},
-	description = [[(Médecin de la Gendarmerie) Vous protegez les citoyens.]],
+	description = [[Médecin de la Gendarmerie]],
 	weapons = {
 		"defibrillator",
 		"door_ram",
@@ -204,7 +204,7 @@ TEAM_MGN = DarkRP.createJob("MGN", {
 TEAM_AGN = DarkRP.createJob("AGN", {
 	color = blue,
 	model = "models/player/rico/gend_polaire.mdl",
-	description = [[(Armurier de la Gendarmerie) Vous protegez les citoyens.]],
+	description = [[Armurier de la Gendarmerie]],
 	weapons = {
 		"door_ram",
 		"drogue_search",
@@ -229,7 +229,7 @@ TEAM_AGN = DarkRP.createJob("AGN", {
 TEAM_SDR = DarkRP.createJob("SDR", {
 	color = blue,
 	model = "models/player/rico/gend_polaire.mdl",
-	description = [[(Sureté des routes) Vous protegez les citoyens.]],
+	description = [[Sureté des routes]],
 	weapons = {
 		"door_ram",
 		"drogue_search",
@@ -261,7 +261,7 @@ TEAM_BRI = DarkRP.createJob("BRI", {
 		"models/darkley/motard_01.mdl",
 		"models/darkley/motard_03.mdl"
 	},
-	description = [[(Brigade Rapide d'intervention) Vous protegez les citoyens.]],
+	description = [[Brigade Rapide d'intervention]],
 	weapons = {
 		"door_ram",
 		"drogue_search",
@@ -296,7 +296,7 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 		"models/player/portal/russian_police6_armor.mdl",
 		"models/player/portal/russian_police7_armor.mdl"
 	},
-	description = [[Vous protegez les citoyens.]],
+	description = [[Officier Supérieur de la Gendarmerie]],
 	weapons = {
 		"arrest_stick",
 		"defibrillator",
@@ -333,7 +333,7 @@ TEAM_GENGEN = DarkRP.createJob("Général", {
 		"models/player/pmc_5/pmc__01.mdl",
 		"models/player/pmc_6/pmc__01.mdl"
 	},
-	description = [[Vous protegez les citoyens.]],
+	description = [[Officier Général de la Gendarmerie]],
 	weapons = {
 		"arrest_stick",
 		"defibrillator",
@@ -368,7 +368,7 @@ TEAM_GENGEN = DarkRP.createJob("Général", {
 TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 	color = blue,
 	model = "models/player/massillia/prefect_01.mdl",
-	description = [[Vous protegez les citoyens.]],
+	description = [[Maréchal, commandant des Gendarmerie]],
 	weapons = {
 		"arrest_stick",
 		"door_ram",
@@ -404,7 +404,7 @@ TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 TEAM_RECRUEGIGN = DarkRP.createJob("Recrue GIGN", {
 	color = blue,
 	model = "models/Dauge/BF3_GIGN.mdl",
-	description = [[Vous êtes une recrue ou un stagiaire vous devez écouter vos supérieur pour progrésser dans l'unité.]],
+	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"door_ram",
 		"drogue_search",
@@ -437,7 +437,7 @@ TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 		"models/player/pmc_5/pmc__13.mdl",
 		"models/player/pmc_5/pmc__14.mdl"
 	},
-	description = [[Vous êtes le médecin de l'unité vous rester en retrait pour soigner vos collègues. Vous êtes sous les ordres des Sous-Officiers et Officiers]],
+	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"defibrillator",
 		"door_ram",
@@ -472,7 +472,7 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 		"models/player/pmc_5/pmc__13.mdl",
 		"models/player/pmc_5/pmc__14.mdl"
 	},
-	description = [[Vous êtes le soldat de l'unité. Vous êtes sous les ordres des Sous-Officiers et Officiers]],
+	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"door_ram",
 		"drogue_search",
@@ -505,7 +505,7 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 		"models/player/pmc_4/pmc__03.mdl",
 		"models/player/pmc_5/pmc__03.mdl"
 	},
-	description = [[Vous êtes le sniper de l'unité. Vous êtes sous les ordres des Sous-Officiers et Officiers]],
+	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"door_ram",
 		"drogue_search",
@@ -539,7 +539,7 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 		"models/player/pmc_5/pmc__05.mdl",
 		"models/player/pmc_5/pmc__06.mdl"
 	},
-	description = [[Vous êtes le sniper de l'unité. Vous êtes sous les ordres des Sous-Officiers et Officiers]],
+	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"door_ram",
 		"drogue_search",
@@ -575,7 +575,7 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 		"models/player/pmc_5/pmc__10.mdl",
 		"models/player/pmc_5/pmc__11.mdl"
 	},
-	description = [[Vous êtes sous les ordres du Général]],
+	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"arrest_stick",
 		"defibrillator",
@@ -615,7 +615,7 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 		"models/player/pmc_4/pmc__01.mdl",
 		"models/player/pmc_5/pmc__01.mdl"
 	},
-	description = [[Vous dirigez le GIGN]],
+	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"arrest_stick",
 		"defibrillator",
@@ -666,7 +666,7 @@ TEAM_BITMINER = DarkRP.createJob("Mineur de BitCoins", {
 		"models/player/suits/male_08_shirt.mdl",
 		"models/player/suits/male_09_shirt.mdl"
 	},
-	description = [[Vous minez des BitCoins.]],
+	description = [[Individu vérifiant les transactions et opérations effectuées par les utilisateurs sur le réseau.]],
 	weapons = {},
 	command = "bitminer",
 	max = 4,
@@ -679,7 +679,7 @@ TEAM_BITMINER = DarkRP.createJob("Mineur de BitCoins", {
 TEAM_BUSINESSMAN = DarkRP.createJob("Businessman", {
 	color = orange,
 	model = "models/player/gman_high.mdl",
-	description = [[Vous employez des travailleurs.]],
+	description = [[Vous êtes un homme d'affaires.]],
 	weapons = {},
 	command = "businessman",
 	max = 5,
@@ -698,7 +698,7 @@ TEAM_PBANQUIER = DarkRP.createJob("Patron de la Banque", {
 		"models/player/suits/male_03_open.mdl",
 		"models/player/suits/male_09_open_waistcoat.mdl"
 	},
-	description = [[Vous dirigez les banquiers.]],
+	description = [[Il dirige les employés de la banque et porte la responsabilité des résultats obtenus.]],
 	weapons = {},
 	command = "pbanquier",
 	max = 1,
@@ -715,7 +715,7 @@ TEAM_BANQUIER = DarkRP.createJob("Banquier", {
 		"models/player/suits/male_02_shirt_tie.mdl",
 		"models/player/suits/male_01_shirt_tie.mdl"
 	},
-	description = [[Vous imprimez des billets.]],
+	description = [[Personne dont la profession est de diriger, administrer ou gérer une banque ou un établissement de crédit.]],
 	weapons = {},
 	command = "banquier",
 	max = 3,
@@ -732,7 +732,7 @@ Banque
 TEAM_SDF = DarkRP.createJob("SDF", {
 	color = green,
 	model = "models/player/scavenger/scavenger.mdl",
-	description = [[Vous recoltez de l'argent.]],
+	description = [[Personne qui n'a pas de logement fixe, échappant à tout contrôle ou recensement administratif.]],
 	weapons = {},
 	command = "sdf",
 	max = 3,
@@ -760,7 +760,7 @@ TEAM_VOLEUR = DarkRP.createJob("Voleur", {
 		"models/player/suits/male_08_shirt.mdl",
 		"models/player/suits/male_09_shirt.mdl"
 	},
-	description = [[Vous volez les gens et les voitures.]],
+	description = [[Personne qui soustrait frauduleusement ce qui appartient à autrui.]],
 	weapons = {
 		"lockpick",
 		"swep_pickpocket"
@@ -789,7 +789,7 @@ TEAM_CAMBRIOLEUR = DarkRP.createJob("Cambrioleur", {
 		"models/player/suits/male_09_shirt.mdl",
 		"models/player/group01/cookies114.mdl"
 	},
-	description = [[Vous cambriolez les maisons.]],
+	description = [[Personne qui soustrait frauduleusement ce qui appartient à autrui.]],
 	weapons = {
 		"m9k_usp",
 		"lockpick",
@@ -826,7 +826,7 @@ Gangs
 TEAM_CGANGSTER = DarkRP.createJob("Chef des Gangsters", {
 	color = black,
 	model = "models/player/alyx.mdl",
-	description = [[Vous dirigez les Gangsters.]],
+	description = [[Membre d'un gang, d'une association de malfaiteurs.]],
 	weapons = {},
 	command = "cgangster",
 	max = 1,
@@ -849,7 +849,7 @@ TEAM_GANGSTER = DarkRP.createJob("Gangster", {
 		"models/player/Group03/male_03.mdl",
 		"models/player/Group03/Male_04.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Membre d'un gang, d'une association de malfaiteurs.]],
 	weapons = {},
 	command = "gangster",
 	max = 6,
@@ -872,7 +872,7 @@ TEAM_GANGSTERV = DarkRP.createJob("Gangster V.I.P", {
 		"models/player/Group03/male_03.mdl",
 		"models/player/Group03/Male_04.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Membre d'un gang, d'une association de malfaiteurs.]],
 	weapons = {
 		"m9k_auga3",
 		"keypad_cracker",
@@ -892,7 +892,7 @@ TEAM_GANGSTERV = DarkRP.createJob("Gangster V.I.P", {
 TEAM_CMAFIA = DarkRP.createJob("Parrain", {
 	color = black,
 	model = "models/vito.mdl",
-	description = [[Vous dirigez les mafieux.]],
+	description = [[Association secrète sicilienne ayant de nombreuses ramifications notamment en Italie et aux États-Unis qui utilise des moyens illicites pour servir ses intérêts.]],
 	weapons = {},
 	command = "cmafia",
 	max = 1,
@@ -911,7 +911,7 @@ TEAM_MAFIA = DarkRP.createJob("Mafieux", {
 		"models/fearless/mafia07.mdl",
 		"models/fearless/mafia09.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Association secrète sicilienne ayant de nombreuses ramifications notamment en Italie et aux États-Unis qui utilise des moyens illicites pour servir ses intérêts.]],
 	weapons = {},
 	command = "mafia",
 	max = 6,
@@ -930,7 +930,7 @@ TEAM_MAFIAV = DarkRP.createJob("Mafieux V.I.P", {
 		"models/fearless/mafia07.mdl",
 		"models/fearless/mafia09.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Association secrète sicilienne ayant de nombreuses ramifications notamment en Italie et aux États-Unis qui utilise des moyens illicites pour servir ses intérêts.]],
 	weapons = {
 		"m9k_auga3",
 		"keypad_cracker",
@@ -953,7 +953,7 @@ TEAM_CYAKUSA = DarkRP.createJob("Chef des Yakuza", {
 		"models/sd/players/[dbs_grappler].mdl",
 		"models/sd/players/[dbs_grappler_2].mdl"
 	},
-	description = [[Vous dirigez les Yakusas.]],
+	description = [[Membre de la mafia japonaise.]],
 	weapons = {},
 	command = "cyakuza",
 	max = 1,
@@ -975,7 +975,7 @@ TEAM_YAKUSA = DarkRP.createJob("Yakuza", {
 		"models/sd/players/[dbs_brawler_2]-head_brawler_dbs.mdl",
 		"models/sd/players/[dbs_brawler]-head_brawler_dbs.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Membre de la mafia japonaise.]],
 	weapons = {},
 	command = "yakuza",
 	max = 6,
@@ -997,7 +997,7 @@ TEAM_YAKUSAV = DarkRP.createJob("Yakuza V.I.P", {
 		"models/sd/players/[dbs_brawler_2]-head_brawler_dbs.mdl",
 		"models/sd/players/[dbs_brawler]-head_brawler_dbs.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Membre de la mafia japonaise.]],
 	weapons = {
 		"m9k_auga3",
 		"keypad_cracker",
@@ -1021,7 +1021,7 @@ TEAM_CBRAQUEUR = DarkRP.createJob("Chef des Braqueurs", {
 		"models/player/suits/robber_tie.mdl",
 		"models/player/suits/robber_open.mdl"
 	},
-	description = [[Vous dirigez les Braqueurs.]],
+	description = [[Auteur d'un braquage et malfaiteur qui commet des attaques à main armée.]],
 	weapons = {},
 	command = "cbraqueur",
 	max = 1,
@@ -1038,7 +1038,7 @@ TEAM_BRAQUEUR = DarkRP.createJob("Braqueur", {
 		"models/player/suits/robber_tie.mdl",
 		"models/player/suits/robber_open.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Auteur d'un braquage et malfaiteur qui commet des attaques à main armée.]],
 	weapons = {},
 	command = "braqueur",
 	max = 6,
@@ -1055,7 +1055,7 @@ TEAM_BRAQUEURV = DarkRP.createJob("Braqueur V.I.P", {
 		"models/player/suits/robber_tie.mdl",
 		"models/player/suits/robber_open.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Auteur d'un braquage et malfaiteur qui commet des attaques à main armée.]],
 	weapons = {
 		"m9k_auga3",
 		"keypad_cracker",
@@ -1078,7 +1078,7 @@ TEAM_CCARTEL = DarkRP.createJob("Chef du Cartel", {
 		"models/fearless/suit04.mdl",
 		"models/fearless/suit07.mdl"
 	},
-	description = [[Vous dirigez les Cartels.]],
+	description = [[Groupement d'intérêt dans l'industrie ou la politique.]],
 	weapons = {},
 	command = "ccartel",
 	max = 1,
@@ -1094,7 +1094,7 @@ TEAM_CARTEL = DarkRP.createJob("Cartel", {
 		"models/fearless/wsuit09.mdl",
 		"models/fearless/wsuit15.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Groupement d'intérêt dans l'industrie ou la politique.]],
 	weapons = {},
 	command = "cartel",
 	max = 6,
@@ -1110,7 +1110,7 @@ TEAM_CARTELV = DarkRP.createJob("Cartel V.I.P", {
 		"models/fearless/wsuit09.mdl",
 		"models/fearless/wsuit15.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Groupement d'intérêt dans l'industrie ou la politique.]],
 	weapons = {
 		"m9k_auga3",
 		"keypad_cracker",
@@ -1130,7 +1130,7 @@ TEAM_CARTELV = DarkRP.createJob("Cartel V.I.P", {
 TEAM_CCRIPZ = DarkRP.createJob("Chef Cripz", {
 	color = black,
 	model = "models/player/cripz/slow_3.mdl",
-	description = [[Vous dirigez les Cripz.]],
+	description = [[Gang originaire de South Central Los Angeles, sur la côte ouest des États-Unis.]],
 	weapons = {"weapon_fists"},
 	command = "ccripz",
 	max = 1,
@@ -1146,7 +1146,7 @@ TEAM_CRIPZ = DarkRP.createJob("Cripz", {
 		"models/player/cripz/slow_1.mdl",
 		"models/player/cripz/slow_2.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Gang originaire de South Central Los Angeles, sur la côte ouest des États-Unis.]],
 	weapons = {"weapon_fists"},
 	command = "cripz",
 	max = 6,
@@ -1162,7 +1162,7 @@ TEAM_CRIPZV = DarkRP.createJob("Cripz V.I.P", {
 		"models/player/cripz/slow_1.mdl",
 		"models/player/cripz/slow_2.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Gang originaire de South Central Los Angeles, sur la côte ouest des États-Unis.]],
 	weapons = {
 		"m9k_auga3",
 		"keypad_cracker",
@@ -1182,7 +1182,7 @@ TEAM_CRIPZV = DarkRP.createJob("Cripz V.I.P", {
 TEAM_CBLOODZ = DarkRP.createJob("Chef Bloodz", {
 	color = black,
 	model = "models/player/bloodz/slow_3.mdl",
-	description = [[Vous dirigez les Bloodz.]],
+	description = [[Gang de rue fondé en 1972 à Los Angeles en Californie.]],
 	weapons = {"weapon_fists"},
 	command = "cbloodz",
 	max = 1,
@@ -1198,7 +1198,7 @@ TEAM_BLOODZ = DarkRP.createJob("Bloodz", {
 		"models/player/bloodz/slow_2.mdl",
 		"models/player/bloodz/slow_1.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Gang de rue fondé en 1972 à Los Angeles en Californie.]],
 	weapons = {"weapon_fists"},
 	command = "bloodz",
 	max = 6,
@@ -1214,7 +1214,7 @@ TEAM_BLOODZV = DarkRP.createJob("Bloodz V.I.P", {
 		"models/player/bloodz/slow_2.mdl",
 		"models/player/bloodz/slow_1.mdl"
 	},
-	description = [[Vous agissez illégalement.]],
+	description = [[Gang de rue fondé en 1972 à Los Angeles en Californie.]],
 	weapons = {
 		"m9k_auga3",
 		"keypad_cracker",
@@ -1261,7 +1261,7 @@ TEAM_SAMU = DarkRP.createJob("Samu", {
 TEAM_ARMURIER = DarkRP.createJob("Armurier", {
 	color = orange,
 	model = "models/player/leet.mdl",
-	description = [[Vous vendez des armes légères.]],
+	description = [[Personne qui fabrique ou vend des armes.]],
 	weapons = {},
 	command = "armurier",
 	max = 4,
@@ -1287,7 +1287,7 @@ TEAM_TRAFIQUANT = DarkRP.createJob("Trafiquant d'Armes", {
 TEAM_QUINCAILLER = DarkRP.createJob("Quincailler", {
 	color = orange,
 	model = "models/player/odessa.mdl",
-	description = [[Vous vendez diverses choses.]],
+	description = [[Personne qui vend ou fabrique de la quincaillerie.]],
 	weapons = {},
 	command = "quincailler",
 	max = 4,
@@ -1300,7 +1300,7 @@ TEAM_QUINCAILLER = DarkRP.createJob("Quincailler", {
 TEAM_COOK = DarkRP.createJob("Cuisinier", {
 	color = green,
 	model = "models/fearless/chef1.mdl",
-	description = [[Vous cuisinez pour les citoyens.]],
+	description = [[Personne qui sait faire la cuisine.]],
 	weapons = {
 		"weapon_hl2pan",
 		"weapon_hl2pot"
@@ -1347,7 +1347,7 @@ TEAM_METH = DarkRP.createJob("Fabriquant de Meth", {
 		"models/player/suits/male_08_shirt.mdl",
 		"models/player/suits/male_09_shirt.mdl"
 	},
-	description = [[Vous fabriquez de la meth.]],
+	description = [[Personne qui fabrique illégalement de la drogue.]],
 	weapons = {"zmlab_extractor"},
 	command = "meth",
 	max = 3,
@@ -1369,7 +1369,7 @@ TEAM_WEED = DarkRP.createJob("Fabriquant de Weed", {
 		"models/player/suits/male_08_shirt.mdl",
 		"models/player/suits/male_09_shirt.mdl"
 	},
-	description = [[Vous fabriquez de la weed.]],
+	description = [[Personne qui fabrique illégalement de la drogue.]],
 	weapons = {"zwf_shoptablet", "zwf_cable"},
 	command = "weed",
 	max = 3,
@@ -1392,7 +1392,7 @@ TEAM_BICRAVEUR = DarkRP.createJob("Bicraveur", {
 		"models/player/suits/male_08_shirt.mdl",
 		"models/player/suits/male_09_shirt.mdl"
 	},
-	description = [[Vous vendez de la drogue.]],
+	description = [[Revendeur de drogue, dealer.]],
 	weapons = {},
 	command = "bicraveur",
 	max = 2,
@@ -1419,7 +1419,7 @@ TEAM_KIDNAPPEUR = DarkRP.createJob("Kidnappeur V.I.P", {
 		"models/player/suits/male_08_shirt.mdl",
 		"models/player/suits/male_09_shirt.mdl"
 	},
-	description = [[Vous Kidnappez les gens.]],
+	description = [[Votre but est d'enlever quelqu'un en vue d'obtenir une rançon ou une contrepartie quelconque.]],
 	weapons = {
 		"csgo_bayonet",
 		"scalpel",
@@ -1447,7 +1447,7 @@ TEAM_PSYCHOPATHE = DarkRP.createJob("Psychopathe V.I.P", {
 		"models/player/suits/male_09_shirt.mdl",
 		"models/billy_jigsaw.mdl"
 	},
-	description = [[Vous tuez les gens discretement.]],
+	description = [[Personne souffrant d'un important trouble du comportement. Il agit de manière très impulsive, dans le de but de détruire psychologiquement et/ou physiquement quelqu'un.]],
 	weapons = {
 		"m9k_machete",
 		"stunstick",
@@ -1468,7 +1468,7 @@ TEAM_ENFANT = DarkRP.createJob("Enfant Bizarre V.I.P", {
 		"models/player/dewobedil/chucky/chucky.mdl",
 		"models/player/portal_and_mika/kid.mdl"
 	},
-	description = [[Vous ignorez la vie.]],
+	description = [[Vous êtes un enfant possédé par l'esprit d'un tueur en série.]],
 	weapons = {"csgo_huntsman_case"},
 	command = "enfant",
 	max = 2,
@@ -1487,7 +1487,7 @@ TEAM_TERRORISTE = DarkRP.createJob("Terroriste V.I.P", {
 		"models/player/leet.mdl",
 		"models/player/suits/male_07_shirt.mdl"
 	},
-	description = [[Vous tuez lors de votre attentat.]],
+	description = [[Personne qui utilise la terreur et la violence pour imposer ses idées politiques ou son autorité.]],
 	weapons = {
 		"csgo_bayonet",
 		"m9k_ak47",
@@ -1522,7 +1522,7 @@ TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
 		"models/player/suits/male_08_shirt.mdl",
 		"models/player/suits/male_09_shirt.mdl"
 	},
-	description = [[Vous tuez sous contrat.]],
+	description = [[Personne qui se fait rémunérer pour assassiner d'autres personnes.]],
 	weapons = {
 		"m9k_m98b",
 		"m9k_glock",
@@ -1553,7 +1553,7 @@ TEAM_ADS = DarkRP.createJob("Agent De Securite", {
 		"models/player/guard_pack/guard_08.mdl",
 		"models/player/guard_pack/guard_09.mdl"
 	},
-	description = [[Vous protégez les commerces légaux.]],
+	description = [[Employé chargé des tâches de gardiennage des bâtiments. Il est là pour surveiller mais également pour protéger, aussi bien les personnes que les biens.]],
 	weapons = {
 		"weaponchecker"
 	},
@@ -1569,7 +1569,7 @@ TEAM_ADS = DarkRP.createJob("Agent De Securite", {
 TEAM_MERCENAIRE = DarkRP.createJob("Mercenaire", {
 	color = black,
 	model = "models/player/guerilla.mdl",
-	description = [[Vous protégez votre client.]],
+	description = [[Personne qui ne travaille que pour un salaire, qui est inspiré par la seule considération du gain.]],
 	weapons = {},
 	command = "mercenaire",
 	max = 4,
@@ -1596,7 +1596,7 @@ TEAM_CITIZEN = DarkRP.createJob("Chomeur", {
 		"models/player/suits/male_08_shirt.mdl",
 		"models/player/suits/male_09_shirt.mdl"
 	},
-	description = [[Vous cherchez un travail.]],
+	description = [[Personne qui est involontairement privée de travail.]],
 	weapons = {},
 	command = "chomeur",
 	max = 0,
@@ -1613,7 +1613,7 @@ Staff
 TEAM_STAFF = DarkRP.createJob("Staff", {
 	color = green,
 	model = "models/fearless/suit04.mdl",
-	description = [[Vous administrez le serveur.]],
+	description = [[Membre du Staff.]],
 	weapons = {
 		"adminstick",
 		"weaponchecker",
