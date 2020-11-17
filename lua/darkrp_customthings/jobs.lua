@@ -699,6 +699,19 @@ TEAM_BUSINESSMAN = DarkRP.createJob("Businessman", {
 	hasLicense = false
 })
 
+TEAM_MINEUR = DarkRP.createJob("Mineur", {
+	color = green,
+	model = defaultSkins,
+	description = [[Personne travaillant dans la mine]],
+	weapons = {"zgw_shovel"},
+	command = "mineur",
+	max = 2,
+	salary = 50,
+	admin = 0,
+	hasLicense = false,
+	candemote = false
+})
+
 --[[-------------------------------------------------------------------------
 Banque
 ---------------------------------------------------------------------------]]
