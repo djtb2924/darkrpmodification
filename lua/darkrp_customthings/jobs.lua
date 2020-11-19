@@ -813,19 +813,6 @@ TEAM_CAMBRIOLEUR = DarkRP.createJob("Cambrioleur", {
 	candemote = false
 })
 
-TEAM_MICHTONEUSE = DarkRP.createJob("Michetonneuse", {
-	color = green,
-	model = "models/wrestlers/ashley_massaro.mdl",
-	description = [[Vous récoltez de l'argent.]],
-	weapons = {"swep_pickpocket"},
-	command = "michto",
-	max = 4,
-	salary = 300,
-	admin = 0,
-	hasLicense = false,
-	candemote = false
-})
-
 --[[-------------------------------------------------------------------------
 Gangs
 ---------------------------------------------------------------------------]]
