@@ -22,6 +22,7 @@ Add shipments and guns under the following line:
 --[[-------------------------------------------------------------------------
 Quincailler
 ---------------------------------------------------------------------------]]
+local quincTbl = {TEAM_QUINCAILLER}
 
 -- Restrains
 DarkRP.createShipment("Attaches Serflex", {
@@ -29,10 +30,7 @@ DarkRP.createShipment("Attaches Serflex", {
 	entity = "weapon_r_restrains",
 	amount = 1,
 	price = 50000,
-	separate = false,
-	pricesep = 1000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
+	allowed = quincTbl
 })
 
 -- Bijouterie
@@ -41,10 +39,7 @@ DarkRP.createShipment("Sac à bijoux", {
 	entity = "advancedrobbery_robbery_bag",
 	amount = 1,
 	price = 1000,
-	separate = false,
-	pricesep = 1000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
+	allowed = quincTbl
 })
 
 DarkRP.createShipment("Telephone bijoux", {
@@ -52,10 +47,7 @@ DarkRP.createShipment("Telephone bijoux", {
 	entity = "advancedrobbery_cellphone",
 	amount = 1,
 	price = 1000,
-	separate = false,
-	pricesep = 1000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
+	allowed = quincTbl
 })
 
 DarkRP.createShipment("Marteau brise glace", {
@@ -63,44 +55,54 @@ DarkRP.createShipment("Marteau brise glace", {
 	entity = "jewelry_robbery_hammer",
 	amount = 1,
 	price = 1000,
-	separate = false,
-	pricesep = 1000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
+	allowed = quincTbl
 })
 
 -- Couteaux
-DarkRP.createShipment("Shadow Daggers | Tigger Tooth", {
+local vanillaKnives = {
+	["bayonet"] = 15000,
+	["bowie"] = 20000,
+	["butterfly"] = 8000,
+	["falchion"] = 18000,
+	["flip"] = 10000,
+	["gut"] = 13000,
+	["huntsman"] = 30000,
+	["karambit"] = 200000,
+	["m9"] = 200000
+}
+
+for k, v in pairs(vanillaKnives) do
+	DarkRP.createShipment(string.sub(k, 1, 1):upper() .. string.sub(k, 2), {
+		model = "models/weapons/w_csgo_" .. k .. ".mdl",
+		entity = "csgo_" .. k,
+		price = v,
+		amount = 1,
+		allowed = quincTbl
+	})
+end
+
+DarkRP.createShipment("Dagues | Tigger Tooth", {
 	model = "models/weapons/w_csgo_push.mdl",
 	entity = "csgo_daggers_tiger",
-	amount = 1,
 	price = 30000,
-	separate = false,
-	pricesep = 20000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
+	amount = 1,
+	allowed = quincTbl
 })
 
-DarkRP.createShipment("M9 Bayonet | Fade", {
+DarkRP.createShipment("Baïonnette M9 | Fade", {
 	model = "models/weapons/w_csgo_m9.mdl",
 	entity = "csgo_m9_fade",
 	amount = 1,
 	price = 40000,
-	separate = false,
-	pricesep = 20000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
+	allowed = quincTbl
 })
 
-DarkRP.createShipment("Butterfly | Marble Fade", {
+DarkRP.createShipment("Papillon | Marble Fade", {
 	model = "models/weapons/w_csgo_butterfly.mdl",
 	entity = "csgo_butterfly_marblefade",
 	amount = 1,
 	price = 35000,
-	separate = false,
-	pricesep = 20000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
+	allowed = quincTbl
 })
 
 DarkRP.createShipment("Karambit | Autotronic", {
@@ -108,114 +110,14 @@ DarkRP.createShipment("Karambit | Autotronic", {
 	entity = "csgo_karambit_autotronic",
 	amount = 1,
 	price = 30000,
-	separate = false,
-	pricesep = 20000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
-})
-
-DarkRP.createShipment("Bayonet", {
-	model = "models/weapons/w_csgo_bayonet.mdl",
-	entity = "csgo_bayonet",
-	price = 15000,
-	amount = 1,
-	separate = false,
-	pricesep = 5000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
-})
-
-DarkRP.createShipment("Bowie", {
-	model = "models/weapons/w_csgo_bowie.mdl",
-	entity = "csgo_bowie",
-	price = 20000,
-	amount = 1,
-	separate = false,
-	pricesep = 7000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
-})
-
-DarkRP.createShipment("Butterfly", {
-	model = "models/weapons/w_csgo_butterfly.mdl",
-	entity = "csgo_butterfly_bright",
-	price = 8000,
-	amount = 1,
-	separate = false,
-	pricesep = 3000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
-})
-
-DarkRP.createShipment("Falchion", {
-	model = "models/weapons/w_csgo_falchion.mdl",
-	entity = "csgo_falchion",
-	price = 18000,
-	amount = 1,
-	separate = false,
-	pricesep = 6000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
-})
-
-DarkRP.createShipment("Flip", {
-	model = "models/weapons/w_csgo_flip.mdl",
-	entity = "csgo_flip",
-	price = 10000,
-	amount = 1,
-	separate = false,
-	pricesep = 3500,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
-})
-
-DarkRP.createShipment("Gut", {
-	model = "models/weapons/w_csgo_gut.mdl",
-	entity = "csgo_gut",
-	price = 13000,
-	amount = 1,
-	separate = false,
-	pricesep = 7500,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
-})
-
-DarkRP.createShipment("Huntsman", {
-	model = "models/weapons/w_csgo_tactical.mdl",
-	entity = "csgo_huntsman",
-	price = 30000,
-	amount = 1,
-	separate = false,
-	pricesep = 75000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
-})
-
-DarkRP.createShipment("Karambit", {
-	model = "models/weapons/w_csgo_karambit.mdl",
-	entity = "csgo_karambit",
-	price = 200000,
-	amount = 1,
-	separate = false,
-	pricesep = 75000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
-})
-
-DarkRP.createShipment("M9 Bayonet", {
-	model = "models/weapons/w_csgo_m9.mdl",
-	entity = "csgo_m9",
-	price = 200000,
-	amount = 1,
-	separate = false,
-	pricesep = 75000,
-	noship = false,
-	allowed = {TEAM_QUINCAILLER}
+	allowed = quincTbl
 })
 
 --[[-------------------------------------------------------------------------
 Armurier
 ---------------------------------------------------------------------------]]
+local armuTbl = {TEAM_ARMURIER}
+local trafiTbl = {TEAM_TRAFIQUANT}
 
 -- Snipers
 DarkRP.createShipment("AI AW50", {
@@ -223,10 +125,7 @@ DarkRP.createShipment("AI AW50", {
 	entity = "m9k_aw50",
 	price = 120000,
 	amount = 1,
-	separate = false,
-	pricesep = 500,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 -- Pistolets
@@ -235,10 +134,7 @@ DarkRP.createShipment("HK45", {
 	entity = "m9k_hk45",
 	price = 10000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("Glock", {
@@ -246,10 +142,7 @@ DarkRP.createShipment("Glock", {
 	entity = "m9k_glock",
 	price = 20000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("USP", {
@@ -257,10 +150,7 @@ DarkRP.createShipment("USP", {
 	entity = "m9k_usp",
 	price = 20000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("Berreta", {
@@ -268,10 +158,7 @@ DarkRP.createShipment("Berreta", {
 	entity = "m9k_m92beretta",
 	price = 10000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("P229r", {
@@ -279,10 +166,7 @@ DarkRP.createShipment("P229r", {
 	entity = "m9k_sig_p229r",
 	price = 20000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("Colt 1911", {
@@ -290,10 +174,7 @@ DarkRP.createShipment("Colt 1911", {
 	entity = "m9k_colt1911",
 	price = 15000,
 	amount = 1,
-	separate = false,
-	pricesep = 16000,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("Raging Bull", {
@@ -301,10 +182,7 @@ DarkRP.createShipment("Raging Bull", {
 	entity = "m9k_ragingbull",
 	price = 25000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("M29 Satan", {
@@ -312,10 +190,7 @@ DarkRP.createShipment("M29 Satan", {
 	entity = "m9k_m29satan",
 	price = 15000,
 	amount = 1,
-	separate = false,
-	pricesep = 16000,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("TEC-9", {
@@ -323,10 +198,7 @@ DarkRP.createShipment("TEC-9", {
 	entity = "m9k_tec9",
 	price = 45000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 -- Fusil d'assaut
@@ -335,10 +207,7 @@ DarkRP.createShipment("AK-74", {
 	entity = "m9k_ak74",
 	price = 85000,
 	amount = 1,
-	separate = false,
-	pricesep = 500,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 DarkRP.createShipment("L85", {
@@ -346,10 +215,7 @@ DarkRP.createShipment("L85", {
 	entity = "m9k_l85",
 	price = 120000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 DarkRP.createShipment("MP9", {
@@ -357,10 +223,7 @@ DarkRP.createShipment("MP9", {
 	entity = "m9k_mp9",
 	price = 45000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("Tommy Gun", {
@@ -368,10 +231,7 @@ DarkRP.createShipment("Tommy Gun", {
 	entity = "m9k_thompson",
 	price = 85000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 DarkRP.createShipment("MP5", {
@@ -379,10 +239,7 @@ DarkRP.createShipment("MP5", {
 	entity = "m9k_mp5",
 	price = 45000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("SCAR", {
@@ -390,10 +247,7 @@ DarkRP.createShipment("SCAR", {
 	entity = "m9k_scar",
 	price = 120000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 DarkRP.createShipment("G36C", {
@@ -401,10 +255,7 @@ DarkRP.createShipment("G36C", {
 	entity = "m9k_g36",
 	price = 85000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("M4A1", {
@@ -412,10 +263,7 @@ DarkRP.createShipment("M4A1", {
 	entity = "m9k_m4a1",
 	price = 120000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 DarkRP.createShipment("HK416", {
@@ -423,10 +271,7 @@ DarkRP.createShipment("HK416", {
 	entity = "m9k_m416",
 	price = 120000,
 	amount = 1,
-	separate = false,
-	pricesep = 15000,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 DarkRP.createShipment("KAC PDW", {
@@ -434,10 +279,7 @@ DarkRP.createShipment("KAC PDW", {
 	entity = "m9k_kac_pdw",
 	price = 45000,
 	amount = 1,
-	separate = false,
-	pricesep = 11000,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("FN FAL", {
@@ -445,10 +287,7 @@ DarkRP.createShipment("FN FAL", {
 	entity = "m9k_fal",
 	price = 85000,
 	amount = 1,
-	separate = false,
-	pricesep = 14000,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 -- Fulis à pompe
@@ -457,10 +296,7 @@ DarkRP.createShipment("M 14", {
 	entity = "m9k_m14sp",
 	price = 85000,
 	amount = 1,
-	separate = false,
-	pricesep = 500,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 DarkRP.createShipment("G3 A3", {
@@ -468,10 +304,7 @@ DarkRP.createShipment("G3 A3", {
 	entity = "m9k_g3a3",
 	price = 90000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 DarkRP.createShipment("Mossberg", {
@@ -479,10 +312,7 @@ DarkRP.createShipment("Mossberg", {
 	entity = "m9k_mossberg590",
 	price = 120000,
 	amount = 1,
-	separate = false,
-	pricesep = 14000,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 DarkRP.createShipment("Remington", {
@@ -490,10 +320,7 @@ DarkRP.createShipment("Remington", {
 	entity = "m9k_remington7615p",
 	price = 120000,
 	amount = 1,
-	separate = false,
-	pricesep = 31000,
-	noship = false,
-	allowed = {TEAM_TRAFIQUANT}
+	allowed = trafiTbl
 })
 
 -- SMG
@@ -502,10 +329,7 @@ DarkRP.createShipment("Uzi", {
 	entity = "m9k_uzi",
 	price = 45000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("P90", {
@@ -513,10 +337,7 @@ DarkRP.createShipment("P90", {
 	entity = "m9k_smgp90",
 	price = 45000,
 	amount = 1,
-	separate = false,
-	pricesep = 9500,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 DarkRP.createShipment("Vector", {
@@ -524,10 +345,7 @@ DarkRP.createShipment("Vector", {
 	entity = "m9k_vector",
 	price = 45000,
 	amount = 1,
-	separate = false,
-	pricesep = 10000,
-	noship = false,
-	allowed = {TEAM_ARMURIER}
+	allowed = armuTbl
 })
 
 -- Autres
@@ -536,21 +354,17 @@ DarkRP.createShipment("Kevlar Leger", {
 	entity = "light kevlar armor",
 	price = 20000,
 	amount = 1,
-	separate = false,
-	pricesep = 17500,
-	noship = false,
 	allowed = {TEAM_ARMURIER, TEAM_TRAFIQUANT, TEAM_QUINCAILLER}
 })
+
+local armuQuincTbl = {TEAM_ARMURIER, TEAM_QUINCAILLER}
 
 DarkRP.createShipment("Lockpick", {
 	model = "models/weapons/w_crowbar.mdl",
 	entity = "lockpick",
 	price = 10000,
 	amount = 1,
-	separate = false,
-	pricesep = 5000,
-	noship = false,
-	allowed = {TEAM_ARMURIER, TEAM_QUINCAILLER}
+	allowed = armuQuincTbl
 })
 
 DarkRP.createShipment("KeyPad Cracker", {
@@ -558,10 +372,7 @@ DarkRP.createShipment("KeyPad Cracker", {
 	entity = "keypad_cracker",
 	price = 10000,
 	amount = 1,
-	seperate = false,
-	pricesep = 2000,
-	noship = false,
-	allowed = {TEAM_ARMURIER, TEAM_QUINCAILLER}
+	allowed = armuQuincTbl
 })
 
 DarkRP.createShipment("Kevlar moyen", {
@@ -569,44 +380,29 @@ DarkRP.createShipment("Kevlar moyen", {
 	entity = "medium kevlar armor",
 	price = 40000,
 	amount = 1,
-	separate = false,
-	pricesep = 17500,
-	noship = false,
 	allowed = {TEAM_ARMURIER, TEAM_TRAFIQUANT, TEAM_QUINCAILLER, TEAM_AGS}
 })
 
 --[[-------------------------------------------------------------------------
 Gendarmerie
 ---------------------------------------------------------------------------]]
-
 DarkRP.createShipment("Kevlar Gendarme", {
 	model = "models/props_c17/suitcase_passenger_physics.mdl",
 	entity = "gen_kevlar",
 	price = 1000,
 	amount = 1,
-	separate = false,
-	allowed = {
-		TEAM_GENDARME,
-		TEAM_AGN,
-		TEAM_MGN,
-		TEAM_BRI,
-		TEAM_SDR,
-		TEAM_OFFICIER,
-		TEAM_GENGEN,
-		TEAM_MARECHAL
-	}
+	allowed = {TEAM_GENDARME, TEAM_AGN, TEAM_MGN, TEAM_BRI, TEAM_SDR, TEAM_OFFICIER, TEAM_GENGEN, TEAM_MARECHAL}
 })
 
 -- AGN
+local agnTbl = {TEAM_AGN}
+
 DarkRP.createShipment("[AGN] Beretta M9", {
 	model = "models/weapons/w_beretta_m92.mdl",
 	entity = "m9k_m92beretta",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] HK USP", {
@@ -614,10 +410,7 @@ DarkRP.createShipment("[AGN] HK USP", {
 	entity = "m9k_usp",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] SIG Sauer P229R", {
@@ -625,10 +418,7 @@ DarkRP.createShipment("[AGN] SIG Sauer P229R", {
 	entity = "m9k_sig_p229r",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] Glock 18", {
@@ -636,10 +426,7 @@ DarkRP.createShipment("[AGN] Glock 18", {
 	entity = "m9k_glock",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] Desert Eagle", {
@@ -647,10 +434,7 @@ DarkRP.createShipment("[AGN] Desert Eagle", {
 	entity = "m9k_deagle",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] HK MP5", {
@@ -658,10 +442,7 @@ DarkRP.createShipment("[AGN] HK MP5", {
 	entity = "m9k_mp5",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] MP9", {
@@ -669,10 +450,7 @@ DarkRP.createShipment("[AGN] MP9", {
 	entity = "m9k_mp9",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] MP5 SD", {
@@ -680,10 +458,7 @@ DarkRP.createShipment("[AGN] MP5 SD", {
 	entity = "m9k_mp5sd",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] HK UMP45", {
@@ -691,10 +466,7 @@ DarkRP.createShipment("[AGN] HK UMP45", {
 	entity = "m9k_ump45",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] Tar-21", {
@@ -702,10 +474,7 @@ DarkRP.createShipment("[AGN] Tar-21", {
 	entity = "m9k_tar21",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] M4A1", {
@@ -713,10 +482,7 @@ DarkRP.createShipment("[AGN] M4A1", {
 	entity = "m9k_m4a1",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] HK416", {
@@ -724,10 +490,7 @@ DarkRP.createShipment("[AGN] HK416", {
 	entity = "m9k_m416",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] HK416", {
@@ -735,10 +498,7 @@ DarkRP.createShipment("[AGN] HK416", {
 	entity = "m9k_m416",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] Remington", {
@@ -746,10 +506,7 @@ DarkRP.createShipment("[AGN] Remington", {
 	entity = "m9k_remington870",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] Benelli", {
@@ -757,10 +514,7 @@ DarkRP.createShipment("[AGN] Benelli", {
 	entity = "m9k_m3",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 DarkRP.createShipment("[AGN] Mossberg", {
@@ -768,10 +522,7 @@ DarkRP.createShipment("[AGN] Mossberg", {
 	entity = "m9k_mossberg590",
 	price = 100,
 	amount = 1,
-	seperate = false,
-	pricesep = 155500,
-	noship = false,
-	allowed = {TEAM_AGN}
+	allowed = agnTbl
 })
 
 -- GIGN
@@ -780,9 +531,6 @@ DarkRP.createShipment("MP5 SD", {
 	entity = "m9k_mp5sd",
 	price = 10000,
 	amount = 1,
-	separate = false,
-	pricesep = 17500,
-	noship = false,
 	allowed = {TEAM_AGS}
 })
 
@@ -791,9 +539,6 @@ DarkRP.createShipment("Herse-Ammo", {
 	entity = "nova_spikestrip_ammo",
 	price = 10000,
 	amount = 4,
-	separate = false,
-	pricesep = 10000,
-	noship = false,
 	allowed = {TEAM_GIGNGENERAL, TEAM_GENGEN}
 })
 
@@ -802,9 +547,6 @@ DarkRP.createShipment("USAS", {
 	entity = "m9k_usas",
 	price = 10000,
 	amount = 1,
-	separate = false,
-	pricesep = 10000,
-	noship = false,
 	allowed = {TEAM_GIGNGENERAL}
 })
 
@@ -813,497 +555,128 @@ DarkRP.createShipment("Paquetage", {
 	entity = "gign_package",
 	price = 5000,
 	amount = 1,
-	separate = false,
-	pricesep = 500,
-	noship = false,
 	allowed = {TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_INGEGIGN, TEAM_SOLDATGIGN, TEAM_SNIPERGIGN, TEAM_OSUGIGN, TEAM_GIGNGENERAL}
 })
 
 --[[-------------------------------------------------------------------------
 Armes VIP
 ---------------------------------------------------------------------------]]
-
--- ARMES --
-local diamond = {}
-
-diamond.Ranks = {
-	["superadmin"] = true,
-	["users"] = true,
-	["chef serveur"] = true,
-	["admin"] = true,
-	["moderateur"] = true,
-	["moderateur test"] = true,
-	["helpeur"] = true,
-	["helpeur test"] = true,
-	["VIPDiamant"] = true
+local vipRanks = {
+	"superadmin",
+	"users",
+	"chef serveur",
+	"admin",
+	"moderateur",
+	"moderateur test",
+	"helpeur",
+	"helpeur test",
+	"VIPDiamant",
+	"VIPPlatinium",
+	"VIPPrenium",
+	"VIP+",
+	"VIP"
 }
 
-function diamond.check(ply)
-	return diamond.Ranks[ply:GetUserGroup()] or false
+local function getKeysTable(tbl)
+	local kv = {}
+
+	for i = 1, #tbl do
+		kv[tbl[i]] = true
+	end
+
+	return kv
 end
 
-diamond.weps = {
-	{"AK-103 Evil Santa", "wf_wpn_ar04_xmas02", "models/weapons/rifleman/ar04/santa/worldmodel.mdl"},
-	{"Syndicate AK Alpha", "wf_wpn_ar29_bp05", "models/weapons/rifleman/ar29/syndicate/worldmodel.mdl"},
-	{"AK Alpha Desert", "wf_wpn_ar29_desert01", "models/weapons/rifleman/ar29/desert/worldmodel.mdl"},
-	{"Gold SIG Sauer P226", "wf_wpn_pt14_gold01", "models/weapons/pistols/pt14/gold/worldmodel.mdl"},
-	{"Gold SCAR-L PDW", "wf_wpn_smg31_gold01", "models/weapons/engineer/smg31/gold/worldmodel.mdl"},
-	{"Gold CZ Scorpion Evo3 A1", "wf_wpn_smg38_gold01", "models/weapons/engineer/smg38/gold/worldmodel.mdl"},
-	{"Dragunov SR Shiny Metal Set", "wf_wpn_sr02_camo05", "models/weapons/sniper/sr02/sms/worldmodel.mdl"},
-	{"Gold Steyr Scout", "wf_wpn_sr34_gold01", "models/weapons/sniper/sr34/gold/worldmodel.mdl"},
-	{"K.I.W.I. Gepard GM6 Lynx", "wf_wpn_sr43_set12", "models/weapons/sniper/sr43/kiwi/worldmodel.mdl"}
+local vipWeapons = {
+	[1] = {	-- VIP
+		{"Luger", "wf_wpn_pt41", "models/weapons/pistols/pt41/worldmodel.mdl"},
+
+		{"Baïonnette | Ultraviolet", "csgo_bayonet_ultraviolet", "models/weapons/w_csgo_bayonet.mdl"}
+	},
+	[2] = {	-- VIP+
+		{"SIG Sauer P226", "wf_wpn_pt14", "models/weapons/pistols/pt14/worldmodel.mdl"},
+		{"Icebreaker SIG Sauer P226", "wf_wpn_pt14_ice01", "models/weapons/pistols/pt14/icebreaker/worldmodel.mdl"},
+
+		{"Baïonnette | Autotronic", "csgo_bayonet_autotronic", "models/weapons/w_csgo_bayonet.mdl"},
+		{"Karambit | Blue Steel", "csgo_karambit_bluesteel", "models/weapons/w_csgo_karambit.mdl"}
+	},
+	[3] = {	-- VIPPrenium
+		{"Earth Shaker SIG Sauer P226", "wf_wpn_pt14_lava01", "models/weapons/pistols/pt14/magma/worldmodel.mdl"},
+		{"H&K MP5", "wf_wpn_smg04", "models/weapons/engineer/smg04/worldmodel.mdl"},
+		{"SCAR-L PDW", "wf_wpn_smg31", "models/weapons/engineer/smg31/worldmodel.mdl"},
+		{"CZ Scorpion Evo3 A1", "wf_wpn_smg38", "models/weapons/engineer/smg38/worldmodel.mdl"},
+
+		{"Papillon | Fade", "csgo_butterfly_fade", "models/weapons/w_csgo_butterfly.mdl"},
+		{"Fauchon | Crimson Webs", "csgo_falchion_crimsonwebs", "models/weapons/w_csgo_falchion.mdl"}
+	},
+	[4] = {	-- VIPPlatinium
+		{"AN-94 N", "m9k_an94n", "models/weapons/w_rif_an_94.mdl"},
+		{"M249 LMG", "m9k_m249lmg", "models/weapons/w_m249_machine_gun.mdl"},
+		{"Striker 12", "m9k_striker12", "models/weapons/w_striker_12g.mdl"},
+		{"Barret M98B", "m9k_m98b", "models/weapons/w_barrett_m98b.mdl"},
+		{"M4A1", "wf_wpn_ar02", "models/weapons/rifleman/ar02/worldmodel.mdl"},
+		{"Anubis AK-103", "wf_wpn_ar04_afro01", "models/weapons/rifleman/ar04/anubis/worldmodel.mdl"},
+		{"AK-103 Shiny Metal Set", "wf_wpn_ar04_camo05", "models/weapons/rifleman/ar04/sms/worldmodel.mdl"},
+		{"Absolute AK Alpha", "wf_wpn_ar29_set10", "models/weapons/rifleman/ar29/absolute/worldmodel.mdl"},
+		{"SCAR-L PDW World Tournament", "wf_wpn_smg31_ec02", "models/weapons/engineer/smg31/tournament/worldmodel.mdl"},
+		{"Earth Shaker SCAR-L PDW", "wf_wpn_smg31_lava01", "models/weapons/engineer/smg31/magma/worldmodel.mdl"},
+		{"Syndicate KRISS Super V Custom", "wf_wpn_smg44_bp05", "models/weapons/engineer/smg44/syndicate/worldmodel.mdl"},
+		{"K.I.W.I. KRISS Super V Custom", "wf_wpn_smg44_set12", "models/weapons/engineer/smg44/kiwi/worldmodel.mdl"},
+		{"Black Shark Steyr Scout", "wf_wpn_sr34_zsd02", "models/weapons/sniper/sr34/ck/worldmodel.mdl"},
+
+		{"Papillon | Tiger Tooth", "csgo_butterfly_tiger", "models/weapons/w_csgo_butterfly.mdl"},
+		{"Flip | Marble Fade", "csgo_flip_marblefade", "models/weapons/w_csgo_flip.mdl"},
+		{"Karambit | Lore", "csgo_karambit_lore", "models/weapons/w_csgo_karambit.mdl"},
+		{"Baïonnette M9 | Gamma Doppler", "csgo_m9_gamma_doppler", "models/weapons/w_csgo_m9.mdl"},
+		{"Stiletto", "csgo_stiletto", "models/weapons/horizon/w_csgo_stiletto.mdl"}
+	},
+	[5] = {	-- VIPDiamant
+		{"AK-103 Evil Santa", "wf_wpn_ar04_xmas02", "models/weapons/rifleman/ar04/santa/worldmodel.mdl"},
+		{"Syndicate AK Alpha", "wf_wpn_ar29_bp05", "models/weapons/rifleman/ar29/syndicate/worldmodel.mdl"},
+		{"AK Alpha Desert", "wf_wpn_ar29_desert01", "models/weapons/rifleman/ar29/desert/worldmodel.mdl"},
+		{"Gold SIG Sauer P226", "wf_wpn_pt14_gold01", "models/weapons/pistols/pt14/gold/worldmodel.mdl"},
+		{"Gold SCAR-L PDW", "wf_wpn_smg31_gold01", "models/weapons/engineer/smg31/gold/worldmodel.mdl"},
+		{"Gold CZ Scorpion Evo3 A1", "wf_wpn_smg38_gold01", "models/weapons/engineer/smg38/gold/worldmodel.mdl"},
+		{"Dragunov SR Shiny Metal Set", "wf_wpn_sr02_camo05", "models/weapons/sniper/sr02/sms/worldmodel.mdl"},
+		{"Gold Steyr Scout", "wf_wpn_sr34_gold01", "models/weapons/sniper/sr34/gold/worldmodel.mdl"},
+		{"K.I.W.I. Gepard GM6 Lynx", "wf_wpn_sr43_set12", "models/weapons/sniper/sr43/kiwi/worldmodel.mdl"},
+
+		{"Baïonnette | Forest DDPAT", "csgo_bayonet_ddpat", "models/weapons/w_csgo_bayonet.mdl"},
+		{"Bowie | Ultraviolet", "csgo_bowie_ultraviolet", "models/weapons/w_csgo_bowie.mdl"},
+		{"Dagues | Gamma Doppler", "csgo_daggers_gamma_doppler", "models/weapons/w_csgo_push.mdl"},
+		{"Dagues | Slaughter", "csgo_daggers_slaughter", "models/weapons/w_csgo_push.mdl"},
+		{"Gut | Autotronic", "csgo_gut_autotronic", "models/weapons/w_csgo_gut.mdl"},
+		{"Chasseur | Night", "csgo_huntsman_night", "models/weapons/w_csgo_tactical.mdl"},
+		{"Karambit | Gamma Doppler", "csgo_karambit_gamma_doppler", "models/weapons/w_csgo_karambit.mdl"},
+		{"Baïonnette M9 | Fade", "csgo_m9_fade", "models/weapons/w_csgo_m9.mdl"},
+		{"Baïonnette M9 | Lore", "csgo_m9_lore", "models/weapons/w_csgo_m9.mdl"},
+		{"Ursus", "csgo_ursus", "models/weapons/horizon/w_csgo_ursus.mdl"}
+	}
 }
 
-for i = 1, #diamond.weps do
-	local diamondWep = diamond.weps[i]
-	DarkRP.createShipment(diamondWep[1], {
-		model = diamondWep[3],
-		entity = diamondWep[2],
-		price = 40000,
-		amount = 1,
-		separate = true,
-		pricesep = 40000,
-		noship = true,
-		customCheck = diamond.check
-	})
+for i, weps in ipairs(vipWeapons) do
+	local keysTable = getKeysTable(vipRanks)
+
+	local customCheck = function(ply)
+		return keysTable[ply:GetUserGroup()] or false
+	end
+
+	for j = 1, #weps do
+		local weapon = weps[j]
+
+		local price = weapon[2]:sub(1, 4) == "csgo" and 10000 or 40000
+
+		DarkRP.createShipment(weapon[1], {
+			model = weapon[3],
+			entity = weapon[2],
+			price = price,
+			amount = 1,
+			separate = true,
+			pricesep = price,
+			noship = true,
+			customCheck = customCheck
+		})
+	end
+
+	table.remove(vipRanks)
 end
-
-local platinium = {}
-
-platinium.Ranks = {
-	["superadmin"] = true,
-	["users"] = true,
-	["chef serveur"] = true,
-	["admin"] = true,
-	["moderateur"] = true,
-	["moderateur test"] = true,
-	["helpeur"] = true,
-	["helpeur test"] = true,
-	["VIPDiamant"] = true,
-	["VIPPlatinium"] = true
-}
-
-function platinium.check(ply)
-	return platinium.Ranks[ply:GetUserGroup()] or false
-end
-
-platinium.weps = {
-	{"AN-94 N", "m9k_an94n", "models/weapons/w_rif_an_94.mdl"},
-	{"M249 LMG", "m9k_m249lmg", "models/weapons/w_m249_machine_gun.mdl"},
-	{"Striker 12", "m9k_striker12", "models/weapons/w_striker_12g.mdl"},
-	{"Barret M98B", "m9k_m98b", "models/weapons/w_barrett_m98b.mdl"},
-	{"M4A1", "wf_wpn_ar02", "models/weapons/rifleman/ar02/worldmodel.mdl"},
-	{"Anubis AK-103", "wf_wpn_ar04_afro01", "models/weapons/rifleman/ar04/anubis/worldmodel.mdl"},
-	{"AK-103 Shiny Metal Set", "wf_wpn_ar04_camo05", "models/weapons/rifleman/ar04/sms/worldmodel.mdl"},
-	{"Absolute AK Alpha", "wf_wpn_ar29_set10", "models/weapons/rifleman/ar29/absolute/worldmodel.mdl"},
-	{"SCAR-L PDW World Tournament", "wf_wpn_smg31_ec02", "models/weapons/engineer/smg31/tournament/worldmodel.mdl"},
-	{"Earth Shaker SCAR-L PDW", "wf_wpn_smg31_lava01", "models/weapons/engineer/smg31/magma/worldmodel.mdl"},
-	{"Syndicate KRISS Super V Custom", "wf_wpn_smg44_bp05", "models/weapons/engineer/smg44/syndicate/worldmodel.mdl"},
-	{"K.I.W.I. KRISS Super V Custom", "wf_wpn_smg44_set12", "models/weapons/engineer/smg44/kiwi/worldmodel.mdl"},
-	{"Black Shark Steyr Scout", "wf_wpn_sr34_zsd02", "models/weapons/sniper/sr34/ck/worldmodel.mdl"}
-}
-
-for i = 1, #platinium.weps do
-	local platiniumWep = platinium.weps[i]
-	DarkRP.createShipment(platiniumWep[1], {
-		model = platiniumWep[3],
-		entity = platiniumWep[2],
-		price = 40000,
-		amount = 1,
-		separate = true,
-		pricesep = 40000,
-		noship = true,
-		customCheck = platinium.check
-	})
-end
-
-local premium = {}
-
-premium.Ranks = {
-	["superadmin"] = true,
-	["users"] = true,
-	["chef serveur"] = true,
-	["admin"] = true,
-	["moderateur"] = true,
-	["moderateur test"] = true,
-	["helpeur"] = true,
-	["helpeur test"] = true,
-	["VIPDiamant"] = true,
-	["VIPPlatinium"] = true,
-	["VIPPrenium"] = true
-}
-
-function premium.check(ply)
-	return premium.Ranks[ply:GetUserGroup()] or false
-end
-
-premium.weps = {
-	{"Earth Shaker SIG Sauer P226", "wf_wpn_pt14_lava01", "models/weapons/pistols/pt14/magma/worldmodel.mdl"},
-	{"H&K MP5", "wf_wpn_smg04", "models/weapons/engineer/smg04/worldmodel.mdl"},
-	{"SCAR-L PDW", "wf_wpn_smg31", "models/weapons/engineer/smg31/worldmodel.mdl"},
-	{"CZ Scorpion Evo3 A1", "wf_wpn_smg38", "models/weapons/engineer/smg38/worldmodel.mdl"}
-}
-
-for i = 1, #premium.weps do
-	local premiumWep = premium.weps[i]
-	DarkRP.createShipment(premiumWep[1], {
-		model = premiumWep[3],
-		entity = premiumWep[2],
-		price = 40000,
-		amount = 1,
-		separate = true,
-		pricesep = 40000,
-		noship = true,
-		customCheck = premium.check
-	})
-end
-
-local plus = {}
-
-plus.Ranks = {
-	["superadmin"] = true,
-	["users"] = true,
-	["chef serveur"] = true,
-	["admin"] = true,
-	["moderateur"] = true,
-	["moderateur test"] = true,
-	["helpeur"] = true,
-	["helpeur test"] = true,
-	["VIPDiamant"] = true,
-	["VIPPlatinium"] = true,
-	["VIPPrenium"] = true,
-	["VIP+"] = true
-}
-
-function plus.check(ply)
-	return plus.Ranks[ply:GetUserGroup()] or false
-end
-
-plus.weps = {
-	{"SIG Sauer P226", "wf_wpn_pt14", "models/weapons/pistols/pt14/worldmodel.mdl"},
-	{"Icebreaker SIG Sauer P226", "wf_wpn_pt14_ice01", "models/weapons/pistols/pt14/icebreaker/worldmodel.mdl"}
-}
-
-for i = 1, #plus.weps do
-	local plusWep = plus.weps[i]
-	DarkRP.createShipment(plusWep[1], {
-		model = plusWep[3],
-		entity = plusWep[2],
-		price = 40000,
-		amount = 1,
-		separate = true,
-		pricesep = 40000,
-		noship = true,
-		customCheck = plus.check
-	})
-end
-
-local vip = {}
-
-vip.Ranks = {
-	["superadmin"] = true,
-	["users"] = true,
-	["chef serveur"] = true,
-	["admin"] = true,
-	["moderateur"] = true,
-	["moderateur test"] = true,
-	["helpeur"] = true,
-	["helpeur test"] = true,
-	["VIPDiamant"] = true,
-	["VIPPlatinium"] = true,
-	["VIPPrenium"] = true,
-	["VIP+"] = true,
-	["VIP"] = true
-}
-
-function vip.check(ply)
-	return vip.Ranks[ply:GetUserGroup()] or false
-end
-
-DarkRP.createShipment("Luger", {
-	model = "models/weapons/pistols/pt41/worldmodel.mdl",
-	entity = "wf_wpn_pt41",
-	price = 40000,
-	amount = 1,
-	separate = true,
-	pricesep = 40000,
-	noship = true,
-	customCheck = vip.check
-})
-
--- KNIFES --
-DarkRP.createShipment("Csgo M9 Lore", {
-	model = "models/weapons/w_csgo_m9.mdl",
-	entity = "csgo_m9_lore",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Karambit Gamma Doppler", {
-	model = "models/weapons/w_csgo_karambit.mdl",
-	entity = "csgo_karambit_gamma_doppler",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Gut Lore", {
-	model = "models/weapons/w_csgo_gut.mdl",
-	entity = "csgo_gut_lore",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Gut Gamma Doppler", {
-	model = "models/weapons/w_csgo_gut.mdl",
-	entity = "csgo_gut_gamma_doppler",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Flip Lore", {
-	model = "models/weapons/w_csgo_flip.mdl",
-	entity = "csgo_flip_lore",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Flip Gamma Doppler", {
-	model = "models/weapons/w_csgo_flip.mdl",
-	entity = "csgo_flip_gamma_doppler",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Bayonet Lore", {
-	model = "models/weapons/w_csgo_bayonet.mdl",
-	entity = "csgo_bayonet_lore",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Bayonet Gamma Doppler", {
-	model = "models/weapons/w_csgo_bayonet.mdl",
-	entity = "csgo_bayonet_gamma_doppler",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Karambit Ultraviolet", {
-	model = "models/weapons/w_csgo_karambit.mdl",
-	entity = "csgo_karambit_ultraviolet",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "VIPPrenium", "VIP", "VIP+", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP "
-})
-
-DarkRP.createShipment("Csgo Bayonet Ultraviolet", {
-	model = "models/weapons/w_csgo_bayonet.mdl",
-	entity = "csgo_bayonet_ultraviolet",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "VIPPrenium", "VIP", "VIP+", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP "
-})
-
-DarkRP.createShipment("Csgo Bowie Tiger", {
-	model = "models/weapons/w_csgo_bowie.mdl",
-	entity = "csgo_bowie_tiger",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "VIPPrenium", "VIP+", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP "
-})
-
-DarkRP.createShipment("Csgo Bayonet Autotronic", {
-	model = "models/weapons/w_csgo_bayonet.mdl",
-	entity = "csgo_bayonet_autotronic",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "VIPPrenium", "VIP+", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP "
-})
-
-DarkRP.createShipment("Csgo Papillon Fade", {
-	model = "models/weapons/w_csgo_butterfly.mdl",
-	entity = "csgo_butterfly_fade",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPrenium", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Falchion Fade", {
-	model = "models/weapons/w_csgo_falchion.mdl",
-	entity = "csgo_falchion_fade",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPrenium", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Flip Damascus", {
-	model = "models/weapons/w_csgo_flip.mdl",
-	entity = "csgo_flip_damascus",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Flip Damascus", {
-	model = "models/weapons/w_csgo_flip.mdl",
-	entity = "csgo_flip_damascus",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIP+", "VIPPrenium", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Falchion Ultraviolet", {
-	model = "models/weapons/w_csgo_falchion.mdl",
-	entity = "csgo_falchion_ultraviolet",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Karambit Ddpat", {
-	model = "models/weapons/w_csgo_karambit.mdl",
-	entity = "csgo_karambit_ddpat",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Karambit Ddpat", {
-	model = "models/weapons/w_csgo_karambit.mdl",
-	entity = "csgo_karambit_ddpat",
-	amount = 1,
-	price = 50000,
-	separate = true,
-	pricesep = 50000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIP+"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Karambit Freehand", {
-	model = "models/weapons/w_csgo_karambit.mdl",
-	entity = "csgo_karambit_freehand",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Falchion Gamma Doppler", {
-	model = "models/weapons/w_csgo_falchion.mdl",
-	entity = "csgo_falchion_gamma_doppler",
-	amount = 1,
-	price = 10000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo Karambit Lore", {
-	model = "models/weapons/w_csgo_karambit.mdl",
-	entity = "csgo_karambit_lore",
-	amount = 1,
-	price = 100000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})
-
-DarkRP.createShipment("Csgo M9 Gamma", {
-	model = "models/weapons/w_csgo_m9.mdl",
-	entity = "csgo_m9_gamma_doppler",
-	amount = 1,
-	price = 100000,
-	separate = true,
-	pricesep = 10000,
-	noship = true,
-	customCheck = function(ply) return table.HasValue({"VIPDiamant", "VIPPlatinium", "helpeur", "helpeur test", "superadmin", "admin", "moderateur test", "moderateur"}, ply:GetNWString("usergroup")) end,
-	CustomCheckFailMsg = "Armes disponible que pour les VIP Platinum"
-})

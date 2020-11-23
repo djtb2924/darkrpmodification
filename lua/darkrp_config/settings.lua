@@ -141,7 +141,7 @@ GM.Config.respawninjail                 = true
 -- restrictallteams - Enable/disable Players can only be citizen until an admin allows them.
 GM.Config.restrictallteams              = false
 -- restrictbuypistol - Enabling this feature makes /buy available only to Gun Dealers.
-GM.Config.restrictbuypistol             = false
+GM.Config.restrictbuypistol             = true
 -- restrictdrop - Enable/disable restricting the weapons players can drop. Setting this to true disallows weapons from shipments from being dropped.
 GM.Config.restrictdrop                  = false
 -- revokeLicenseOnJobChange - Whether licenses are revoked when a player changes jobs.
