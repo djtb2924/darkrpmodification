@@ -1484,7 +1484,8 @@ TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
 	max = 2,
 	salary = 1000,
 	admin = 0,
-	hasLicense = false
+	hasLicense = false,
+	candemote = false
 })
 
 --[[-------------------------------------------------------------------------
