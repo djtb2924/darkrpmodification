@@ -164,9 +164,9 @@ TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 TEAM_GENDARME = DarkRP.createJob("Gendarme", {
 	color = blue,
 	model = {
-		"models/player/darkley/gendarmerie_01.mdl",
-		"models/player/darkley/gendarmerie_02.mdl",
-		"models/player/darkley/gendarmerie_03.mdl"
+		"models/player/rico/gendarmerie_nationalev401.mdl",
+		"models/player/rico/gendarmerie_nationalev402.mdl",
+		"models/player/rico/gendarmerie_nationalev403.mdl"
 	},
 	description = [[Militaire appartenant à une formation de la gendarmerie nationale.]],
 	weapons = {
@@ -280,6 +280,7 @@ TEAM_BRI = DarkRP.createJob("BRI", {
 	model = {
 		"models/player/rico/gend_polaire.mdl",
 		"models/darkley/motard_01.mdl",
+		"models/darkley/motard_02.mdl",
 		"models/darkley/motard_03.mdl"
 	},
 	description = [[Brigade Rapide d'intervention]],
