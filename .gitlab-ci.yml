@@ -4,7 +4,8 @@ deploy1:
   environment:
     name: production
   only:
-    - server1
+    refs:
+      - server1
   script:
     - apk add openssh --no-cache
     - mkdir -p ~/.ssh
@@ -24,7 +25,8 @@ deploy3:
   environment:
     name: production
   only:
-    - server3
+    refs:
+      - server3
   script:
     - apk add openssh --no-cache
     - mkdir -p ~/.ssh
@@ -44,7 +46,8 @@ deploy4:
   environment:
     name: production
   only:
-    - server4
+    refs:
+      - server4
   script:
     - apk add openssh --no-cache
     - mkdir -p ~/.ssh
