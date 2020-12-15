@@ -345,10 +345,7 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply)
-		ply:SetHealth(100)
-		ply:SetArmor(200)
-	end
+	PlayerLoadout = loadout(200)
 })
 
 TEAM_GENGEN = DarkRP.createJob("Général", {
@@ -673,10 +670,7 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = function(ply)
-		ply:SetHealth(100)
-		ply:SetArmor(290)
-	end
+	PlayerLoadout = loadout(290)
 })
 
 --[[-------------------------------------------------------------------------
