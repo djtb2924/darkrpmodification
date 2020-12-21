@@ -1331,7 +1331,8 @@ TEAM_METH = DarkRP.createJob("Fabriquant de Meth", {
 	max = 3,
 	salary = 200,
 	admin = 0,
-	hasLicense = false
+	hasLicense = false,
+	candemote = false
 })
 
 TEAM_WEED = DarkRP.createJob("Fabriquant de Weed", {
