@@ -6,7 +6,7 @@ ALL other weapons will require a license
 Note: this only works if the license setting is enabled
 ---------------------------------------------------------------------------]]
 
--- Copyright © LiveYourGame, 2020
+-- Copyright © LiveYourGame, 2021
 
 GM.NoLicense["weapon_physcannon"] = true
 GM.NoLicense["weapon_physgun"]    = true

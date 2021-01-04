@@ -1,4 +1,4 @@
--- Copyright © LiveYourGame, 2020
+-- Copyright © LiveYourGame, 2021
 
 DarkRP.declareChatCommand{
     command = "tow",
