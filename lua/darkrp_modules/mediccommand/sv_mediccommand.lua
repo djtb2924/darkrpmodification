@@ -15,7 +15,7 @@ local function medic(ply, args)
         local players = player.GetAll()
         for i = 1, #players do
             if players[i]:Team() == TEAM_SAMU or players[i] == ply then
-                DarkRP.talkToPerson(players[i], col, "(Dépannage) " .. name, green, text, ply)
+                DarkRP.talkToPerson(players[i], col, "(Samu) " .. name, green, text, ply)
             end
         end
     end
