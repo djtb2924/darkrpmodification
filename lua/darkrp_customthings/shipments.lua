@@ -66,7 +66,6 @@ local vanillaKnives = {
 	["falchion"] = 18000,
 	["flip"] = 10000,
 	["gut"] = 13000,
-	["huntsman"] = 30000,
 	["karambit"] = 200000,
 	["m9"] = 200000
 }
@@ -114,265 +113,67 @@ DarkRP.createShipment("Karambit | Autotronic", {
 })
 
 --[[-------------------------------------------------------------------------
-Armurier
+Armes
 ---------------------------------------------------------------------------]]
-local armuTbl = {TEAM_ARMURIER}
-local trafiTbl = {TEAM_TRAFIQUANT}
 
--- Snipers
-DarkRP.createShipment("AI AW50", {
-	model = "models/weapons/w_acc_int_aw50.mdl",
-	entity = "m9k_aw50",
-	price = 120000,
-	amount = 1,
-	allowed = trafiTbl
-})
+local function createShipments(weps, sellers)
+	for i = 1, #weps do
+		DarkRP.createShipment(weps[i][1], {
+			model = weps[i][3],
+			entity = weps[i][2],
+			price = weps[i][4],
+			amount = 1,
+			allowed = sellers
+		})
+	end
+end
 
--- Pistolets
-DarkRP.createShipment("HK45", {
-	model = "models/weapons/w_hk45c.mdl",
-	entity = "m9k_hk45",
-	price = 10000,
-	amount = 1,
-	allowed = armuTbl
-})
+local armuWeps = {
+	-- Pistols
+	{"Raging Bull - Scoped", "m9k_scoped_taurus", "models/weapons/w_raging_bull_scoped.mdl", 60000},
+	{"Glock 18", "m9k_glock", "models/weapons/w_dmg_glock.mdl", 60000},
+	{"Desert Eagle", "m9k_deagle", "models/weapons/w_tcom_deagle.mdl", 60000},
+	{"HK USP", "m9k_usp", "models/weapons/w_pist_fokkususp.mdl", 50000},
+	{"M92 Beretta", "m9k_m92beretta", "models/weapons/w_beretta_m92.mdl", 40000},
+	{"HK45C", "m9k_hk45", "models/weapons/w_hk45c.mdl", 40000},
+	{"Colt 1911", "m9k_colt1911", "models/weapons/s_dmgf_co1911.mdl", 40000},
+	-- SMGs
+	{"KRISS Vector", "m9k_vector", "models/weapons/w_kriss_vector.mdl", 80000},
+	{"TEC-9", "m9k_tec9", "models/weapons/w_intratec_tec9.mdl", 75000},
+	{"FN P90", "m9k_smgp90", "models/weapons/w_fn_p90.mdl", 75000},
+	{"HK MP5", "m9k_mp5", "models/weapons/w_hk_mp5.mdl", 75000},
+	{"HK MP7", "m9k_mp7", "models/weapons/w_mp7_silenced.mdl", 50000},
+}
+createShipments(armuWeps, {TEAM_ARMURIER})
 
-DarkRP.createShipment("Glock", {
-	model = "models/weapons/w_dmg_glock.mdl",
-	entity = "m9k_glock",
-	price = 20000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("USP", {
-	model = "models/weapons/w_pist_fokkususp.mdl",
-	entity = "m9k_usp",
-	price = 20000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("Berreta", {
-	model = "models/weapons/w_beretta_m92.mdl",
-	entity = "m9k_m92beretta",
-	price = 10000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("P229r", {
-	model = "models/weapons/w_sig_229r.mdl",
-	entity = "m9k_sig_p229r",
-	price = 20000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("Colt 1911", {
-	model = "models/weapons/s_dmgf_co1911.mdl",
-	entity = "m9k_colt1911",
-	price = 15000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("Raging Bull", {
-	model = "models/weapons/w_taurus_raging_bull.mdl",
-	entity = "m9k_ragingbull",
-	price = 25000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("M29 Satan", {
-	model = "models/weapons/w_m29_satan.mdl",
-	entity = "m9k_m29satan",
-	price = 15000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("TEC-9", {
-	model = "models/weapons/w_intratec_tec9.mdl",
-	entity = "m9k_tec9",
-	price = 45000,
-	amount = 1,
-	allowed = armuTbl
-})
-
--- Fusil d'assaut
-DarkRP.createShipment("AK-74", {
-	model = "models/weapons/w_tct_ak47.mdl",
-	entity = "m9k_ak74",
-	price = 85000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
-DarkRP.createShipment("L85", {
-	model = "models/weapons/w_l85a2.mdl",
-	entity = "m9k_l85",
-	price = 120000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
-DarkRP.createShipment("MP9", {
-	model = "models/weapons/w_brugger_thomet_mp9.mdl",
-	entity = "m9k_mp9",
-	price = 45000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("Tommy Gun", {
-	model = "models/weapons/w_tommy_gun.mdl",
-	entity = "m9k_thompson",
-	price = 85000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
-DarkRP.createShipment("MP5", {
-	model = "models/weapons/w_hk_mp5.mdl",
-	entity = "m9k_mp5",
-	price = 45000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("SCAR", {
-	model = "models/weapons/w_fn_scar_h.mdl",
-	entity = "m9k_scar",
-	price = 120000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
-DarkRP.createShipment("G36C", {
-	model = "models/weapons/w_hk_g36c.mdl",
-	entity = "m9k_g36",
-	price = 85000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("M4A1", {
-	model = "models/weapons/w_m4a1_iron.mdl",
-	entity = "m9k_m4a1",
-	price = 120000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
-DarkRP.createShipment("HK416", {
-	model = "models/weapons/w_hk_416.mdl",
-	entity = "m9k_m416",
-	price = 120000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
-DarkRP.createShipment("KAC PDW", {
-	model = "models/weapons/w_kac_pdw.mdl",
-	entity = "m9k_kac_pdw",
-	price = 45000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("FN FAL", {
-	model = "models/weapons/w_fn_fal.mdl",
-	entity = "m9k_fal",
-	price = 85000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
--- Fulis à pompe
-DarkRP.createShipment("M 14", {
-	model = "models/weapons/w_snip_m14sp.mdl",
-	entity = "m9k_m14sp",
-	price = 85000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
-DarkRP.createShipment("G3 A3", {
-	model = "models/weapons/w_hk_g3.mdl",
-	entity = "m9k_g3a3",
-	price = 90000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
-DarkRP.createShipment("Mossberg", {
-	model = "models/weapons/w_mossberg_590.mdl",
-	entity = "m9k_mossberg590",
-	price = 120000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
-DarkRP.createShipment("Remington", {
-	model = "models/weapons/w_remington_7615p.mdl",
-	entity = "m9k_remington7615p",
-	price = 120000,
-	amount = 1,
-	allowed = trafiTbl
-})
-
--- SMG
-DarkRP.createShipment("Uzi", {
-	model = "models/weapons/w_uzi_imi.mdl",
-	entity = "m9k_uzi",
-	price = 45000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("P90", {
-	model = "models/weapons/w_fn_p90.mdl",
-	entity = "m9k_smgp90",
-	price = 45000,
-	amount = 1,
-	allowed = armuTbl
-})
-
-DarkRP.createShipment("Vector", {
-	model = "models/weapons/w_kriss_vector.mdl",
-	entity = "m9k_vector",
-	price = 45000,
-	amount = 1,
-	allowed = armuTbl
-})
+local trafiWeps = {
+	-- Rifles
+	{"SCAR", "m9k_scar", "models/weapons/w_fn_scar_h.mdl", 100000},
+	{"TAR-21", "m9k_tar21", "models/weapons/w_imi_tar21.mdl", 100000},
+	{"HK 416", "m9k_m416", "models/weapons/w_hk_416.mdl", 120000},
+	{"M4A1 Iron", "m9k_m4a1", "models/weapons/w_m4a1_iron.mdl", 120000},
+	{"AK-47", "m9k_ak47", "models/weapons/w_ak47_m9k.mdl", 80000},
+	-- Snipers
+	{"Intervention", "m9k_intervention", "models/weapons/w_snip_int.mdl", 110000},
+	{"AI AW50", "m9k_aw50", "models/weapons/w_acc_int_aw50.mdl", 130000},
+	{"Remington 7615P", "m9k_remington7615p", "models/weapons/w_remington_7615p.mdl", 90000},
+	-- Shotguns
+	{"Mossberg 590", "m9k_mossberg590", "models/weapons/w_mossberg_590.mdl", 115000},
+	{"Winchester 87", "m9k_1887winchester", "models/weapons/w_winchester_1887.mdl", 125000},
+	{"Benelli M3", "m9k_m3", "models/weapons/w_benelli_m3.mdl", 150000},
+}
+createShipments(trafiWeps, {TEAM_TRAFIQUANT})
 
 -- Autres
+
+local allSellers = {TEAM_ARMURIER, TEAM_TRAFIQUANT, TEAM_QUINCAILLER}
+
 DarkRP.createShipment("Kevlar Leger", {
 	model = "models/combine_vests/bogvest.mdl",
 	entity = "light kevlar armor",
 	price = 20000,
 	amount = 1,
-	allowed = {TEAM_ARMURIER, TEAM_TRAFIQUANT, TEAM_QUINCAILLER}
-})
-
-local armuQuincTbl = {TEAM_ARMURIER, TEAM_QUINCAILLER}
-
-DarkRP.createShipment("Lockpick", {
-	model = "models/weapons/w_crowbar.mdl",
-	entity = "lockpick",
-	price = 10000,
-	amount = 1,
-	allowed = armuQuincTbl
-})
-
-DarkRP.createShipment("KeyPad Cracker", {
-	model = "models/weapons/w_c4.mdl",
-	entity = "keypad_cracker",
-	price = 10000,
-	amount = 1,
-	allowed = armuQuincTbl
+	allowed = allSellers
 })
 
 DarkRP.createShipment("Kevlar moyen", {
@@ -380,7 +181,23 @@ DarkRP.createShipment("Kevlar moyen", {
 	entity = "medium kevlar armor",
 	price = 40000,
 	amount = 1,
-	allowed = {TEAM_ARMURIER, TEAM_TRAFIQUANT, TEAM_QUINCAILLER, TEAM_AGS}
+	allowed = allSellers
+})
+
+DarkRP.createShipment("Lockpick", {
+	model = "models/weapons/w_crowbar.mdl",
+	entity = "lockpick",
+	price = 10000,
+	amount = 1,
+	allowed = allSellers
+})
+
+DarkRP.createShipment("KeyPad Cracker", {
+	model = "models/weapons/w_c4.mdl",
+	entity = "keypad_cracker",
+	price = 10000,
+	amount = 1,
+	allowed = allSellers
 })
 
 --[[-------------------------------------------------------------------------
@@ -391,163 +208,7 @@ DarkRP.createShipment("Kevlar Gendarme", {
 	entity = "gen_kevlar",
 	price = 1000,
 	amount = 1,
-	allowed = {TEAM_GENDARME, TEAM_AGN, TEAM_MGN, TEAM_BRI, TEAM_SDR, TEAM_OFFICIER, TEAM_GENGEN, TEAM_MARECHAL}
-})
-
--- AGN
-local agnTbl = {TEAM_AGN}
-
-DarkRP.createShipment("[AGN] Beretta M9", {
-	model = "models/weapons/w_beretta_m92.mdl",
-	entity = "m9k_m92beretta",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] HK USP", {
-	model = "models/weapons/w_pist_fokkususp.mdl",
-	entity = "m9k_usp",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] SIG Sauer P229R", {
-	model = "models/weapons/w_sig_229r.mdl",
-	entity = "m9k_sig_p229r",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] Glock 18", {
-	model = "models/weapons/w_dmg_glock.mdl",
-	entity = "m9k_glock",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] Desert Eagle", {
-	model = "models/weapons/w_tcom_deagle.mdl",
-	entity = "m9k_deagle",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] HK MP5", {
-	model = "models/weapons/w_hk_mp5.mdl",
-	entity = "m9k_mp5",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] MP9", {
-	model = "models/weapons/w_brugger_thomet_mp9.mdl",
-	entity = "m9k_mp9",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] MP5 SD", {
-	model = "models/weapons/w_hk_mp5sd.mdl",
-	entity = "m9k_mp5sd",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] HK UMP45", {
-	model = "models/weapons/w_hk_ump45.mdl",
-	entity = "m9k_ump45",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] Tar-21", {
-	model = "models/weapons/w_imi_tar21.mdl",
-	entity = "m9k_tar21",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] M4A1", {
-	model = "models/weapons/w_m4a1_iron.mdl",
-	entity = "m9k_m4a1",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] HK416", {
-	model = "models/weapons/w_hk_416.mdl",
-	entity = "m9k_m416",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] HK416", {
-	model = "models/weapons/w_hk_416.mdl",
-	entity = "m9k_m416",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] Remington", {
-	model = "models/weapons/w_remington_870_tact.mdl",
-	entity = "m9k_remington870",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] Benelli", {
-	model = "models/weapons/w_benelli_m3.mdl",
-	entity = "m9k_m3",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
-DarkRP.createShipment("[AGN] Mossberg", {
-	model = "models/weapons/w_mossberg_590.mdl",
-	entity = "m9k_mossberg590",
-	price = 100,
-	amount = 1,
-	allowed = agnTbl
-})
-
--- GIGN
-DarkRP.createShipment("MP5 SD", {
-	model = "models/weapons/w_hk_mp5sd.mdl",
-	entity = "m9k_mp5sd",
-	price = 10000,
-	amount = 1,
-	allowed = {TEAM_AGS}
-})
-
-DarkRP.createShipment("Herse-Ammo", {
-	model = "models/novacars/spikestrip/spikestrip.mdl",
-	entity = "nova_spikestrip_ammo",
-	price = 10000,
-	amount = 4,
-	allowed = {TEAM_GIGNGENERAL, TEAM_GENGEN}
-})
-
-DarkRP.createShipment("USAS", {
-	model = "models/weapons/w_usas_12.mdl",
-	entity = "m9k_usas",
-	price = 10000,
-	amount = 1,
-	allowed = {TEAM_GIGNGENERAL}
+	allowed = {TEAM_GENDARME, TEAM_AGN, TEAM_BRI, TEAM_MGN, TEAM_SDR, TEAM_OFFICIER, TEAM_GENGEN, TEAM_MARECHAL}
 })
 
 DarkRP.createShipment("Paquetage", {
@@ -557,6 +218,39 @@ DarkRP.createShipment("Paquetage", {
 	amount = 1,
 	allowed = {TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_INGEGIGN, TEAM_SOLDATGIGN, TEAM_SNIPERGIGN, TEAM_OSUGIGN, TEAM_GIGNGENERAL}
 })
+
+-- AGN
+local agnWeps = {
+	-- Pistols
+	{"Glock 18", "m9k_glock", "models/weapons/w_dmg_glock.mdl"},
+	{"SIG Sauer P229R", "m9k_sig_p229r", "models/weapons/w_sig_229r.mdl"},
+	{"HK USP", "m9k_usp", "models/weapons/w_pist_fokkususp.mdl"},
+	{"M92 Beretta", "m9k_m92beretta", "models/weapons/w_beretta_m92.mdl"},
+	-- Rifles
+	{"HK 416", "m9k_m416", "models/weapons/w_hk_416.mdl"},
+	{"M4A1 Iron", "m9k_m4a1", "models/weapons/w_m4a1_iron.mdl"},
+	{"TAR-21", "m9k_tar21", "models/weapons/w_imi_tar21.mdl"},
+	{"MP5SD", "m9k_mp5sd", "models/weapons/w_hk_mp5sd.mdl"},
+	{"MP9", "m9k_mp9", "models/weapons/w_brugger_thomet_mp9.mdl"},
+	{"HK MP5", "m9k_mp5", "models/weapons/w_hk_mp5.mdl"},
+	{"HK UMP45", "m9k_ump45", "models/weapons/w_hk_ump45.mdl"},
+	-- Shotguns
+	{"Mossberg 590", "m9k_mossberg590", "models/weapons/w_mossberg_590.mdl"},
+	{"Benelli M3", "m9k_m3", "models/weapons/w_benelli_m3.mdl"},
+	{"Remington 870", "m9k_remington870", "models/weapons/w_remington_870_tact.mdl"}
+}
+
+local agnTbl = {TEAM_AGN}
+
+for i = 1, #agnWeps do
+	DarkRP.createShipment("[AGN] " .. agnWeps[i][1], {
+		model = agnWeps[i][3],
+		entity = agnWeps[i][2],
+		price = 100,
+		amount = 1,
+		allowed = agnTbl
+	})
+end
 
 --[[-------------------------------------------------------------------------
 Armes VIP
