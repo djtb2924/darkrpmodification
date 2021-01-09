@@ -1,5 +1,5 @@
 local red = Color(255, 0, 0)
-local color_white = color_white
+local white = Color(255, 255, 255)
 
 local function ano(ply, args)
     return args, function(text)
@@ -10,7 +10,7 @@ local function ano(ply, args)
 
         local players = player.GetAll()
         for i = 1, #players do
-            DarkRP.talkToPerson(players[i], red, "[Anonyme]", color_white, text, ply)
+            DarkRP.talkToPerson(players[i], red, "[Anonyme] ", white, text, ply)
         end
     end
 end
