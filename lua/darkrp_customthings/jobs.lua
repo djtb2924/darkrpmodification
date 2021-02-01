@@ -310,6 +310,9 @@ TEAM_BRI = DarkRP.createJob("BRI", {
 TEAM_OFFICIER = DarkRP.createJob("Officier", {
 	color = blue,
 	model = {
+		"models/darkley/motard_01.mdl",
+		"models/darkley/motard_02.mdl",
+		"models/darkley/motard_03.mdl",
 		"models/player/portal/russian_police1_armor.mdl",
 		"models/player/portal/russian_police2_armor.mdl",
 		"models/player/portal/russian_police3_armor.mdl",
