@@ -412,6 +412,8 @@ local my_language = {
     lottery_won = "%s a gagné le jackpot :  %s !",
     lottery = "lotterie",
     lottery_please_specify_an_entry_cost = "Merci d'entrer le prix du billet ($%i-%i)",
+        too_few_players_for_lottery = "There are too few players to start a lottery. There need to be at least %d players",
+    lottery_ongoing = "Cannot start a lottery, there is already a lottery ongoing",
 
     -- Animations
     custom_animation = "Animations",
