@@ -679,7 +679,7 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 --[[-------------------------------------------------------------------------
 Farm
 ---------------------------------------------------------------------------]]
-TEAM_BITMINER = DarkRP.createJob("Mineur de BitCoins", {
+TEAM_BITMINER = DarkRP.createJob("Mineur de Bitcoin", {
 	color = orange,
 	model = defaultSkins,
 	description = [[Individu vérifiant les transactions et opérations effectuées par les utilisateurs sur le réseau.]],
@@ -805,7 +805,7 @@ TEAM_CAMBRIOLEUR = DarkRP.createJob("Cambrioleur", {
 	candemote = false
 })
 
-TEAM_MICHTONEUSE = DarkRP.createJob("Michtoneuse", {
+TEAM_MICHTONEUSE = DarkRP.createJob("Michetonneuse", {
 	color = green,
 	model = "models/wrestlers/ashley_massaro.mdl",
 	description = [[Vous récoltez de l'argent.]],
@@ -1225,7 +1225,7 @@ TEAM_BLOODSV = DarkRP.createJob("Bloods V.I.P", {
 --[[-------------------------------------------------------------------------
 Services
 ---------------------------------------------------------------------------]]
-TEAM_SAMU = DarkRP.createJob("Samu", {
+TEAM_SAMU = DarkRP.createJob("SAMU", {
 	color = green,
 	model = {
 		"models/player/portal/Male_02_Medic.mdl",
@@ -1263,7 +1263,7 @@ TEAM_ARMURIER = DarkRP.createJob("Armurier", {
 	candemote = false
 })
 
-TEAM_TRAFIQUANT = DarkRP.createJob("Trafiquant d'Armes", {
+TEAM_TRAFIQUANT = DarkRP.createJob("Trafiquant d'armes", {
 	color = orange,
 	model = "models/player/leet.mdl",
 	description = [[Vous vendez des armes lourdes.]],
@@ -1325,7 +1325,7 @@ TEAM_TOWER = DarkRP.createJob("Dépanneur", {
 --[[-------------------------------------------------------------------------
 Drogues
 ---------------------------------------------------------------------------]]
-TEAM_METH = DarkRP.createJob("Fabriquant de Meth", {
+TEAM_METH = DarkRP.createJob("Fabricant de Meth", {
 	color = orange,
 	model = defaultSkins,
 	description = [[Personne qui fabrique illégalement de la drogue.]],
@@ -1338,7 +1338,7 @@ TEAM_METH = DarkRP.createJob("Fabriquant de Meth", {
 	candemote = false
 })
 
-TEAM_WEED = DarkRP.createJob("Fabriquant de Weed", {
+TEAM_WEED = DarkRP.createJob("Fabricant de Weed", {
 	color = orange,
 	model = defaultSkins,
 	description = [[Personne qui fabrique illégalement de la drogue.]],
@@ -1482,6 +1482,19 @@ TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
 	command = "tueur",
 	max = 2,
 	salary = 1000,
+	admin = 0,
+	hasLicense = false,
+	candemote = false
+})
+
+TEAM_ORGANE = DarkRP.createJob("Trafiquant d'organes", {
+	color = orange,
+	model = defaultSkins,
+	description = [[Exercice illégal du commerce d'organes, il comprend le prélèvement d'un organe ou d'un tissu humain sur des personnes vivantes ou décédées, en vue d'une transplantation]],
+	weapons = {"scalpel"},
+	command = "organe",
+	max = 4,
+	salary = 50,
 	admin = 0,
 	hasLicense = false,
 	candemote = false
