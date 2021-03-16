@@ -178,6 +178,7 @@ TEAM_GENDARME = DarkRP.createJob("Gendarme", {
 		"itemstore_checker",
 		"salute",
 		"stunstick",
+		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "gendarme",
@@ -475,7 +476,6 @@ TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 		"salute",
 		"stunstick",
 		"unarrest_stick",
-		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "medicgign",
@@ -511,7 +511,6 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 		"salute",
 		"stunstick",
 		"unarrest_stick",
-		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "soldatgign",
@@ -543,7 +542,6 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 		"realistic_hook",
 		"salute",
 		"stunstick",
-		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "snipergign",
@@ -579,7 +577,6 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 		"salute",
 		"stunstick",
 		"swep_drone_controller",
-		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "ingegign",
@@ -622,7 +619,6 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 		"stunstick",
 		"swep_drone_controller",
 		"unarrest_stick",
-		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "osugign",
@@ -663,7 +659,6 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 		"stunstick",
 		"swep_drone_controller",
 		"unarrest_stick",
-		"wcd_speedchecker",
 		"weapon_r_handcuffs"
 	},
 	command = "gigngeneral",
