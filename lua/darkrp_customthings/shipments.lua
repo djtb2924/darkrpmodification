@@ -240,7 +240,7 @@ local agnWeps = {
 	{"Remington 870", "m9k_remington870", "models/weapons/w_remington_870_tact.mdl"}
 }
 
-local agnTbl = {TEAM_AGN, TEAM_OFFICIER}
+local agnTbl = {TEAM_AGN, TEAM_OFFICIER, TEAM_GENGEN}
 
 for i = 1, #agnWeps do
 	DarkRP.createShipment("[AGN] " .. agnWeps[i][1], {
