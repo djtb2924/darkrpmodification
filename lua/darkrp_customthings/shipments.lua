@@ -26,7 +26,7 @@ local quincTbl = {TEAM_QUINCAILLER}
 
 -- Restrains
 DarkRP.createShipment("Attaches Serflex", {
-	model = "models/tobadforyou/flexcuffs_deployed.mdl",
+	model = "models/weapons/w_crowbar.mdl",
 	entity = "weapon_r_restrains",
 	amount = 1,
 	price = 50000,
