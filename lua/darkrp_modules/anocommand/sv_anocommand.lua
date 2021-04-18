@@ -15,4 +15,4 @@ local function ano(ply, args)
     end
 end
 
-DarkRP.defineChatCommand("ano", ano, 1.5)
+DarkRP.defineChatCommand("ano", ano)

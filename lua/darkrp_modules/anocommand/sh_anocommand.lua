@@ -3,5 +3,5 @@
 DarkRP.declareChatCommand{
     command = "ano",
     description = "Message anonyme",
-    delay = 1.5
+    delay = 5
 }

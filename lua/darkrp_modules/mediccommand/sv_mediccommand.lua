@@ -21,4 +21,4 @@ local function medic(ply, args)
     end
 end
 
-DarkRP.defineChatCommand("medic", medic, 1.5)
+DarkRP.defineChatCommand("medic", medic)

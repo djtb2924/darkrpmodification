@@ -21,4 +21,4 @@ local function tow(ply, args)
     end
 end
 
-DarkRP.defineChatCommand("tow", tow, 1.5)
+DarkRP.defineChatCommand("tow", tow)
