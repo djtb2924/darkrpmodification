@@ -142,7 +142,6 @@ TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 	weapons = {
 		"ags_badge",
 		"door_ram",
-		"drogue_search",
 		"dsr_taser",
 		"keypad_cracker",
 		"lockpick",
@@ -171,7 +170,6 @@ TEAM_GENDARME = DarkRP.createJob("Gendarme", {
 	description = [[Militaire appartenant à une formation de la gendarmerie nationale.]],
 	weapons = {
 		"door_ram",
-		"drogue_search",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -201,7 +199,6 @@ TEAM_MGN = DarkRP.createJob("MGN", {
 	description = [[Médecin de la Gendarmerie]],
 	weapons = {
 		"door_ram",
-		"drogue_search",
 		"dsr_medkit",
 		"dsr_taser",
 		"fine_list",
@@ -228,7 +225,6 @@ TEAM_AGN = DarkRP.createJob("AGN", {
 	description = [[Armurier de la Gendarmerie]],
 	weapons = {
 		"door_ram",
-		"drogue_search",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -254,7 +250,6 @@ TEAM_SDR = DarkRP.createJob("SDR", {
 	description = [[Sureté des routes]],
 	weapons = {
 		"door_ram",
-		"drogue_search",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -287,7 +282,6 @@ TEAM_BRI = DarkRP.createJob("BRI", {
 	description = [[Brigade Rapide d'intervention]],
 	weapons = {
 		"door_ram",
-		"drogue_search",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -327,7 +321,6 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 		"arrest_stick",
 		"defibrillator",
 		"door_ram",
-		"drogue_search",
 		"dsr_medkit",
 		"dsr_megaphone",
 		"dsr_taser",
@@ -364,7 +357,6 @@ TEAM_GENGEN = DarkRP.createJob("Général", {
 		"arrest_stick",
 		"defibrillator",
 		"door_ram",
-		"drogue_search",
 		"dsr_medkit",
 		"dsr_megaphone",
 		"dsr_taser",
@@ -397,7 +389,6 @@ TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 	weapons = {
 		"arrest_stick",
 		"door_ram",
-		"drogue_search",
 		"dsr_medkit",
 		"dsr_megaphone",
 		"dsr_taser",
@@ -431,7 +422,6 @@ TEAM_RECRUEGIGN = DarkRP.createJob("Recrue GIGN", {
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"door_ram",
-		"drogue_search",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -465,7 +455,6 @@ TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 	weapons = {
 		"defibrillator",
 		"door_ram",
-		"drogue_search",
 		"dsr_medkit",
 		"dsr_taser",
 		"fine_list",
@@ -500,7 +489,6 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 	weapons = {
 		"deployable_shield",
 		"door_ram",
-		"drogue_search",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -532,7 +520,6 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"door_ram",
-		"drogue_search",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -565,7 +552,6 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"door_ram",
-		"drogue_search",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -603,7 +589,6 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 		"defibrillator",
 		"deployable_shield",
 		"door_ram",
-		"drogue_search",
 		"dsr_medkit",
 		"dsr_megaphone",
 		"dsr_taser",
@@ -643,7 +628,6 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 		"defibrillator",
 		"deployable_shield",
 		"door_ram",
-		"drogue_search",
 		"dsr_medkit",
 		"dsr_megaphone",
 		"dsr_taser",
