@@ -19,6 +19,27 @@ deploy1:
      git fetch --all &&
      git reset --hard $CI_COMMIT_SHA"'
 
+deploy2:
+  image: alpine:latest
+  stage: deploy
+  environment:
+    name: production
+  only:
+    refs:
+      - server2
+  script:
+    - apk add openssh --no-cache
+    - mkdir -p ~/.ssh
+    - echo "$SSH_KEY" > ~/.ssh/id_rsa
+    - echo "$HOST_INFO" > ~/.ssh/known_hosts
+    - chmod 700 -R ~/.ssh
+    - chmod 600 ~/.ssh/*
+    - ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
+    - 'ssh -p 4 gmodserver@gmod2.lyg.fr 
+    "cd /home/gmodserver/serverfiles/garrysmod/addons/$CI_PROJECT_NAME &&
+     git fetch --all &&
+     git reset --hard $CI_COMMIT_SHA"'
+
 deploy3:
   image: alpine:latest
   stage: deploy
