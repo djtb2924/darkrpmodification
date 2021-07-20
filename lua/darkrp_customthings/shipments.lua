@@ -20,6 +20,20 @@ Add shipments and guns under the following line:
 -- Copyright © LiveYourGame, 2021
 
 --[[-------------------------------------------------------------------------
+Paquetage
+---------------------------------------------------------------------------]]
+
+DarkRP.createShipment("Paquetage métier", {
+	model = "models/props_junk/cardboard_box004a.mdl",
+	entity = "job_package",
+	price = 50000,
+	amount = 1,
+	separate = true,
+	pricesep = 50000,
+	noship = true
+})
+
+--[[-------------------------------------------------------------------------
 Quincailler
 ---------------------------------------------------------------------------]]
 local quincTbl = {TEAM_QUINCAILLER}
