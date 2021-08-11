@@ -39,9 +39,9 @@ Quincailler
 local quincTbl = {TEAM_QUINCAILLER}
 
 -- Restrains
-DarkRP.createShipment("Menottes", {
-	model = "models/sterling/glorified_w_handcuffs.mdl",
-	entity = "glorifiedhandcuffs_handcuffs",
+DarkRP.createShipment("Attaches Serflex", {
+	model = "models/weapons/w_crowbar.mdl",
+	entity = "weapon_r_restrains",
 	amount = 1,
 	price = 50000,
 	allowed = quincTbl
