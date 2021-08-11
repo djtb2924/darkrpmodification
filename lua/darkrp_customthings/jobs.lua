@@ -1347,8 +1347,8 @@ TEAM_KIDNAPPEUR = DarkRP.createJob("Kidnappeur V.I.P", {
 	description = [[Votre but est d'enlever quelqu'un en vue d'obtenir une rançon ou une contrepartie quelconque.]],
 	weapons = {
 		"csgo_bayonet",
-		"glorifiedhandcuffs_nightstick",
-		"scalpel"
+		"scalpel",
+		"weapon_r_baton"
 	},
 	command = "kidnappeur",
 	max = 2,
