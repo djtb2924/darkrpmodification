@@ -520,7 +520,6 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 		"gen_badge",
 		"googles",
 		"itemstore_checker",
-		"m9k_m24",
 		"realistic_hook",
 		"salute",
 		"stunstick",
