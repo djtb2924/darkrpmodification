@@ -280,7 +280,7 @@ local vipRanks = {
 	"helpeur test",
 	"VIPDiamant",
 	"VIPPlatinium",
-	"VIPPrenium",
+	"VIPPremium",
 	"VIP+",
 	"VIP"
 }
@@ -308,7 +308,7 @@ local vipWeapons = {
 		{"Baïonnette | Autotronic", "csgo_bayonet_autotronic", "models/weapons/w_csgo_bayonet.mdl"},
 		{"Karambit | Blue Steel", "csgo_karambit_bluesteel", "models/weapons/w_csgo_karambit.mdl"}
 	},
-	[3] = {	-- VIPPrenium
+	[3] = {	-- VIPPremium
 		{"Earth Shaker SIG Sauer P226", "wf_wpn_pt14_lava01", "models/weapons/pistols/pt14/magma/worldmodel.mdl"},
 		{"H&K MP5", "wf_wpn_smg04", "models/weapons/engineer/smg04/worldmodel.mdl"},
 		{"SCAR-L PDW", "wf_wpn_smg31", "models/weapons/engineer/smg31/worldmodel.mdl"},
