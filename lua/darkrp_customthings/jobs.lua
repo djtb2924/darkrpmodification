@@ -33,7 +33,8 @@ end
 local loadouts = {
 	[50] = loadout(50),
 	[150] = loadout(150),
-	[250] = loadout(250)
+	[250] = loadout(250),
+	[290] = loadout(290)
 }
 
 local defaultSkins = {
@@ -387,6 +388,7 @@ TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 	description = [[Maréchal, commandant des Gendarmerie]],
 	weapons = {
 		"arrest_stick",
+		"defibrillator",
 		"door_ram",
 		"dsr_medkit",
 		"dsr_megaphone",
@@ -398,6 +400,7 @@ TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 		"realistic_hook",
 		"salute",
 		"stunstick",
+		"sv_wrench",
 		"swep_drone_controller",
 		"unarrest_stick",
 		"wcd_speedchecker",
@@ -410,7 +413,7 @@ TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 	hasLicense = true,
 	chief = true,
 	candemote = false,
-	PlayerLoadout = loadouts[250]
+	PlayerLoadout = loadouts[290]
 })
 
 -- GIGN
