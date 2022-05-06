@@ -347,7 +347,7 @@ TEAM_GENGEN = DarkRP.createJob("Général", {
 	model = {
 		"models/player/pmc_1/pmc__01.mdl",
 		"models/player/pmc_5/pmc__01.mdl",
-		"models/player/pmc_6/pmc__01.mdl"
+		"models/player/pmc_3/pmc__01.mdl"
 	},
 	description = [[Officier Général de la Gendarmerie]],
 	weapons = {
@@ -380,7 +380,10 @@ TEAM_GENGEN = DarkRP.createJob("Général", {
 -- Maréchal
 TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 	color = blue,
-	model = "models/player/massillia/prefect_01.mdl",
+	model = {
+		"models/fearless/sru01.mdl",
+		"models/player/massillia/prefect_01.mdl"
+	},
 	description = [[Maréchal, commandant des Gendarmerie]],
 	weapons = {
 		"arrest_stick",
@@ -444,13 +447,15 @@ TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 		"models/player/pmc_4/pmc__08.mdl",
 		"models/player/pmc_4/pmc__09.mdl",
 		"models/player/pmc_5/pmc__08.mdl",
-		"models/player/pmc_5/pmc__09.mdl"
+		"models/player/pmc_5/pmc__09.mdl",
+		"models/player/pmc_3/pmc__08.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"defibrillator",
 		"door_ram",
 		"dsr_medkit",
+		"dsr_megaphone",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -478,12 +483,14 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 		"models/player/pmc_4/pmc__13.mdl",
 		"models/player/pmc_4/pmc__14.mdl",
 		"models/player/pmc_5/pmc__13.mdl",
-		"models/player/pmc_5/pmc__14.mdl"
+		"models/player/pmc_5/pmc__14.mdl",
+		"models/player/pmc_3/pmc__13.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"deployable_shield",
 		"door_ram",
+		"dsr_megaphone",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -510,11 +517,13 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 	color = blue,
 	model = {
 		"models/player/pmc_4/pmc__03.mdl",
-		"models/player/pmc_5/pmc__03.mdl"
+		"models/player/pmc_5/pmc__03.mdl",
+		"models/player/pmc_3/pmc__03.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"door_ram",
+		"dsr_megaphone",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -541,11 +550,13 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 		"models/player/pmc_4/pmc__05.mdl",
 		"models/player/pmc_4/pmc__06.mdl",
 		"models/player/pmc_5/pmc__05.mdl",
-		"models/player/pmc_5/pmc__06.mdl"
+		"models/player/pmc_5/pmc__06.mdl",
+		"models/player/pmc_3/pmc__05.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
 		"door_ram",
+		"dsr_megaphone",
 		"dsr_taser",
 		"fine_list",
 		"gen_badge",
@@ -574,7 +585,8 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 		"models/player/pmc_4/pmc__10.mdl",
 		"models/player/pmc_4/pmc__11.mdl",
 		"models/player/pmc_5/pmc__10.mdl",
-		"models/player/pmc_5/pmc__11.mdl"
+		"models/player/pmc_5/pmc__11.mdl",
+		"models/player/pmc_3/pmc__10.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
 	weapons = {
@@ -611,6 +623,7 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 	color = blue,
 	model = {
+		"models/player/pmc_3/pmc__01.mdl",
 		"models/player/pmc_4/pmc__01.mdl",
 		"models/player/pmc_5/pmc__01.mdl"
 	},
