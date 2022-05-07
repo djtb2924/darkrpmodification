@@ -32,9 +32,7 @@ end
 
 local loadouts = {
 	[50] = loadout(50),
-	[150] = loadout(150),
-	[250] = loadout(250),
-	[290] = loadout(290)
+	[150] = loadout(150)
 }
 
 local defaultSkins = {
@@ -90,7 +88,7 @@ TEAM_SECRETAIRE = DarkRP.createJob("Secretaire Du Maire", {
 })
 
 TEAM_GARDE = DarkRP.createJob("Garde Du Maire", {
-	color = grey,
+	color = black,
 	model = "models/fearless/02.mdl",
 	description = [[Votre but est de protéger le Maire ainsi que mettre en oeuvre l'ensemble des mesures nécessaires à l'organisation matérielle et à la sécurité des déplacements du Maire.]],
 	weapons = {"weaponchecker"},
@@ -169,25 +167,14 @@ TEAM_GENDARME = DarkRP.createJob("Gendarme", {
 		"models/player/rico/gendarmerie_nationalev403.mdl"
 	},
 	description = [[Militaire appartenant à une formation de la gendarmerie nationale.]],
-	weapons = {
-		"door_ram",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"itemstore_checker",
-		"salute",
-		"stunstick",
-		"wcd_speedchecker",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "gendarme",
 	max = 0,
 	salary = 3000,
 	admin = 0,
 	hasLicense = true,
 	candemote = false,
-	chief = true,
-	PlayerLoadout = loadouts[150]
+	chief = true
 })
 
 TEAM_MGN = DarkRP.createJob("MGN", {
@@ -198,77 +185,42 @@ TEAM_MGN = DarkRP.createJob("MGN", {
 		"models/player/darkley/gend_03.mdl"
 	},
 	description = [[Médecin de la Gendarmerie]],
-	weapons = {
-		"door_ram",
-		"dsr_medkit",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"itemstore_checker",
-		"salute",
-		"stunstick",
-		"wcd_speedchecker",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "mgn",
 	max = 8,
 	salary = 4000,
 	admin = 0,
 	hasLicense = true,
 	candemote = false,
-	chief = true,
-	PlayerLoadout = loadouts[150]
+	chief = true
 })
 
 TEAM_AGN = DarkRP.createJob("AGN", {
 	color = blue,
 	model = "models/player/rico/gend_polaire.mdl",
 	description = [[Armurier de la Gendarmerie]],
-	weapons = {
-		"door_ram",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"itemstore_checker",
-		"salute",
-		"stunstick",
-		"wcd_speedchecker",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "agn",
 	max = 4,
 	salary = 4000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[150]
+	candemote = false
 })
 
 TEAM_SDR = DarkRP.createJob("SDR", {
 	color = blue,
 	model = "models/player/rico/gend_polaire.mdl",
 	description = [[Sureté des routes]],
-	weapons = {
-		"door_ram",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"itemstore_checker",
-		"salute",
-		"stunstick",
-		"swep_drone_controller",
-		"wcd_speedchecker",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "sdr",
 	max = 8,
 	salary = 4000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[150]
+	candemote = false
 })
 
 TEAM_BRI = DarkRP.createJob("BRI", {
@@ -280,25 +232,14 @@ TEAM_BRI = DarkRP.createJob("BRI", {
 		"models/darkley/motard_03.mdl"
 	},
 	description = [[Brigade Rapide d'intervention]],
-	weapons = {
-		"door_ram",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"itemstore_checker",
-		"salute",
-		"stunstick",
-		"wcd_speedchecker",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "bri",
 	max = 8,
 	salary = 4000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[150]
+	candemote = false
 })
 
 TEAM_OFFICIER = DarkRP.createJob("Officier", {
@@ -316,31 +257,14 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 		"models/player/portal/russian_police7_armor.mdl"
 	},
 	description = [[Officier Supérieur de la Gendarmerie]],
-	weapons = {
-		"arrest_stick",
-		"defibrillator",
-		"door_ram",
-		"dsr_medkit",
-		"dsr_megaphone",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"itemstore_checker",
-		"salute",
-		"stunstick",
-		"swep_drone_controller",
-		"unarrest_stick",
-		"wcd_speedchecker",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "officier",
 	max = 3,
 	salary = 6000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadout(200)
+	candemote = false
 })
 
 TEAM_GENGEN = DarkRP.createJob("Général", {
@@ -351,31 +275,14 @@ TEAM_GENGEN = DarkRP.createJob("Général", {
 		"models/player/pmc_3/pmc__01.mdl"
 	},
 	description = [[Officier Général de la Gendarmerie]],
-	weapons = {
-		"arrest_stick",
-		"defibrillator",
-		"door_ram",
-		"dsr_medkit",
-		"dsr_megaphone",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"itemstore_checker",
-		"salute",
-		"stunstick",
-		"swep_drone_controller",
-		"unarrest_stick",
-		"wcd_speedchecker",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "gengen",
 	max = 2,
 	salary = 8000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[250]
+	candemote = false
 })
 
 -- Maréchal
@@ -386,34 +293,14 @@ TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 		"models/player/massillia/prefect_01.mdl"
 	},
 	description = [[Maréchal, commandant des Gendarmerie]],
-	weapons = {
-		"arrest_stick",
-		"defibrillator",
-		"door_ram",
-		"dsr_medkit",
-		"dsr_megaphone",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"itemstore_checker",
-		"m9k_m24",
-		"realistic_hook",
-		"salute",
-		"stunstick",
-		"sv_wrench",
-		"swep_drone_controller",
-		"unarrest_stick",
-		"wcd_speedchecker",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "marechal",
 	max = 1,
 	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[290]
+	candemote = false
 })
 
 -- GIGN
@@ -421,27 +308,14 @@ TEAM_RECRUEGIGN = DarkRP.createJob("Recrue GIGN", {
 	color = blue,
 	model = "models/Dauge/BF3_GIGN.mdl",
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
-	weapons = {
-		"door_ram",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"googles",
-		"itemstore_checker",
-		"realistic_hook",
-		"salute",
-		"stunstick",
-		"unarrest_stick",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "recruegign",
 	max = 10,
 	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[250]
+	candemote = false
 })
 
 TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
@@ -454,30 +328,14 @@ TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 		"models/player/pmc_3/pmc__08.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
-	weapons = {
-		"defibrillator",
-		"door_ram",
-		"dsr_medkit",
-		"dsr_megaphone",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"googles",
-		"itemstore_checker",
-		"realistic_hook",
-		"salute",
-		"stunstick",
-		"unarrest_stick",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "medicgign",
 	max = 4,
 	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[250]
+	candemote = false
 })
 
 TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
@@ -490,30 +348,14 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 		"models/player/pmc_3/pmc__13.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
-	weapons = {
-		"deployable_shield",
-		"door_ram",
-		"dsr_megaphone",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"googles",
-		"itemstore_checker",
-		"m9k_jackhammer",
-		"realistic_hook",
-		"salute",
-		"stunstick",
-		"unarrest_stick",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "soldatgign",
 	max = 4,
 	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[250]
+	candemote = false
 })
 
 TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
@@ -521,30 +363,17 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 	model = {
 		"models/player/pmc_4/pmc__03.mdl",
 		"models/player/pmc_5/pmc__03.mdl",
-		"models/player/pmc_3/pmc__03.mdl"
+		"models/player/PMC_3/PMC__03.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
-	weapons = {
-		"door_ram",
-		"dsr_megaphone",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"googles",
-		"itemstore_checker",
-		"realistic_hook",
-		"salute",
-		"stunstick",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "snipergign",
 	max = 3,
 	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[250]
+	candemote = false
 })
 
 TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
@@ -557,29 +386,14 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 		"models/player/pmc_3/pmc__05.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
-	weapons = {
-		"door_ram",
-		"dsr_megaphone",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"googles",
-		"itemstore_checker",
-		"realistic_hook",
-		"salute",
-		"stunstick",
-		"sv_wrench",
-		"swep_drone_controller",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "ingegign",
 	max = 4,
 	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[250]
+	candemote = false
 })
 
 TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
@@ -592,35 +406,14 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 		"models/player/pmc_3/pmc__10.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
-	weapons = {
-		"arrest_stick",
-		"defibrillator",
-		"deployable_shield",
-		"door_ram",
-		"dsr_medkit",
-		"dsr_megaphone",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"googles",
-		"itemstore_checker",
-		"m9k_m24",
-		"realistic_hook",
-		"salute",
-		"stunstick",
-		"sv_wrench",
-		"swep_drone_controller",
-		"unarrest_stick",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "osugign",
 	max = 3,
 	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadouts[250]
+	candemote = false
 })
 
 TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
@@ -631,35 +424,14 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 		"models/player/pmc_5/pmc__01.mdl"
 	},
 	description = [[Groupe d'intervention de la gendarmerie nationale. Unité d'élite de la gendarmerie nationale spécialisée dans la lutte contre le terrorisme et la libération d'otages.]],
-	weapons = {
-		"arrest_stick",
-		"defibrillator",
-		"deployable_shield",
-		"door_ram",
-		"dsr_medkit",
-		"dsr_megaphone",
-		"dsr_taser",
-		"fine_list",
-		"gen_badge",
-		"googles",
-		"itemstore_checker",
-		"m9k_m24",
-		"realistic_hook",
-		"salute",
-		"stunstick",
-		"sv_wrench",
-		"swep_drone_controller",
-		"unarrest_stick",
-		"weapon_r_handcuffs"
-	},
+	weapons = {},
 	command = "gigngeneral",
 	max = 2,
 	salary = 10000,
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false,
-	PlayerLoadout = loadout(290)
+	candemote = false
 })
 
 --[[-------------------------------------------------------------------------
@@ -794,7 +566,8 @@ TEAM_CAMBRIOLEUR = DarkRP.createJob("Cambrioleur", {
 		"keypad_cracker",
 		"lockpick",
 		"m9k_usp",
-		"realistic_hook"
+		"realistic_hook",
+		"swep_drone_controller"
 	},
 	command = "cambrioleur",
 	max = 2,
@@ -1292,6 +1065,19 @@ TEAM_COOK = DarkRP.createJob("Cuisinier", {
 	cook = true
 })
 
+TEAM_SMOOTHIE = DarkRP.createJob("Vendeur de smoothies", {
+	color = green,
+	model = defaultSkins,
+	description = [[Vous frabriquez et vendez vos Smoothies.]],
+	weapons = {"zfs_knife"},
+	command = "smoothie",
+	max = 3,
+	salary = 50,
+	admin = 0,
+	hasLicense = false,
+	candemote = false
+})
+
 TEAM_TOWER = DarkRP.createJob("Dépanneur", {
 	color = green,
 	model = "models/player/magnusson.mdl",
@@ -1301,6 +1087,36 @@ TEAM_TOWER = DarkRP.createJob("Dépanneur", {
 		"tow_attach"
 	},
 	command = "tower",
+	max = 2,
+	salary = 500,
+	admin = 0,
+	hasLicense = false,
+	candemote = false,
+})
+
+TEAM_UBER = DarkRP.createJob("Chauffeur Uber",{
+	color = green,
+	model = defaultSkins,
+	description = [[]],
+	weapons = {},
+	command = "uber",
+	max = 2,
+	salary = 500,
+	admin = 0,
+	hasLicense = false,
+	candemote = false,
+})
+
+TEAM_UBEREATS = DarkRP.createJob("Uber Eats",{
+	color = green,
+	model = {
+		"models/player/hostage/hostage_01.mdl",
+		"models/player/hostage/hostage_02.mdl",
+		"models/player/hostage/hostage_03.mdl"
+	},
+	description = [[]],
+	weapons = {},
+	command = "ubereats",
 	max = 2,
 	salary = 500,
 	admin = 0,
@@ -1473,24 +1289,12 @@ TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
 	candemote = false
 })
 
-TEAM_ORGANE = DarkRP.createJob("Trafiquant d'organes", {
-	color = orange,
-	model = defaultSkins,
-	description = [[Exercice illégal du commerce d'organes, il comprend le prélèvement d'un organe ou d'un tissu humain sur des personnes vivantes ou décédées, en vue d'une transplantation]],
-	weapons = {"scalpel"},
-	command = "organe",
-	max = 4,
-	salary = 50,
-	admin = 0,
-	hasLicense = false,
-	candemote = false
-})
 
 --[[-------------------------------------------------------------------------
 Sécurité
 ---------------------------------------------------------------------------]]
 TEAM_ADS = DarkRP.createJob("Agent De Securite", {
-	color = red,
+	color = grey,
 	model = {
 		"models/player/guard_pack/guard_01.mdl",
 		"models/player/guard_pack/guard_02.mdl",
@@ -1523,6 +1327,19 @@ TEAM_MERCENAIRE = DarkRP.createJob("Mercenaire", {
 	salary = 300,
 	admin = 0,
 	hasLicense = false,
+	candemote = false
+})
+
+TEAM_GARDECORPS = DarkRP.createJob("Garde du Corps", {
+	color = black,
+	model = "models/player/smith.mdl",
+	description = [[Vous protégez votre client.]],
+	weapons = {},
+	command = "gardecorps",
+	max = 4,
+	salary = 600,
+	admin = 0,
+	hasLicense = true,
 	candemote = false
 })
 
