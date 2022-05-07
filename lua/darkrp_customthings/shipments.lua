@@ -132,61 +132,61 @@ end
 
 local armuWeps = {
 	-- Pistols
-	{"Glock 18", "m9k_glock", "models/weapons/w_dmg_glock.mdl", 60000},
-	{"HK USP", "m9k_usp", "models/weapons/w_pist_fokkususp.mdl", 60000},
-	{"P08 Luger", "m9k_luger", "models/weapons/w_luger_p08.mdl", 60000},
+	{"Colt Python", "m9k_coltpython", "models/weapons/w_colt_python.mdl", 40000},
+	{"M29 Satan", "m9k_m29satan", "models/weapons/w_m29_satan.mdl", 40000},
+	{"Raging Bull", "m9k_ragingbull", "models/weapons/w_taurus_raging_bull.mdl", 40000},
+	{"Remington 1858", "m9k_remington1858", "models/weapons/w_remington_1858.mdl", 40000},
 	{"Colt 1911", "m9k_colt1911", "models/weapons/s_dmgf_co1911.mdl", 50000},
 	{"Desert Eagle", "m9k_deagle", "models/weapons/w_tcom_deagle.mdl", 50000},
 	{"HK45C", "m9k_hk45", "models/weapons/w_hk45c.mdl", 50000},
 	{"M92 Beretta", "m9k_m92beretta", "models/weapons/w_beretta_m92.mdl", 50000},
 	{"SIG Sauer P229R", "m9k_sig_p229r", "models/weapons/w_sig_229r.mdl", 50000},
-	{"Colt Python", "m9k_coltpython", "models/weapons/w_colt_python.mdl", 40000},
-	{"M29 Satan", "m9k_m29satan", "models/weapons/w_m29_satan.mdl", 40000},
-	{"Raging Bull", "m9k_ragingbull", "models/weapons/w_taurus_raging_bull.mdl", 40000},
-	{"Remington 1858", "m9k_remington1858", "models/weapons/w_remington_1858.mdl", 40000},
+	{"Glock 18", "m9k_glock", "models/weapons/w_dmg_glock.mdl", 60000},
+	{"HK USP", "m9k_usp", "models/weapons/w_pist_fokkususp.mdl", 60000},
+	{"P08 Luger", "m9k_luger", "models/weapons/w_luger_p08.mdl", 60000},
 	-- SMGs
-	{"HK MP7", "m9k_mp7", "models/weapons/w_mp7_silenced.mdl", 90000},
-	{"KRISS Vector", "m9k_vector", "models/weapons/w_kriss_vector.mdl", 90000},
-	{"Magpul PDR", "m9k_magpulpdr", "models/weapons/w_magpul_pdr.mdl", 90000},
-	{"MP9", "m9k_mp9", "models/weapons/w_brugger_thomet_mp9.mdl", 90000},
+	{"FN P90", "m9k_smgp90", "models/weapons/w_fn_p90.mdl", 70000},
+	{"HK UMP45", "m9k_ump45", "models/weapons/w_hk_ump45.mdl", 70000},
+	{"KAC PDW", "m9k_kac_pdw", "models/weapons/w_kac_pdw.mdl", 70000},
+	{"Tommy Gun", "m9k_thompson", "models/weapons/w_tommy_gun.mdl", 70000},
 	{"HK MP5", "m9k_mp5", "models/weapons/w_hk_mp5.mdl", 80000},
 	{"MP40", "m9k_mp40", "models/weapons/w_mp40smg.mdl", 80000},
 	{"MP5SD", "m9k_mp5sd", "models/weapons/w_hk_mp5sd.mdl", 80000},
 	{"STEN", "m9k_sten", "models/weapons/w_sten.mdl", 80000},
-	{"FN P90", "m9k_smgp90", "models/weapons/w_fn_p90.mdl", 70000},
-	{"HK UMP45", "m9k_ump45", "models/weapons/w_hk_ump45.mdl", 70000},
-	{"KAC PDW", "m9k_kac_pdw", "models/weapons/w_kac_pdw.mdl", 70000},
-	{"Tommy Gun", "m9k_thompson", "models/weapons/w_tommy_gun.mdl", 70000}
+	{"HK MP7", "m9k_mp7", "models/weapons/w_mp7_silenced.mdl", 90000},
+	{"KRISS Vector", "m9k_vector", "models/weapons/w_kriss_vector.mdl", 90000},
+	{"Magpul PDR", "m9k_magpulpdr", "models/weapons/w_magpul_pdr.mdl", 90000},
+	{"MP9", "m9k_mp9", "models/weapons/w_brugger_thomet_mp9.mdl", 90000}
 }
 createShipments(armuWeps, {TEAM_ARMURIER})
 
 local trafiWeps = {
 	-- Rifles
-	{"ACR", "m9k_acr", "models/weapons/w_masada_acr.mdl", 120000},
-	{"AK-47", "m9k_ak47", "models/weapons/w_ak47_m9k.mdl", 120000},
-	{"HK 416", "m9k_m416", "models/weapons/w_hk_416.mdl", 120000},
-	{"M4A1 Iron", "m9k_m4a1", "models/weapons/w_m4a1_iron.mdl", 120000},
-	{"FN FAL", "m9k_fal", "models/weapons/w_fn_fal.mdl", 110000},
-	{"HK G3A3", "m9k_g3a3", "models/weapons/w_hk_g3.mdl", 110000},
-	{"SCAR", "m9k_scar", "models/weapons/w_fn_scar_h.mdl", 110000},
-	{"TAR-21", "m9k_tar21", "models/weapons/w_imi_tar21.mdl", 110000},
 	{"AK-74", "m9k_ak74", "models/weapons/w_tct_ak47.mdl", 100000},
 	{"G36", "m9k_g36", "models/weapons/w_hk_g36c.mdl", 100000},
 	{"M14", "m9k_m14sp", "models/weapons/w_snip_m14sp.mdl", 100000},
 	{"M16A4 ACOG", "m9k_m16a4_acog", "models/weapons/w_dmg_m16ag.mdl", 100000},
+	{"FN FAL", "m9k_fal", "models/weapons/w_fn_fal.mdl", 110000},
+	{"HK G3A3", "m9k_g3a3", "models/weapons/w_hk_g3.mdl", 110000},
+	{"SCAR", "m9k_scar", "models/weapons/w_fn_scar_h.mdl", 110000},
+	{"TAR-21", "m9k_tar21", "models/weapons/w_imi_tar21.mdl", 110000},
+	{"ACR", "m9k_acr", "models/weapons/w_masada_acr.mdl", 120000},
+	{"AK-47", "m9k_ak47", "models/weapons/w_ak47_m9k.mdl", 120000},
+	{"HK 416", "m9k_m416", "models/weapons/w_hk_416.mdl", 120000},
+	{"M4A1 Iron", "m9k_m4a1", "models/weapons/w_m4a1_iron.mdl", 120000},
 	-- Snipers
-	{"AI AW50", "m9k_aw50", "models/weapons/w_acc_int_aw50.mdl", 150000},
-	{"M24", "m9k_m24", "models/weapons/w_snip_m24_6.mdl", 150000},
+	{"Barret M98B", "m9k_m98b", "models/weapons/w_barrett_m98b.mdl", 130000},
 	{"Intervention", "m9k_intervention", "models/weapons/w_snip_int.mdl", 140000},
 	{"Thompson Contender G2", "m9k_contender", "models/weapons/w_g2_contender.mdl", 140000},
-	{"Barret M98B", "m9k_m98b", "models/weapons/w_barrett_m98b.mdl", 130000},
+	{"AI AW50", "m9k_aw50", "models/weapons/w_acc_int_aw50.mdl", 150000},
+	{"M24", "m9k_m24", "models/weapons/w_snip_m24_6.mdl", 150000},
 	-- Shotguns
-	{"Browning Auto 5", "m9k_browningauto5", "models/weapons/w_browning_auto.mdl", 120000},
-	{"Winchester 87", "m9k_1887winchester", "models/weapons/w_winchester_1887.mdl", 120000},
-	{"Ithaca M37", "m9k_ithacam37", "models/weapons/w_ithaca_m37.mdl", 110000},
-	{"Mossberg 590", "m9k_mossberg590", "models/weapons/w_mossberg_590.mdl", 110000},
 	{"Benelli M3", "m9k_m3", "models/weapons/w_benelli_m3.mdl", 100000},
 	{"Remington 870", "m9k_remington870", "models/weapons/w_remington_870_tact.mdl", 100000},
+	{"Ithaca M37", "m9k_ithacam37", "models/weapons/w_ithaca_m37.mdl", 110000},
+	{"Mossberg 590", "m9k_mossberg590", "models/weapons/w_mossberg_590.mdl", 110000},
+	{"Browning Auto 5", "m9k_browningauto5", "models/weapons/w_browning_auto.mdl", 120000},
+	{"Winchester 87", "m9k_1887winchester", "models/weapons/w_winchester_1887.mdl", 120000}
 }
 createShipments(trafiWeps, {TEAM_TRAFIQUANT})
 
