@@ -201,11 +201,20 @@ local my_language = {
 
     picking_lock = "Crochetage de la serrure",
 
+<<<<<<< HEAD
     cannot_pocket_x = "Vous ne pouvez pas mettre ceci dans vos poches !",
     object_too_heavy = "Cet objet est trop lourd.",
     pocket_full = "Vos poches sont pleines !",
     pocket_no_items = "Vous n'avez rien dans vos poches.",
     drop_item = "Lâcher un objet",
+=======
+    cannot_pocket_x = "You cannot put this in your pocket!",
+    cannot_pocket_gravgunned = "You cannot put this in your pocket: it is being held by a gravgun.",
+    object_too_heavy = "This object is too heavy.",
+    pocket_full = "Your pocket is full!",
+    pocket_no_items = "Your pocket contains no items.",
+    drop_item = "Drop item",
+>>>>>>> upstream/master
 
     bonus_destroying_entity = "avoir détruit cette entité illégale.",
 
