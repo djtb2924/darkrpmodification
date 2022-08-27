@@ -439,19 +439,19 @@ Farm
 ---------------------------------------------------------------------------]]
 TEAM_BEEKEEPER = DarkRP.createJob("Apiculteur", {
 	color = orange,
-    model = {
-        "models/player/Group01/Male_02.mdl",
-       	"models/player/Group01/Male_04.mdl",
-      	"models/player/Group01/Male_06.mdl",
-      	"models/player/Group01/Male_08.mdl"
+	model = {
+		"models/player/Group01/Male_02.mdl",
+		"models/player/Group01/Male_04.mdl",
+		"models/player/Group01/Male_06.mdl",
+		"models/player/Group01/Male_08.mdl"
 	},
-    description = [[]],
-    weapons = {}, -- BKS tools (by default sold by NPC) : "beekeeping_smoker_swep", "beekeeping_vacuum_swep"
-   	command = "beekeeper",
-   	max = 2,
-   	salary = 20,
-   	admin = 0,
-   	vote = false,
+	description = [[]],
+	weapons = {}, -- BKS tools (by default sold by NPC) : "beekeeping_smoker_swep", "beekeeping_vacuum_swep"
+	command = "beekeeper",
+	max = 2,
+	salary = 20,
+	admin = 0,
+	vote = false,
 	hasLicense = false,
 })
 
