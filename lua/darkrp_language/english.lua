@@ -1,6 +1,7 @@
 --[[-------------------------------------------------------------------------
 English (example) language file
------------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
 This is the english language file. The things on the left side of the equals sign are the things you should leave alone
 The parts between the quotes are the parts you should translate. You can also copy this file and create a new language.
 
