@@ -365,15 +365,17 @@ GM.Config.DisallowDrop = {
 
 -- The list of weapons people spawn with.
 GM.Config.DefaultWeapons = {
-    "idcard",
-    "surrender",
-    "weapon_physgun",
+    "aphone",
+    "glorifiedbanking_card",
     "gmod_camera",
     "gmod_tool",
+    "idcard",
     "itemstore_pickup",
     "keys",
+    "surrender",
     "weapon_fists",
-    "weapon_physcannon"
+    "weapon_physcannon",
+    "weapon_physgun"
 }
 
 -- Override categories.
