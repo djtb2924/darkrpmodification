@@ -1384,6 +1384,7 @@ Staff
 local staffRanks = {
 	["superadmin"] = true,
 	["users"] = true,
+	["adming"] = true,
 	["admin"] = true,
 	["moderateur"] = true,
 	["moderateur test"] = true,
