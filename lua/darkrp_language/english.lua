@@ -177,6 +177,7 @@ local my_language = {
     door_group_set = "Groupe de porte appliqué.",
     sold_x_doors_for_y = "Vous avez vendu %d portes pour %s%d !", -- backwards compatibility
     sold_x_doors = "Vous avez vendu %d portes pour %s !",
+    no_doors_owned = "Vous n'avez aucune porte !",
 
     -- Entities
     drugs = "drogues",
