@@ -1381,16 +1381,11 @@ TEAM_CITIZEN = DarkRP.createJob("Chomeur", {
 Staff
 ---------------------------------------------------------------------------]]
 
-local staffRanks = {
-	["superadmin"] = true,
-	["users"] = true,
-	["adming"] = true,
-	["admin"] = true,
-	["moderateur"] = true,
-	["moderateur test"] = true,
-	["helpeur"] = true,
-	["helpeur test"] = true
-}
+local staffRanks = {"superadmin", "users"}
+
+hook.Add("LYGInfraLoaded", "DRPModStaff", function(LYGInfra)
+	staffRanks = LYGInfra.staffGroups
+end)
 
 TEAM_STAFF = DarkRP.createJob("Staff", {
 	color = green,
