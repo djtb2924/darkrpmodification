@@ -1384,7 +1384,11 @@ Staff
 local staffRanks = {"superadmin", "users"}
 
 hook.Add("LYGInfraLoaded", "DRPModStaff", function(LYGInfra)
-	staffRanks = LYGInfra.staffGroups
+	table.Empty(staffRanks)
+
+	for k, v in pairs(LYGInfra.staffGroups) do
+		table.insert(staffRanks, v)
+	end
 end)
 
 TEAM_STAFF = DarkRP.createJob("Staff", {
