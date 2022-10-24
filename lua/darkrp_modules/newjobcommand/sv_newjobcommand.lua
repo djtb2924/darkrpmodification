@@ -1,5 +1,4 @@
 local allowedTeams = {
-    [TEAM_AGS] = true,
     [TEAM_MAYOR] = true
 }
 
