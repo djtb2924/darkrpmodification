@@ -17,7 +17,7 @@ https://darkrp.miraheze.org/wiki/DarkRP:CustomShipmentFields
 Add shipments and guns under the following line:
 ---------------------------------------------------------------------------]]
 
--- Copyright © LiveYourGame, 2021
+-- Copyright © LiveYourGame, 2022
 
 
 

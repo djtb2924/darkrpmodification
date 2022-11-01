@@ -15,7 +15,7 @@ Note: if you want to have e.g. edit the official medic job, you MUST disable the
 You can copy the medic from DarkRP and paste it in darkrp_config/jobs.lua
 ---------------------------------------------------------------------------]]
 
--- Copyright © LiveYourGame, 2021
+-- Copyright © LiveYourGame, 2022
 
 --[[-------------------------------------------------------------------------
 The list of modules that are disabled. Set to true to disable, false to enable.

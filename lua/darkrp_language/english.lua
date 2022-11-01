@@ -22,7 +22,7 @@ Make sure the language code is right at the bottom of this file
 Make sure the convar gmod_language is set to your language code. You can do that in a server CFG file.
 ---------------------------------------------------------------------------]]
 
--- Copyright © LiveYourGame, 2021
+-- Copyright © LiveYourGame, 2022
 
 local my_language = {
     -- Admin things

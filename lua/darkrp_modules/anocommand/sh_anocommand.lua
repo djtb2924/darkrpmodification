@@ -1,4 +1,4 @@
--- Copyright © LiveYourGame, 2021
+-- Copyright © LiveYourGame, 2022
 
 DarkRP.declareChatCommand{
     command = "ano",

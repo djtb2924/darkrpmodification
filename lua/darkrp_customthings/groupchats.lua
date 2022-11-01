@@ -15,7 +15,7 @@ This is for people who know how to script Lua.
 
 ---------------------------------------------------------------------------]]
 
--- Copyright © LiveYourGame, 2021
+-- Copyright © LiveYourGame, 2022
 
 GAMEMODE:AddGroupChat(TEAM_MAYOR, TEAM_SECRETAIRE, TEAM_GARDE)
 GAMEMODE:AddGroupChat(TEAM_GENDARME, TEAM_AGN, TEAM_MGN, TEAM_BRI, TEAM_SDR, TEAM_OFFICIER, TEAM_RECRUEGIGN, TEAM_MEDICGIGN, TEAM_SOLDATGIGN, TEAM_SNIPERGIGN, TEAM_INGEGIGN, TEAM_OSUGIGN, TEAM_MARECHAL, TEAM_GENGEN, TEAM_GIGNGENERAL, TEAM_AGS)

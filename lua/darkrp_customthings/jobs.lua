@@ -16,7 +16,7 @@ https://darkrp.miraheze.org/wiki/DarkRP:CustomJobFields
 Add your custom jobs under the following line:
 ---------------------------------------------------------------------------]]
 
--- Copyright © LiveYourGame, 2021
+-- Copyright © LiveYourGame, 2022
 
 local green = Color(20, 150, 20)
 local yellow = Color(241, 196, 15)
