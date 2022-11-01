@@ -52,9 +52,14 @@ local function demoteJob(ply)
 	ply:changeTeam(GAMEMODE.DefaultTeam, true)
 end
 
+local category
+
 --[[-------------------------------------------------------------------------
 Gouvernement
 ---------------------------------------------------------------------------]]
+
+category = "Gouvernement"
+
 TEAM_MAYOR = DarkRP.createJob("Maire", {
 	color = orange,
 	model = "models/player/breen.mdl",
@@ -68,6 +73,7 @@ TEAM_MAYOR = DarkRP.createJob("Maire", {
 	mayor = true,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	PlayerDeath = demoteJob
 })
 
@@ -84,7 +90,8 @@ TEAM_SECRETAIRE = DarkRP.createJob("Secretaire Du Maire", {
 	salary = 600,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_GARDE = DarkRP.createJob("Garde Du Maire", {
@@ -98,6 +105,7 @@ TEAM_GARDE = DarkRP.createJob("Garde Du Maire", {
 	admin = 0,
 	hasLicense = true,
 	candemote = false,
+	category = category,
 	PlayerLoadout = loadouts[50]
 })
 
@@ -117,12 +125,16 @@ TEAM_AVOCAT = DarkRP.createJob("Avocat", {
 	salary = 10000,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 --[[-------------------------------------------------------------------------
 Gendarmerie
 ---------------------------------------------------------------------------]]
+
+category = "Services secrets"
+
 TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 	color = black,
 	model = {
@@ -154,9 +166,12 @@ TEAM_AGS = DarkRP.createJob("Agent Secret V.I.P", {
 	admin = 0,
 	hasLicense = true,
 	candemote = false,
+	category = category,
 	chief = true,
 	PlayerLoadout = loadout(100)
 })
+
+category = "Gendarmerie"
 
 -- Gendarmes
 TEAM_GENDARME = DarkRP.createJob("Gendarme", {
@@ -174,6 +189,7 @@ TEAM_GENDARME = DarkRP.createJob("Gendarme", {
 	admin = 0,
 	hasLicense = true,
 	candemote = false,
+	category = category,
 	chief = true
 })
 
@@ -192,6 +208,7 @@ TEAM_MGN = DarkRP.createJob("MGN", {
 	admin = 0,
 	hasLicense = true,
 	candemote = false,
+	category = category,
 	chief = true
 })
 
@@ -206,7 +223,8 @@ TEAM_AGN = DarkRP.createJob("AGN", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_SDR = DarkRP.createJob("SDR", {
@@ -220,7 +238,8 @@ TEAM_SDR = DarkRP.createJob("SDR", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_BRI = DarkRP.createJob("BRI", {
@@ -239,7 +258,8 @@ TEAM_BRI = DarkRP.createJob("BRI", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_OFFICIER = DarkRP.createJob("Officier", {
@@ -264,7 +284,8 @@ TEAM_OFFICIER = DarkRP.createJob("Officier", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_GENGEN = DarkRP.createJob("Général", {
@@ -282,7 +303,8 @@ TEAM_GENGEN = DarkRP.createJob("Général", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 -- Maréchal
@@ -300,7 +322,8 @@ TEAM_MARECHAL = DarkRP.createJob("Maréchal", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 -- GIGN
@@ -315,7 +338,8 @@ TEAM_RECRUEGIGN = DarkRP.createJob("Recrue GIGN", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
@@ -335,7 +359,8 @@ TEAM_MEDICGIGN = DarkRP.createJob("Médecin GIGN", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
@@ -355,7 +380,8 @@ TEAM_SOLDATGIGN = DarkRP.createJob("Soldat GIGN", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
@@ -373,7 +399,8 @@ TEAM_SNIPERGIGN = DarkRP.createJob("Sniper GIGN", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
@@ -393,7 +420,8 @@ TEAM_INGEGIGN = DarkRP.createJob("Ingénieur GIGN", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
@@ -413,7 +441,8 @@ TEAM_OSUGIGN = DarkRP.createJob("Officier Supérieur GIGN", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
@@ -431,12 +460,16 @@ TEAM_GIGNGENERAL = DarkRP.createJob("Général GIGN", {
 	admin = 0,
 	hasLicense = true,
 	chief = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 --[[-------------------------------------------------------------------------
 Farm
 ---------------------------------------------------------------------------]]
+
+category = "Farm"
+
 TEAM_BEEKEEPER = DarkRP.createJob("Apiculteur", {
 	color = orange,
 	model = {
@@ -465,7 +498,8 @@ TEAM_BITMINER = DarkRP.createJob("Mineur de Bitcoin", {
 	salary = 100,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_BUSINESSMAN = DarkRP.createJob("Businessman", {
@@ -490,12 +524,16 @@ TEAM_MINEUR = DarkRP.createJob("Mineur", {
 	salary = 50,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 --[[-------------------------------------------------------------------------
 Banque
 ---------------------------------------------------------------------------]]
+
+category = "Banque"
+
 TEAM_PBANQUIER = DarkRP.createJob("Patron de la Banque", {
 	color = green,
 	model = {
@@ -509,7 +547,8 @@ TEAM_PBANQUIER = DarkRP.createJob("Patron de la Banque", {
 	salary = 2000,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_BANQUIER = DarkRP.createJob("Banquier", {
@@ -526,12 +565,16 @@ TEAM_BANQUIER = DarkRP.createJob("Banquier", {
 	salary = 1000,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 --[[-------------------------------------------------------------------------
 SDF
 ---------------------------------------------------------------------------]]
+
+category = "Métiers de la rue"
+
 TEAM_SDF = DarkRP.createJob("SDF", {
 	color = green,
 	model = "models/player/scavenger/scavenger.mdl",
@@ -543,6 +586,7 @@ TEAM_SDF = DarkRP.createJob("SDF", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	hobo = true
 })
 
@@ -562,7 +606,8 @@ TEAM_VOLEUR = DarkRP.createJob("Voleur", {
 	salary = 100,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_CAMBRIOLEUR = DarkRP.createJob("Cambrioleur", {
@@ -592,12 +637,16 @@ TEAM_CAMBRIOLEUR = DarkRP.createJob("Cambrioleur", {
 	salary = 100,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 --[[-------------------------------------------------------------------------
 Gangs
 ---------------------------------------------------------------------------]]
+
+category = "Gangs / Gangsters"
+
 -- Gangsters
 TEAM_CGANGSTER = DarkRP.createJob("Chef des Gangsters", {
 	color = black,
@@ -609,7 +658,8 @@ TEAM_CGANGSTER = DarkRP.createJob("Chef des Gangsters", {
 	salary = 400,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_GANGSTER = DarkRP.createJob("Gangster", {
@@ -632,7 +682,8 @@ TEAM_GANGSTER = DarkRP.createJob("Gangster", {
 	salary = 200,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_GANGSTERV = DarkRP.createJob("Gangster V.I.P", {
@@ -660,8 +711,11 @@ TEAM_GANGSTERV = DarkRP.createJob("Gangster V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	PlayerLoadout = loadouts[150]
 })
+
+category = "Gangs / Mafia"
 
 -- Mafieux
 TEAM_CMAFIA = DarkRP.createJob("Parrain", {
@@ -674,7 +728,8 @@ TEAM_CMAFIA = DarkRP.createJob("Parrain", {
 	salary = 400,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_MAFIA = DarkRP.createJob("Mafieux", {
@@ -693,7 +748,8 @@ TEAM_MAFIA = DarkRP.createJob("Mafieux", {
 	salary = 200,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_MAFIAV = DarkRP.createJob("Mafieux V.I.P", {
@@ -717,8 +773,11 @@ TEAM_MAFIAV = DarkRP.createJob("Mafieux V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	PlayerLoadout = loadouts[150]
 })
+
+category = "Gangs / Yakuzas"
 
 -- Yakuzas
 TEAM_CYAKUZA = DarkRP.createJob("Chef des Yakuza", {
@@ -734,7 +793,8 @@ TEAM_CYAKUZA = DarkRP.createJob("Chef des Yakuza", {
 	salary = 400,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_YAKUZA = DarkRP.createJob("Yakuza", {
@@ -756,7 +816,8 @@ TEAM_YAKUZA = DarkRP.createJob("Yakuza", {
 	salary = 200,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_YAKUZAV = DarkRP.createJob("Yakuza V.I.P", {
@@ -783,8 +844,11 @@ TEAM_YAKUZAV = DarkRP.createJob("Yakuza V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	PlayerLoadout = loadouts[150]
 })
+
+category = "Gangs / Braqueurs"
 
 -- Braqueurs
 TEAM_CBRAQUEUR = DarkRP.createJob("Chef des Braqueurs", {
@@ -801,7 +865,8 @@ TEAM_CBRAQUEUR = DarkRP.createJob("Chef des Braqueurs", {
 	salary = 400,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_BRAQUEUR = DarkRP.createJob("Braqueur", {
@@ -818,7 +883,8 @@ TEAM_BRAQUEUR = DarkRP.createJob("Braqueur", {
 	salary = 200,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_BRAQUEURV = DarkRP.createJob("Braqueur V.I.P", {
@@ -840,8 +906,11 @@ TEAM_BRAQUEURV = DarkRP.createJob("Braqueur V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	PlayerLoadout = loadouts[150]
 })
+
+category = "Gangs / Cartel"
 
 -- Cartel
 TEAM_CCARTEL = DarkRP.createJob("Chef du Cartel", {
@@ -857,7 +926,8 @@ TEAM_CCARTEL = DarkRP.createJob("Chef du Cartel", {
 	salary = 300,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_CARTEL = DarkRP.createJob("Cartel", {
@@ -873,7 +943,8 @@ TEAM_CARTEL = DarkRP.createJob("Cartel", {
 	salary = 200,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_CARTELV = DarkRP.createJob("Cartel V.I.P", {
@@ -894,8 +965,11 @@ TEAM_CARTELV = DarkRP.createJob("Cartel V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	PlayerLoadout = loadouts[150]
 })
+
+category = "Gangs / Crips"
 
 -- Crips
 TEAM_CCRIPS = DarkRP.createJob("Chef Crips", {
@@ -908,7 +982,8 @@ TEAM_CCRIPS = DarkRP.createJob("Chef Crips", {
 	salary = 400,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_CRIPS = DarkRP.createJob("Crips", {
@@ -924,7 +999,8 @@ TEAM_CRIPS = DarkRP.createJob("Crips", {
 	salary = 200,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_CRIPSV = DarkRP.createJob("Crips V.I.P", {
@@ -945,8 +1021,11 @@ TEAM_CRIPSV = DarkRP.createJob("Crips V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	PlayerLoadout = loadouts[150]
 })
+
+category = "Gangs / Bloods"
 
 -- Bloods
 TEAM_CBLOODS = DarkRP.createJob("Chef Bloods", {
@@ -959,7 +1038,8 @@ TEAM_CBLOODS = DarkRP.createJob("Chef Bloods", {
 	salary = 400,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_BLOODS = DarkRP.createJob("Bloods", {
@@ -975,7 +1055,8 @@ TEAM_BLOODS = DarkRP.createJob("Bloods", {
 	salary = 200,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_BLOODSV = DarkRP.createJob("Bloods V.I.P", {
@@ -996,12 +1077,16 @@ TEAM_BLOODSV = DarkRP.createJob("Bloods V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	PlayerLoadout = loadouts[150]
 })
 
 --[[-------------------------------------------------------------------------
 Services
 ---------------------------------------------------------------------------]]
+
+category = "Services"
+
 TEAM_SAMU = DarkRP.createJob("SAMU", {
 	color = green,
 	model = {
@@ -1024,6 +1109,7 @@ TEAM_SAMU = DarkRP.createJob("SAMU", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	medic = true
 })
 
@@ -1037,7 +1123,8 @@ TEAM_ARMURIER = DarkRP.createJob("Armurier", {
 	salary = 400,
 	admin = 0,
 	hasLicense = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_TRAFIQUANT = DarkRP.createJob("Trafiquant d'armes", {
@@ -1050,7 +1137,8 @@ TEAM_TRAFIQUANT = DarkRP.createJob("Trafiquant d'armes", {
 	salary = 400,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_QUINCAILLER = DarkRP.createJob("Quincailler", {
@@ -1063,7 +1151,8 @@ TEAM_QUINCAILLER = DarkRP.createJob("Quincailler", {
 	salary = 300,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_COOK = DarkRP.createJob("Cuisinier", {
@@ -1080,6 +1169,7 @@ TEAM_COOK = DarkRP.createJob("Cuisinier", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	cook = true
 })
 
@@ -1093,7 +1183,8 @@ TEAM_SMOOTHIE = DarkRP.createJob("Vendeur de smoothies", {
 	salary = 50,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_TOWER = DarkRP.createJob("Dépanneur", {
@@ -1110,6 +1201,7 @@ TEAM_TOWER = DarkRP.createJob("Dépanneur", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category
 })
 
 TEAM_UBER = DarkRP.createJob("Chauffeur Uber",{
@@ -1123,6 +1215,7 @@ TEAM_UBER = DarkRP.createJob("Chauffeur Uber",{
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category
 })
 
 TEAM_UBEREATS = DarkRP.createJob("Uber Eats",{
@@ -1140,11 +1233,15 @@ TEAM_UBEREATS = DarkRP.createJob("Uber Eats",{
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category
 })
 
 --[[-------------------------------------------------------------------------
 Drogues
 ---------------------------------------------------------------------------]]
+
+category = "Drogues"
+
 TEAM_METH = DarkRP.createJob("Fabricant de Meth", {
 	color = orange,
 	model = defaultSkins,
@@ -1155,7 +1252,8 @@ TEAM_METH = DarkRP.createJob("Fabricant de Meth", {
 	salary = 200,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_WEED = DarkRP.createJob("Fabricant de Weed", {
@@ -1171,7 +1269,8 @@ TEAM_WEED = DarkRP.createJob("Fabricant de Weed", {
 	salary = 200,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_BICRAVEUR = DarkRP.createJob("Bicraveur", {
@@ -1184,12 +1283,16 @@ TEAM_BICRAVEUR = DarkRP.createJob("Bicraveur", {
 	salary = 100,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 --[[-------------------------------------------------------------------------
 Autres
 ---------------------------------------------------------------------------]]
+
+category = "Autre"
+
 TEAM_KIDNAPPEUR = DarkRP.createJob("Kidnappeur V.I.P", {
 	color = yellow,
 	model = defaultSkins,
@@ -1204,7 +1307,8 @@ TEAM_KIDNAPPEUR = DarkRP.createJob("Kidnappeur V.I.P", {
 	salary = 100,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_PSYCHOPATHE = DarkRP.createJob("Psychopathe V.I.P", {
@@ -1232,7 +1336,8 @@ TEAM_PSYCHOPATHE = DarkRP.createJob("Psychopathe V.I.P", {
 	salary = 100,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_ENFANT = DarkRP.createJob("Enfant Bizarre V.I.P", {
@@ -1248,7 +1353,8 @@ TEAM_ENFANT = DarkRP.createJob("Enfant Bizarre V.I.P", {
 	salary = 300,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_TERRORISTE = DarkRP.createJob("Terroriste V.I.P", {
@@ -1274,6 +1380,7 @@ TEAM_TERRORISTE = DarkRP.createJob("Terroriste V.I.P", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	PlayerDeath = demoteJob,
 	PlayerLoadout = loadouts[150]
 })
@@ -1304,13 +1411,17 @@ TEAM_TUEUR = DarkRP.createJob("Tueur a Gages V.I.P", {
 	salary = 1000,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 
 --[[-------------------------------------------------------------------------
 Sécurité
 ---------------------------------------------------------------------------]]
+
+category = "Sécurité"
+
 TEAM_ADS = DarkRP.createJob("Agent De Securite", {
 	color = grey,
 	model = {
@@ -1332,6 +1443,7 @@ TEAM_ADS = DarkRP.createJob("Agent De Securite", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	PlayerLoadout = loadouts[50]
 })
 
@@ -1345,7 +1457,8 @@ TEAM_MERCENAIRE = DarkRP.createJob("Mercenaire", {
 	salary = 300,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 TEAM_GARDECORPS = DarkRP.createJob("Garde du Corps", {
@@ -1358,7 +1471,8 @@ TEAM_GARDECORPS = DarkRP.createJob("Garde du Corps", {
 	salary = 600,
 	admin = 0,
 	hasLicense = true,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 --[[-------------------------------------------------------------------------
@@ -1374,12 +1488,15 @@ TEAM_CITIZEN = DarkRP.createJob("Chomeur", {
 	salary = 100,
 	admin = 0,
 	hasLicense = false,
-	candemote = false
+	candemote = false,
+	category = category
 })
 
 --[[-------------------------------------------------------------------------
 Staff
 ---------------------------------------------------------------------------]]
+
+category = "Staff"
 
 local staffRanks = {"superadmin", "users"}
 
@@ -1407,6 +1524,7 @@ TEAM_STAFF = DarkRP.createJob("Staff", {
 	admin = 0,
 	hasLicense = false,
 	candemote = false,
+	category = category,
 	customCheck = function(ply) return staffRanks[ply:GetUserGroup()] end,
 })
 
