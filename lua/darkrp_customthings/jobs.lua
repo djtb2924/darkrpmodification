@@ -1498,15 +1498,7 @@ Staff
 
 category = "Staff"
 
-local staffRanks = {"superadmin", "users"}
-
-hook.Add("LYGInfraLoaded", "DRPModStaff", function(LYGInfra)
-	table.Empty(staffRanks)
-
-	for k, v in pairs(LYGInfra.staffGroups) do
-		table.insert(staffRanks, v)
-	end
-end)
+local staffRanks = LYGInfra.staffGroups
 
 TEAM_STAFF = DarkRP.createJob("Staff", {
 	color = green,
