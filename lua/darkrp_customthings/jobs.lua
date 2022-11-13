@@ -1520,7 +1520,7 @@ TEAM_STAFF = DarkRP.createJob("Staff", {
 	customCheck = function(ply) return staffRanks[ply:GetUserGroup()] end,
 })
 
-include("families.lua")
+include("darkrp_customthings/families.lua")
 
 -- Misc DarkRP defines
 GAMEMODE.DefaultTeam = TEAM_CITIZEN
